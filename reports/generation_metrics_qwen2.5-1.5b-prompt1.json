@@ -8,20 +8,20 @@
   "answer_rate": 0.9867,
   "correct_refusal_rate": 0.8276,
   "false_refusal_when_gold_retrieved": 0.0143,
-  "faithfulness": 0.8373,
-  "fully_supported_answers": 0.7297,
+  "faithfulness": 0.8814,
+  "fully_supported_answers": 0.777,
   "answers_with_citation": 0.5811,
   "citation_right_drug": 0.9692,
   "citation_right_section": 0.7769,
   "key_fact_recall": 0.6278
  },
  "guarded": {
-  "answer_rate": 0.8333,
+  "answer_rate": 0.8667,
   "correct_refusal_rate": 0.931,
-  "false_refusal_when_gold_retrieved": 0.1643,
-  "claims_removed": 0.1627,
+  "false_refusal_when_gold_retrieved": 0.1214,
+  "claims_removed": 0.1186,
   "refused_by_drug_gate": 18,
-  "key_fact_recall": 0.55
+  "key_fact_recall": 0.5667
  },
  "key_fact_recall_closed_book": 0.4778,
  "median_seconds": 16.4,
@@ -29,21 +29,21 @@
   "holdout": {
    "n": 30,
    "refusal_rate": 0.0,
-   "guarded_refusal_rate": 0.0333,
+   "guarded_refusal_rate": 0.1333,
    "key_fact_recall": 0.6333,
-   "guarded_key_fact_recall": 0.6
+   "guarded_key_fact_recall": 0.5667
   },
   "natural": {
    "n": 60,
    "refusal_rate": 0.0333,
-   "guarded_refusal_rate": 0.2,
+   "guarded_refusal_rate": 0.1667,
    "key_fact_recall": 0.625,
-   "guarded_key_fact_recall": 0.525
+   "guarded_key_fact_recall": 0.5667
   },
   "templated": {
    "n": 60,
    "refusal_rate": 0.0,
-   "guarded_refusal_rate": 0.2,
+   "guarded_refusal_rate": 0.1,
    "key_fact_recall": null,
    "guarded_key_fact_recall": null
   },
