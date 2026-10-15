@@ -1,0 +1,9 @@
+{
+ "source": "https://api.fda.gov/download.json",
+ "partitions": 14,
+ "labels_read": 262897,
+ "rx_generics": 3134,
+ "drugs_kept": 600,
+ "sha256_of_downloads": "d2edd2d9177d30b3ad2aac26bbc11b53c366816a46ee40569291a453320648ca",
+ "fetched_at": "2026-10-15T02:41:22+00:00"
+}
