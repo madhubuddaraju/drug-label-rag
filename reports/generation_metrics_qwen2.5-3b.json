@@ -1,0 +1,58 @@
+{
+ "model": "Qwen/Qwen2.5-3B-Instruct-GGUF/qwen2.5-3b-instruct-q4_k_m.gguf",
+ "top_k": 4,
+ "minutes": 136.2,
+ "answerable": 150,
+ "unanswerable": 29,
+ "raw": {
+  "answer_rate": 0.9667,
+  "correct_refusal_rate": 0.931,
+  "false_refusal_when_gold_retrieved": 0.0214,
+  "faithfulness": 0.5987,
+  "fully_supported_answers": 0.3655,
+  "answers_with_citation": 0.7931,
+  "citation_right_drug": 0.9885,
+  "citation_right_section": 0.8621,
+  "key_fact_recall": 0.8167
+ },
+ "guarded": {
+  "answer_rate": 0.7533,
+  "correct_refusal_rate": 0.931,
+  "false_refusal_when_gold_retrieved": 0.2286,
+  "claims_removed": 0.4013,
+  "key_fact_recall": 0.5722
+ },
+ "key_fact_recall_closed_book": 0.5056,
+ "median_seconds": 34.1,
+ "by_source": {
+  "holdout": {
+   "n": 30,
+   "refusal_rate": 0.0333,
+   "guarded_refusal_rate": 0.3333,
+   "key_fact_recall": 0.7667,
+   "guarded_key_fact_recall": 0.5333
+  },
+  "natural": {
+   "n": 60,
+   "refusal_rate": 0.05,
+   "guarded_refusal_rate": 0.1667,
+   "key_fact_recall": 0.8417,
+   "guarded_key_fact_recall": 0.5917
+  },
+  "templated": {
+   "n": 60,
+   "refusal_rate": 0.0167,
+   "guarded_refusal_rate": 0.2833,
+   "key_fact_recall": null,
+   "guarded_key_fact_recall": null
+  },
+  "unanswerable": {
+   "n": 29,
+   "refusal_rate": 0.931,
+   "guarded_refusal_rate": 0.931,
+   "key_fact_recall": null,
+   "guarded_key_fact_recall": null
+  }
+ },
+ "nli_model": "cross-encoder/nli-deberta-v3-base"
+}
