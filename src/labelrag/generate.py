@@ -15,7 +15,7 @@ import time
 import numpy as np
 
 from . import corpus, evalset
-from .config import CHUNKS, EMBEDDINGS, NLI_MODEL, REPORTS, RERANK_MODEL, SEED
+from .config import CHUNKS, EMBEDDINGS, NLI_MODEL, REPORTS, SEED
 from .evaluate import same_drug
 from .search import Retriever
 
@@ -90,7 +90,6 @@ def main():
     a = ap.parse_args()
 
     from llama_cpp import Llama
-    from sentence_transformers import CrossEncoder
 
     from .build import encoder
 
@@ -98,8 +97,7 @@ def main():
     chunks = corpus.load_chunks(CHUNKS)
     emb = np.load(EMBEDDINGS).astype(np.float32)
     enc = encoder()
-    retr = Retriever(chunks, corpus.alias_index(labels), emb, encode_query=lambda t: enc(t, query=True),
-                     reranker=CrossEncoder(RERANK_MODEL, device="cpu"))
+    retr = Retriever(chunks, corpus.alias_index(labels), emb, encode_query=lambda t: enc(t, query=True))
     llm = Llama.from_pretrained(LLM_REPO, LLM_FILE, n_ctx=4096, n_threads=4, verbose=False, seed=SEED)
     faith = Faithfulness()
 
@@ -118,7 +116,8 @@ def main():
 
     rows, t0 = [], time.time()
     for n, q in enumerate(questions):
-        ids = retr.search(q["question"], method="hybrid", k=TOP_K, drug_filter=True, rerank=True, hints=True)
+        # the best configuration from reports/retrieval_metrics.json; the cross-encoder re-ranker lowered hit@1 there
+        ids = retr.search(q["question"], method="hybrid", k=TOP_K, drug_filter=True, rerank=False, hints=True)
         passages = [chunks[i] for i in ids]
         t = time.time()
         ans = chat(SYSTEM, prompt(q["question"], passages))
