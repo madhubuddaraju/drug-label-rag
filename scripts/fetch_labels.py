@@ -107,7 +107,7 @@ def main():
             rec = best[g]
             rec.pop("_score")
             rec["n_labels"] = counts[g]
-            rec["aliases"] = [b for b, _ in brands[g].most_common(6)]
+            rec["aliases"] = [b for b, _ in brands[g].most_common(30)]
             f.write(json.dumps(rec) + "\n")
     meta = {"source": INDEX, "partitions": len(parts), "labels_read": seen, "rx_generics": len(counts),
             "drugs_kept": len(top), "sha256_of_downloads": digest.hexdigest(),
