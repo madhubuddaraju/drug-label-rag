@@ -1,0 +1,30 @@
+{"qid": "h0", "question": "Will lisinopril hurt my unborn baby?", "drug": "lisinopril", "sections": ["boxed_warning", "pregnancy", "warnings"], "must": [["fetal", "fetus"]]}
+{"qid": "h1", "question": "What's hydroxyzine prescribed for?", "drug": "hydroxyzine hydrochloride", "sections": ["indications"], "must": [["anxiety"]]}
+{"qid": "h2", "question": "My grandmother is 82. Does she need a lower amount of zolpidem?", "drug": "zolpidem tartrate", "sections": ["dosage", "geriatric"], "must": [["5 mg"]]}
+{"qid": "h3", "question": "Is clonazepam habit forming?", "drug": "clonazepam", "sections": ["boxed_warning", "warnings"], "must": [["dependence", "addiction", "abuse"]]}
+{"qid": "h4", "question": "Does amlodipine cause ankle swelling?", "drug": "amlodipine besylate", "sections": ["adverse_reactions"], "must": [["edema"]]}
+{"qid": "h5", "question": "How many sertraline pills would be dangerous?", "drug": "sertraline hydrochloride", "sections": ["overdosage"], "must": [["serotonin", "somnolence", "tachycardia", "vomiting"]]}
+{"qid": "h6", "question": "Can baclofen be stopped all at once?", "drug": "baclofen", "sections": ["boxed_warning", "warnings", "dosage"], "must": [["hallucination", "seizure", "withdrawal"]]}
+{"qid": "h7", "question": "What's the lowest strength of atorvastatin to start on?", "drug": "atorvastatin calcium", "sections": ["dosage"], "must": [["10 mg"]]}
+{"qid": "h8", "question": "Is ciprofloxacin okay for a 10 year old?", "drug": "ciprofloxacin", "sections": ["pediatric", "boxed_warning", "warnings", "indications"], "must": [["pediatric", "children"]]}
+{"qid": "h9", "question": "Does tamsulosin make you dizzy when standing up?", "drug": "tamsulosin hydrochloride", "sections": ["warnings", "adverse_reactions"], "must": [["orthostatic", "hypotension", "dizziness"]]}
+{"qid": "h10", "question": "Who must avoid sildenafil?", "drug": "sildenafil citrate", "sections": ["contraindications"], "must": [["nitrate"]]}
+{"qid": "h11", "question": "Is montelukast approved for toddlers?", "drug": "montelukast sodium", "sections": ["pediatric", "indications", "dosage"], "must": [["months", "years"]]}
+{"qid": "h12", "question": "What does furosemide do?", "drug": "furosemide", "sections": ["indications"], "must": [["edema"]]}
+{"qid": "h13", "question": "Can you take ondansetron while expecting?", "drug": "ondansetron", "sections": ["pregnancy"], "must": [["cleft", "pregnan"]]}
+{"qid": "h14", "question": "Do I need blood tests while on lithium?", "drug": "lithium carbonate", "sections": ["warnings", "dosage", "boxed_warning"], "must": [["serum", "level", "concentration"]]}
+{"qid": "h15", "question": "Which other medicines change how warfarin works?", "drug": "warfarin sodium", "sections": ["interactions"], "must": [["cyp2c9", "inr", "bleeding"]]}
+{"qid": "h16", "question": "Are there heart rhythm risks with azithromycin?", "drug": "azithromycin", "sections": ["warnings"], "must": [["qt"]]}
+{"qid": "h17", "question": "What are bad allergic reactions to amoxicillin?", "drug": "amoxicillin", "sections": ["warnings", "adverse_reactions", "contraindications"], "must": [["anaphyla", "hypersensitivity"]]}
+{"qid": "h18", "question": "Is meloxicam hard on the stomach?", "drug": "meloxicam", "sections": ["boxed_warning", "warnings"], "must": [["gastrointestinal", "bleeding", "ulcer"]]}
+{"qid": "h19", "question": "Does gabapentin cause breathing problems with opioids?", "drug": "gabapentin", "sections": ["warnings"], "must": [["respiratory depression"]]}
+{"qid": "h20", "question": "Is topiramate linked to kidney stones?", "drug": "topiramate", "sections": ["warnings"], "must": [["kidney stone", "nephrolithiasis"]]}
+{"qid": "h21", "question": "Can tramadol be given to a 10-year-old?", "drug": "tramadol hydrochloride", "sections": ["boxed_warning", "contraindications", "pediatric"], "must": [["12"]]}
+{"qid": "h22", "question": "What illnesses is quetiapine approved to treat?", "drug": "quetiapine", "sections": ["indications"], "must": [["schizophrenia"], ["bipolar"]]}
+{"qid": "h23", "question": "Can levofloxacin affect blood sugar?", "drug": "levofloxacin", "sections": ["warnings"], "must": [["dysglycemia", "hypoglycemia", "glucose"]]}
+{"qid": "h24", "question": "Is escitalopram safe with MAO inhibitors?", "drug": "escitalopram", "sections": ["contraindications", "interactions", "warnings"], "must": [["maoi", "monoamine oxidase"]]}
+{"qid": "h25", "question": "Does duloxetine affect the liver?", "drug": "duloxetine", "sections": ["warnings"], "must": [["hepat", "liver"]]}
+{"qid": "h26", "question": "Is spironolactone a problem with potassium supplements?", "drug": "spironolactone", "sections": ["interactions", "warnings", "contraindications"], "must": [["hyperkalemia", "potassium"]]}
+{"qid": "h27", "question": "What amount of buspirone do people usually start with?", "drug": "buspirone hydrochloride", "sections": ["dosage"], "must": [["7.5 mg", "15 mg", "5 mg"]]}
+{"qid": "h28", "question": "Can omeprazole be given to infants?", "drug": "omeprazole", "sections": ["pediatric", "dosage"], "must": [["month", "year"]]}
+{"qid": "h29", "question": "Why is metoprolol not stopped suddenly?", "drug": "metoprolol tartrate", "sections": ["boxed_warning", "warnings"], "must": [["angina", "myocardial infarction"]]}

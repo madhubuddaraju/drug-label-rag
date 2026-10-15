@@ -19,23 +19,31 @@ from .search import Retriever, doc_text
 log = logging.getLogger("labelrag")
 
 CONFIGS = [
-    # name, method, header, drug_filter, rerank
-    ("BM25", "bm25", False, False, False),
-    ("BM25 + chunk headers", "bm25", True, False, False),
-    ("BM25 + headers + drug-name filter", "bm25", True, True, False),
-    ("Dense (bge-small)", "dense", False, False, False),
-    ("Dense + chunk headers", "dense", True, False, False),
-    ("Dense, binary-quantised", "binary", True, False, False),
-    ("Hybrid (RRF)", "hybrid", True, False, False),
-    ("Hybrid + drug-name filter", "hybrid", True, True, False),
-    ("Hybrid, binary + drug-name filter", "hybrid_binary", True, True, False),
-    ("Hybrid + drug filter + re-ranker", "hybrid", True, True, True),
+    # name, method, header, drug_filter, rerank, section hints
+    ("BM25", "bm25", False, False, False, False),
+    ("BM25 + chunk headers", "bm25", True, False, False, False),
+    ("BM25 + headers + drug filter", "bm25", True, True, False, False),
+    ("BM25 + headers + drug filter + section hints", "bm25", True, True, False, True),
+    ("Dense (bge-small)", "dense", False, False, False, False),
+    ("Dense + chunk headers", "dense", True, False, False, False),
+    ("Dense, binary-quantised", "binary", True, False, False, False),
+    ("Hybrid (RRF)", "hybrid", True, False, False, False),
+    ("Hybrid + drug filter", "hybrid", True, True, False, False),
+    ("Hybrid + drug filter + section hints", "hybrid", True, True, False, True),
+    ("Hybrid, binary + drug filter + hints", "hybrid_binary", True, True, False, True),
+    ("Hybrid + filter + hints + re-ranker", "hybrid", True, True, True, True),
 ]
 
 
 def encoder():
+    import os
+
+    import torch
     from sentence_transformers import SentenceTransformer
+    torch.set_num_threads(os.cpu_count() or 4)
     model = SentenceTransformer(EMBED_MODEL, device="cpu")
+    model.max_seq_length = 320
+    log.info("loaded %s (%d threads)", EMBED_MODEL, torch.get_num_threads())
 
     def enc(texts, query=False):
         texts = [QUERY_PREFIX + t for t in texts] if query else texts
@@ -49,7 +57,8 @@ def embed_cached(enc, chunks, with_header, path):
         if len(e) == len(chunks):
             return e
     t0 = time.time()
-    e = enc([doc_text(c, with_header) for c in chunks])
+    texts = [doc_text(c, with_header) for c in chunks]
+    e = np.vstack([enc(texts[i:i + 2000]) for i in range(0, len(texts), 2000) if not log.info("embedding %d/%d", i, len(texts))])
     log.info("embedded %d chunks (headers=%s) in %.0fs", len(chunks), with_header, time.time() - t0)
     np.save(path, e.astype(np.float16))
     return e
@@ -62,37 +71,40 @@ def run(dense: bool = True) -> dict:
     aliases = corpus.alias_index(labels)
     log.info("%d drugs -> %d chunks, %d drug-name aliases", len(labels), len(chunks), len(aliases))
 
-    questions = evalset.templated(labels) + evalset.natural()
+    questions = evalset.templated(labels) + evalset.natural() + evalset.natural("holdout")
     known = {lab["drug"] for lab in labels}
     questions = [q for q in questions if q["drug"] in known]
     gold = {q["qid"]: relevant(chunks, q) for q in questions}
 
     enc = encoder() if dense else None
     emb_h = emb_p = None
-    qvecs = {}
+    qvecs, qvecs_hint = {}, {}
     reranker = None
     if dense:
         emb_h = embed_cached(enc, chunks, True, EMBEDDINGS)
         emb_p = embed_cached(enc, chunks, False, DATA / "embeddings_plain.npy")
         qv = enc([q["question"] for q in questions], query=True)
         qvecs = {q["qid"]: v for q, v in zip(questions, qv, strict=True)}
+        qv = enc([corpus.expand_query(q["question"]) for q in questions], query=True)
+        qvecs_hint = {q["qid"]: v for q, v in zip(questions, qv, strict=True)}
         from sentence_transformers import CrossEncoder
         reranker = CrossEncoder(RERANK_MODEL, device="cpu")
 
     retrievers = {True: Retriever(chunks, aliases, emb_h, reranker=reranker, with_header=True),
                   False: Retriever(chunks, aliases, emb_p, reranker=reranker, with_header=False)}
     results, per_q = [], {}
-    for name, method, hdr, filt, rr in CONFIGS:
+    for name, method, hdr, filt, rr, hints in CONFIGS:
         if method != "bm25" and not dense:
             continue
-        summary, rows = run_config(retrievers[hdr], questions, qvecs, chunks, gold, method=method, k=10,
-                                   drug_filter=filt, rerank=rr)
+        summary, rows = run_config(retrievers[hdr], questions, qvecs_hint if hints else qvecs, chunks, gold, method=method, k=10,
+                                   drug_filter=filt, rerank=rr, hints=hints)
         by_source = breakdown(rows, questions, "source")
-        results.append({"name": name, "method": method, "headers": hdr, "drug_filter": filt, "rerank": rr,
+        results.append({"name": name, "method": method, "headers": hdr, "drug_filter": filt, "rerank": rr, "hints": hints,
                         **summary, "by_source": by_source})
         per_q[name] = rows
-        log.info("%-36s hit@5 %.3f  mrr %.3f  natural hit@5 %.3f  %.1f ms", name, summary["hit@5"], summary["mrr@10"],
-                 by_source.get("natural", {}).get("hit@5", float("nan")), summary["ms_per_query"])
+        log.info("%-46s hit@5 %.3f  natural %.3f  holdout %.3f  %.1f ms", name, summary["hit@5"],
+                 by_source.get("natural", {}).get("hit@5", float("nan")), by_source.get("holdout", {}).get("hit@5", float("nan")),
+                 summary["ms_per_query"])
 
     best = max(results, key=lambda r: (r["by_source"].get("natural", r)["mrr@10"], r["mrr@10"]))
     rows = per_q[best["name"]]
@@ -108,8 +120,7 @@ def run(dense: bool = True) -> dict:
         "corpus": {"drugs": len(labels), "chunks": len(chunks), "aliases": len(aliases),
                    "avg_chunk_words": round(float(np.mean([len(c["text"].split()) for c in chunks])), 1),
                    "sections": {s: sum(c["section"] == s for c in chunks) for s in sorted({c["section"] for c in chunks})}},
-        "questions": {"templated": sum(q["source"] == "templated" for q in questions),
-                      "natural": sum(q["source"] == "natural" for q in questions)},
+        "questions": {s: sum(q["source"] == s for q in questions) for s in ("templated", "natural", "holdout")},
         "configs": results,
         "best": best["name"],
         "best_by_section": breakdown(rows, questions, "section"),

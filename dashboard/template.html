@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ask the Drug Label</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a clinical reference tool on white. A search-first hero (the product), then the evaluation
+   as a lab notebook: leaderboard, ablations, generated answers, failures. Single light theme by design. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff; --ink: #0d1b1e; --ink-2: #44545a; --ink-3: #85949a; --line: #e3e8ea; --soft: #f4f7f7; --soft-2: #eaf2f1;
+  --teal: #0f766e; --teal-2: #14b8a6; --teal-soft: #ccfbf1; --amber: #b45309; --amber-soft: #fef3c7; --red: #b42318; --red-soft: #fee4e2;
+  --mark: #fde68a;
+  --f-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --f-data: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--f-body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+.num, td.n { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+a { color: var(--teal); }
+.top { border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.01em; font-size: 17px; }
+.brand i { width: 26px; height: 26px; border-radius: 7px; background: var(--teal); display: grid; place-items: center; color: #fff; font-style: normal; font-size: 15px; }
+.top nav { display: flex; gap: 16px; font-size: 13.5px; }
+.top nav a { color: var(--ink-2); text-decoration: none; }
+.top nav a:hover { color: var(--ink); }
+
+.hero { padding-block: 40px 18px; text-align: center; }
+.hero h1 { font-size: clamp(30px, 4.6vw, 48px); line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 10px; font-weight: 800; text-wrap: balance; }
+.hero p { margin: 0 auto; max-width: 64ch; color: var(--ink-2); font-size: 16px; }
+.askbox { max-width: 780px; margin: 22px auto 0; position: relative; }
+.askbox form { display: flex; border: 2px solid var(--ink); border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 6px 0 var(--soft-2); }
+.askbox input { flex: 1; min-width: 0; border: 0; font: inherit; font-size: 17px; padding: 14px 16px; color: var(--ink); background: transparent; }
+.askbox input:focus { outline: none; }
+.askbox form:focus-within { border-color: var(--teal); }
+.askbox button { border: 0; background: var(--ink); color: #fff; font: inherit; font-weight: 600; padding: 0 22px; cursor: pointer; }
+.askbox button:hover { background: var(--teal); }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; margin-top: 12px; }
+.chips button { font: inherit; font-size: 13px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink-2); cursor: pointer; }
+.chips button:hover { border-color: var(--teal); color: var(--teal); }
+.status { margin-top: 12px; font-size: 12.5px; color: var(--ink-3); display: inline-flex; gap: 8px; align-items: center; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); display: inline-block; }
+.dot.ok { background: var(--teal-2); }
+
+.results { max-width: 860px; margin: 18px auto 0; display: grid; gap: 12px; text-align: left; }
+.answer { border: 1px solid var(--teal); background: linear-gradient(180deg, var(--soft-2), #fff 70%); border-radius: 12px; padding: 16px 18px; }
+.answer .lab { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); font-weight: 700; }
+.answer .txt { font-size: 17px; margin: 6px 0 8px; }
+.answer .src { font-size: 12.5px; color: var(--ink-2); }
+.notfound { border: 1px solid var(--amber); background: var(--amber-soft); border-radius: 12px; padding: 14px 18px; color: #6b3a07; }
+.notfound b { color: #4a2804; }
+.passage { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: #fff; }
+.passage header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.passage .rank { font-family: var(--f-data); font-size: 12px; color: var(--ink-3); }
+.passage .drug { font-weight: 700; }
+.badge { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--ink-2); border: 1px solid var(--line); }
+.badge.sec { background: var(--teal-soft); border-color: transparent; color: #115e59; font-weight: 600; }
+.passage p { margin: 0; color: var(--ink-2); font-size: 14px; }
+.passage p .hit { background: var(--soft-2); color: var(--ink); }
+.passage mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 2px; }
+.passage footer { margin-top: 8px; font-size: 12px; color: var(--ink-3); display: flex; gap: 12px; flex-wrap: wrap; }
+.disclaimer { font-size: 12px; color: var(--ink-3); text-align: center; margin-top: 4px; }
+
+.section { padding-block: 34px; border-top: 1px solid var(--line); margin-top: 30px; }
+.section + .section { margin-top: 0; }
+.eyebrow { font-size: 12px; letter-spacing: .09em; text-transform: uppercase; color: var(--teal); font-weight: 700; }
+h2 { font-size: clamp(22px, 2.8vw, 30px); letter-spacing: -0.02em; margin: 4px 0 8px; line-height: 1.15; font-weight: 800; }
+.lede { color: var(--ink-2); max-width: 70ch; margin: 0 0 18px; }
+.lede b { color: var(--ink); }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 20px; }
+.kpi { border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 2px; }
+.kpi b { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.kpi span { font-size: 13px; color: var(--ink-2); }
+.kpi small { font-size: 12px; color: var(--ink-3); }
+.cols { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 26px; align-items: start; }
+.chart { position: relative; height: 360px; }
+.chart.short { height: 300px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); margin-bottom: 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.scroll { overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th { text-align: left; font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; padding: 8px; border-bottom: 1px solid var(--ink); white-space: nowrap; }
+td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th.n, td.n { text-align: right; white-space: nowrap; }
+tr.best td { background: var(--soft-2); }
+tr.best td:first-child { box-shadow: inset 3px 0 0 var(--teal); }
+.delta { font-family: var(--f-data); font-size: 12px; color: var(--teal); }
+.delta.neg { color: var(--red); }
+.tabs { display: inline-flex; border: 1px solid var(--ink); border-radius: 8px; overflow: hidden; margin-bottom: 12px; flex-wrap: wrap; }
+.tabs button { font: inherit; font-size: 13px; padding: 6px 12px; border: 0; background: #fff; color: var(--ink-2); cursor: pointer; }
+.tabs button + button { border-left: 1px solid var(--ink); }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.qa { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+.qa .q { font-weight: 700; }
+.qa .a { color: var(--ink-2); margin-top: 4px; font-size: 14px; }
+.qa .a sup { color: var(--teal); font-weight: 700; }
+.qa .meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.pill { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+.pill.ok { background: var(--teal-soft); color: #115e59; } .pill.warn { background: var(--amber-soft); color: #92400e; } .pill.bad { background: var(--red-soft); color: var(--red); }
+.pill.plain { background: var(--soft); color: var(--ink-2); font-weight: 500; }
+.closed { margin-top: 8px; font-size: 13px; color: var(--ink-3); border-left: 2px solid var(--line); padding-left: 10px; }
+.pending { border: 1px dashed var(--line); border-radius: 12px; padding: 18px; color: var(--ink-2); background: var(--soft); }
+.method { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.method div { border-top: 3px solid var(--teal); padding-top: 10px; font-size: 13.5px; color: var(--ink-2); }
+.method b { display: block; color: var(--ink); margin-bottom: 3px; }
+footer.site { border-top: 1px solid var(--line); padding-block: 20px 40px; font-size: 12.5px; color: var(--ink-3); display: grid; gap: 4px; }
+@media (max-width: 900px) { .cols { grid-template-columns: 1fr; } .kpis, .method { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .kpis, .method { grid-template-columns: 1fr; } .askbox button { padding: 0 14px; } .top nav { display: none; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><i>Rx</i>Ask the Drug Label</div>
+  <nav><a href="#eval">Retrieval</a><a href="#answers">Answers</a><a href="#method">Method</a><a href="https://github.com/madhubuddaraju/drug-label-rag">Code</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Ask the FDA label.</h1>
+    <p id="heroSub"></p>
+    <div class="askbox">
+      <form id="ask" role="search"><label for="qin" style="position:absolute;left:-9999px">Question</label>
+        <input id="qin" autocomplete="off" placeholder="e.g. Can I drink alcohol while taking metronidazole?"><button type="submit">Search</button></form>
+      <div class="chips" id="chips"></div>
+      <div class="status" id="status"><span class="dot"></span>Loading the label index…</div>
+    </div>
+    <div class="results" id="results" aria-live="polite"></div>
+    <p class="disclaimer">Search over FDA label text for a portfolio project. Not medical advice; ask a pharmacist or doctor.</p>
+  </section>
+
+  <section class="section" id="eval">
+    <span class="eyebrow">Retrieval evaluation</span>
+    <h2>Which search finds the right label section?</h2>
+    <p class="lede" id="evalLede"></p>
+    <div class="kpis" id="retKpis"></div>
+    <div class="cols">
+      <div>
+        <div class="legend"><span><i style="background:#0f766e"></i>Development questions</span><span><i style="background:#b45309"></i>Held-out questions</span><span><i style="background:#9fd8d1"></i>Templated questions</span></div>
+        <div class="chart" style="height:520px"><canvas id="cfgChart" role="img" aria-label="Hit rate at 5 for each retrieval configuration"></canvas></div>
+      </div>
+      <div class="scroll"><table id="cfgTable"></table></div>
+    </div>
+    <div class="cols" style="margin-top:26px">
+      <div>
+        <h3 style="margin:0 0 6px;font-size:17px">Best configuration, by label section</h3>
+        <div class="chart short"><canvas id="secChart" role="img" aria-label="Hit rate at 5 by label section for the best configuration"></canvas></div>
+      </div>
+      <div>
+        <h3 style="margin:0 0 6px;font-size:17px">Where it still misses</h3>
+        <p class="lede" style="font-size:14px;margin-bottom:8px" id="failLede"></p>
+        <div class="scroll"><table id="failTable"></table></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="answers">
+    <span class="eyebrow">Generation evaluation</span>
+    <h2>Does the model stick to the label, and say when it can't answer?</h2>
+    <div id="genBody"></div>
+  </section>
+
+  <section class="section" id="method">
+    <span class="eyebrow">Method</span>
+    <h2>How it works</h2>
+    <div class="method">
+      <div><b>Corpus</b><span id="mCorpus"></span></div>
+      <div><b>Chunking</b>Sentence-packed chunks of ~160 words with 30 words of overlap, each prefixed with drug, brand names and section.</div>
+      <div><b>Retrieval</b>BM25 + bge-small embeddings fused with reciprocal rank fusion, filtered to the drug named in the question, re-ranked by a cross-encoder.</div>
+      <div><b>Generation</b>Qwen2.5-1.5B (4-bit, CPU) answers only from the top 4 passages, cites them, and refuses when they don't answer.</div>
+    </div>
+  </section>
+
+  <footer class="site" id="foot"></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+__RAG_JS__
+</script>
+<script>
+const D = __DATA__;
+const R = D.retrieval, G = D.generation;
+const $ = (id) => document.getElementById(id);
+const pct = (x, d = 0) => x == null ? "–" : (x * 100).toFixed(d) + "%";
+const fmt = (x) => Math.round(x).toLocaleString("en-US");
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+const tip = { backgroundColor: "#0d1b1e", titleColor: "#fff", bodyColor: "#e3e8ea", padding: 10, cornerRadius: 6 };
+const SEC = { boxed_warning: "Boxed warning", indications: "Indications", dosage: "Dosage", contraindications: "Contraindications", warnings: "Warnings", adverse_reactions: "Side effects", interactions: "Interactions", pregnancy: "Pregnancy", lactation: "Lactation", pediatric: "Children", geriatric: "Older adults", overdosage: "Overdose" };
+
+$("heroSub").textContent = `Type a question about a prescription drug. The answer is pulled from ${R.corpus.drugs} official FDA labels (${fmt(R.corpus.chunks)} passages), searched in your browser, with every passage cited back to its label section.`;
+
+// ---------------- live search ----------------
+let E = null, C = null, embed = null;
+const EXAMPLES = ["Can I drink alcohol while taking metronidazole?", "What's the most metformin I can take in a day?", "Is Lipitor safe during pregnancy?", "How is a Xanax overdose treated?", "Can kids take Neurontin?", "What is the dose of Eliquis?"];
+$("chips").innerHTML = EXAMPLES.map((q) => `<button type="button">${esc(q)}</button>`).join("");
+$("chips").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; $("qin").value = b.textContent; run(); });
+$("ask").addEventListener("submit", (e) => { e.preventDefault(); run(); });
+
+function setStatus(ok, text) { $("status").innerHTML = `<span class="dot ${ok ? "ok" : ""}"></span>${text}`; }
+
+fetch("corpus.json").then((r) => r.json()).then((corpus) => {
+  C = corpus; E = makeEngine(corpus);
+  setStatus(false, `Keyword search ready · loading the semantic model (about 30 MB, once)…`);
+  $("qin").value = EXAMPLES[0]; run();
+  import("https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.2").then(async (T) => {
+    T.env.allowLocalModels = false;
+    const ex = await T.pipeline("feature-extraction", corpus.model, { dtype: "q8" });
+    embed = async (q) => Array.from((await ex(corpus.query_prefix + q, { pooling: "cls", normalize: true })).data);
+    setStatus(true, `Hybrid search ready: keywords + semantic embeddings, running on your device`);
+    if ($("qin").value) run();
+  }).catch(() => setStatus(true, "Keyword search ready (the semantic model could not load in this browser)"));
+}).catch(() => setStatus(false, "Could not load the label index."));
+
+function highlight(text, terms) {
+  return esc(text).replace(/[A-Za-z0-9]+/g, (w) => terms.has(E.tokenize(w)[0]) ? `<mark>${w}</mark>` : w);
+}
+async function run() {
+  const q = $("qin").value.trim();
+  if (!E || q.length < 4) return;
+  const qvec = embed ? await embed(q) : null;
+  const r = E.search(q, { k: 4, qvec });
+  const out = [];
+  if (!r.drugs.length) {
+    out.push(`<div class="notfound"><b>Not found in these ${R.corpus.drugs} labels.</b> The question doesn't name a drug in this index (brand-only drugs such as Eliquis or Ozempic aren't included). A RAG system should say so rather than guess. The closest passages are shown below for transparency.</div>`);
+  }
+  r.ids.forEach((i, n) => {
+    const c = C.chunks[i], meta = C.drugs[c.drug] || {};
+    const bs = E.bestSentence(q, c.text);
+    if (n === 0 && r.drugs.length) {
+      out.push(`<div class="answer"><div class="lab">Most relevant sentence</div><div class="txt">${highlight(bs.sentences[bs.best], bs.terms)}</div>
+        <div class="src">From the <b>${esc(c.header.split(" | ")[1])}</b> section of the ${esc(cap(c.drug))} label [1] · ${r.mode} search</div></div>`);
+    }
+    const body = bs.sentences.map((s, j) => j === bs.best ? `<span class="hit">${highlight(s, bs.terms)}</span>` : highlight(s, bs.terms)).join(" ");
+    const date = meta.effective_time ? `${meta.effective_time.slice(0, 4)}-${meta.effective_time.slice(4, 6)}` : "";
+    out.push(`<article class="passage"><header><span class="rank">[${n + 1}]</span><span class="drug">${esc(cap(c.drug))}</span><span class="badge sec">${esc(c.header.split(" | ")[1])}</span>${r.drugs.length > 1 ? "" : ""}</header>
+      <p>${body}</p><footer>${meta.manufacturer ? `<span>${esc(meta.manufacturer)}</span>` : ""}${date ? `<span>label effective ${date}</span>` : ""}${meta.set_id ? `<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=${encodeURIComponent(meta.set_id)}" target="_blank" rel="noopener">Full label on DailyMed ↗</a>` : ""}</footer></article>`);
+  });
+  $("results").innerHTML = out.join("");
+}
+
+// ---------------- retrieval evaluation ----------------
+const cfgs = R.configs;
+const best = cfgs.find((c) => c.name === R.best);
+const nat = (c) => (c.by_source.natural || c);
+const tmp = (c) => (c.by_source.templated || c);
+const hold = (c) => (c.by_source.holdout || c);
+const base = cfgs[0];
+$("evalLede").innerHTML = `Every configuration answers the same questions: ${fmt(R.questions.natural)} hand-written <b>development</b> questions used while building the retriever, ${fmt(R.questions.holdout)} <b>held-out</b> questions written after it was frozen, and ${fmt(R.questions.templated)} templated questions generated from label structure. Every expected answer was checked against the label text. A hit means a passage from the right drug <i>and</i> the right section is in the top 5.`;
+$("retKpis").innerHTML = [
+  [pct(hold(best)["hit@5"]), "of held-out questions answered in the top 5", `vs ${pct(hold(base)["hit@5"])} for plain BM25; ${pct(nat(best)["hit@5"])} on development questions`],
+  [pct(hold(best)["hit@1"]), "of held-out questions with the right passage first", `MRR@10 ${hold(best)["mrr@10"].toFixed(2)}`],
+  [pct(best["drug@1"]), "top result is about the right drug", `all ${fmt(best.n)} questions`],
+  [`${best.ms_per_query.toFixed(0)} ms`, "per query on a laptop-class CPU", R.best],
+].map(([v, l, s]) => `<div class="kpi"><b>${v}</b><span>${l}</span><small>${esc(s)}</small></div>`).join("");
+new Chart($("cfgChart"), { type: "bar", data: { labels: cfgs.map((c) => c.name),
+  datasets: [{ label: "Development", data: cfgs.map((c) => nat(c)["hit@5"] * 100), backgroundColor: "#0f766e", borderRadius: 3, barPercentage: 0.9, categoryPercentage: 0.8 },
+             { label: "Held-out", data: cfgs.map((c) => hold(c)["hit@5"] * 100), backgroundColor: "#b45309", borderRadius: 3, barPercentage: 0.9, categoryPercentage: 0.8 },
+             { label: "Templated", data: cfgs.map((c) => tmp(c)["hit@5"] * 100), backgroundColor: "#9fd8d1", borderRadius: 3, barPercentage: 0.9, categoryPercentage: 0.8 }] },
+  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, animation: false, plugins: { legend: { display: false }, tooltip: { ...tip, callbacks: { label: (c) => ` ${c.dataset.label}: ${c.parsed.x.toFixed(1)}% hit@5` } } },
+    scales: { x: { min: 0, max: 100, grid: { color: "#eef2f3" }, border: { display: false }, ticks: { callback: (v) => v + "%", color: "#5b6b70" }, title: { display: true, text: "Right drug + section in top 5", color: "#85949a" } },
+      y: { grid: { display: false }, ticks: { color: "#0d1b1e", font: { size: 11.5 } } } } } });
+$("cfgTable").innerHTML = `<thead><tr><th>Configuration</th><th class="n">Dev hit@5</th><th class="n">Held-out</th><th class="n">Templated</th><th class="n">ms</th></tr></thead><tbody>` +
+  cfgs.map((c) => `<tr class="${c.name === R.best ? "best" : ""}"><td>${esc(c.name)}</td><td class="n">${pct(nat(c)["hit@5"])}</td><td class="n"><b>${pct(hold(c)["hit@5"])}</b></td>
+      <td class="n">${pct(tmp(c)["hit@5"])}</td><td class="n">${c.ms_per_query.toFixed(0)}</td></tr>`).join("") +
+  `</tbody><caption style="caption-side:bottom;text-align:left;font-size:12px;color:#85949a;padding-top:6px">Hit@5: share of questions with the right drug and section in the top 5. Highlighted: the configuration chosen on development questions.</caption>`;
+const secs = Object.entries(R.best_by_section).sort((a, b) => b[1]["hit@5"] - a[1]["hit@5"]);
+new Chart($("secChart"), { type: "bar", data: { labels: secs.map(([s, v]) => `${SEC[s] || s} (${v.n})`), datasets: [{ data: secs.map(([, v]) => v["hit@5"] * 100), backgroundColor: secs.map(([, v]) => v["hit@5"] < 0.7 ? "#b45309" : "#0f766e"), borderRadius: 3, barPercentage: 0.75 }] },
+  options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, animation: false, plugins: { legend: { display: false }, tooltip: { ...tip, callbacks: { label: (c) => ` ${c.parsed.x.toFixed(1)}% hit@5` } } },
+    scales: { x: { min: 0, max: 100, grid: { color: "#eef2f3" }, border: { display: false }, ticks: { callback: (v) => v + "%", color: "#5b6b70" } }, y: { grid: { display: false }, ticks: { color: "#0d1b1e" } } } } });
+const fails = R.failures.filter((f) => f.source !== "templated").concat(R.failures.filter((f) => f.source === "templated")).slice(0, 8);
+$("failLede").textContent = `${fmt(R.failure_count)} of ${fmt(best.n)} questions miss the top 5. Most misses land on the right drug but a neighbouring section: interaction and warning text overlaps heavily in real labels.`;
+$("failTable").innerHTML = `<thead><tr><th>Question</th><th>Wanted</th><th>Got</th></tr></thead><tbody>` +
+  fails.map((f) => `<tr><td>${esc(f.question)}</td><td>${SEC[f.gold_section] || f.gold_section}</td><td>${f.got_drug === f.gold_drug ? "" : esc(cap(f.got_drug || "–")) + " · "}${SEC[f.got_section] || f.got_section || "–"}</td></tr>`).join("") + "</tbody>";
+
+// ---------------- generation ----------------
+function cite(a) { return esc(a).replace(/\[(\d+)\]/g, "<sup>[$1]</sup>"); }
+if (!G) {
+  $("genBody").innerHTML = `<div class="pending">Answer generation and grading run in a separate job (an open-source LLM on CPU takes about an hour). Results appear here when it finishes.</div>`;
+} else {
+  const un = G.by_source.unanswerable || {};
+  $("genBody").innerHTML = `<p class="lede">An open-source model (Qwen2.5-1.5B, 4-bit, running on a CPU) answers using only the top 4 retrieved passages. Each answer sentence is checked against the passages it cites with an entailment model, and ${fmt(G.unanswerable)} questions the labels can't answer test whether it refuses.</p>
+    <div class="kpis">
+      <div class="kpi"><b>${pct(G.faithfulness)}</b><span>of answer sentences supported by the cited passage</span><small>NLI entailment, ${G.nli_model.split("/")[1]}</small></div>
+      <div class="kpi"><b>${pct(G.citation_right_section)}</b><span>of citations point to the right drug and section</span><small>${pct(G.citation_right_drug)} cite the right drug</small></div>
+      <div class="kpi"><b>${pct(G.correct_refusal_rate)}</b><span>of unanswerable questions correctly refused</span><small>${pct(G.false_refusal_when_gold_retrieved)} false refusals when the answer was retrieved</small></div>
+      <div class="kpi"><b>${pct(G.key_fact_recall_rag)}</b><span>key facts recalled with retrieval</span><small>vs ${pct(G.key_fact_recall_closed_book)} for the same model without it</small></div>
+    </div>
+    <div class="tabs" id="ansTabs"><button aria-pressed="true" data-f="natural">Development</button><button aria-pressed="false" data-f="holdout">Held-out</button><button aria-pressed="false" data-f="unanswerable">Unanswerable</button><button aria-pressed="false" data-f="refused">Refused</button></div>
+    <div id="ansList"></div>`;
+  const draw = (f) => {
+    const rows = D.answers.filter((a) => f === "refused" ? a.refused && a.source !== "unanswerable" : a.source === f).slice(0, 14);
+    $("ansList").innerHTML = rows.length ? rows.map((a) => {
+      const pills = [];
+      if (a.source === "unanswerable") pills.push(a.refused ? '<span class="pill ok">correctly refused</span>' : '<span class="pill bad">answered anyway</span>');
+      else if (a.refused) pills.push('<span class="pill warn">refused</span>');
+      else {
+        if (a.sentences) pills.push(`<span class="pill ${a.supported === a.sentences ? "ok" : "warn"}">${a.supported}/${a.sentences} sentences supported</span>`);
+        if (a.key_facts != null) pills.push(`<span class="pill ${a.key_facts === 1 ? "ok" : a.key_facts > 0 ? "warn" : "bad"}">key facts ${pct(a.key_facts)}</span>`);
+      }
+      const srcs = (a.citations || []).map((c) => a.passages[c - 1]).filter(Boolean).map((p) => `<span class="pill plain">[${a.passages.indexOf(p) + 1}] ${esc(p.header)}</span>`).join("");
+      return `<div class="qa"><div class="q">${esc(a.question)}</div><div class="a">${cite(a.answer)}</div><div class="meta">${pills.join("")}${srcs}</div>
+        ${a.closed_book_answer ? `<div class="closed"><b>Same model, no retrieval:</b> ${esc(a.closed_book_answer)}</div>` : ""}</div>`;
+    }).join("") : `<div class="pending">None in this category.</div>`;
+  };
+  $("ansTabs").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; for (const x of $("ansTabs").children) x.setAttribute("aria-pressed", x === b); draw(b.dataset.f); });
+  draw("natural");
+}
+
+$("mCorpus").textContent = `${R.corpus.drugs} prescription drugs with the most marketed labels, from ${fmt(D.meta.labels_read)} openFDA labels; 12 label sections.`;
+$("foot").innerHTML = `<div>Data: openFDA drug labeling (public domain), snapshot ${D.meta.fetched_at.slice(0, 10)}. Labels can lag the latest DailyMed version, and generic labels can omit indications carved out for the brand.</div><div>Portfolio project by <a href="https://madhubuddaraju.github.io/">madhubuddaraju</a> · <a href="https://github.com/madhubuddaraju/drug-label-rag">source code</a></div>`;
+</script>
+</body>
+</html>

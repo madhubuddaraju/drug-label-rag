@@ -20,8 +20,14 @@ jobs:
         run: |
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt sentence-transformers
+      - name: Cache embeddings of chunks without headers (only used for the ablation)
+        uses: actions/cache@v4
+        with:
+          path: data/embeddings_plain.npy
+          key: emb-plain-${{ hashFiles('data/labels.jsonl.gz', 'src/labelrag/corpus.py') }}
       - name: Embed chunks and evaluate every retrieval configuration
-        run: python -m labelrag.build
+        run: python -m labelrag.build 2>&1 | tee build.log; test ${PIPESTATUS[0]} -eq 0
+        shell: bash
         env:
           PYTHONPATH: src
       - name: Commit index and metrics
@@ -32,3 +38,10 @@ jobs:
           git commit -m "Rebuild index and retrieval metrics" || exit 0
           git pull --rebase
           git push
+      - name: Keep the build log
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git checkout -B build-log
+          git add -f build.log && git commit -qm "build log" && git push -qf origin build-log

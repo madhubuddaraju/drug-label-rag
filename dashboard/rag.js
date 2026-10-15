@@ -41,6 +41,11 @@ function makeEngine(D) {
     return s;
   }
 
+  // ---- section hints: "kids" -> "Pediatric use" (same regexes as corpus.SECTION_HINTS) ----
+  const HINTS = (D.hints || []).map(([sec, rx]) => [sec, new RegExp(rx, "i")]);
+  const sectionHints = (q) => HINTS.filter(([, rx]) => rx.test(q)).map(([sec]) => sec);
+  const expandQuery = (q) => q + sectionHints(q).map((s) => " " + D.sections[s]).join("");
+
   // ---- drug names ----
   function findDrugs(q, maxLen = 5) {
     const toks = words(q), found = [];
@@ -84,13 +89,14 @@ function makeEngine(D) {
     return [...out.entries()].sort((a, c) => c[1] - a[1] || a[0] - c[0]).map((e) => e[0]);
   }
 
-  function search(query, { k = 5, qvec = null, drugFilter = true } = {}) {
-    const drugs = drugFilter ? findDrugs(query) : [];
+  function search(question, { k = 5, qvec = null, drugFilter = true, hints = true } = {}) {
+    const drugs = drugFilter ? findDrugs(question) : [];
+    const query = hints ? expandQuery(question) : question;
     const allowed = drugs.length ? D.chunks.map((c) => drugs.includes(c.drug)) : null;
     const lex = bm25(query);
     const lexTop = top(lex, 100, allowed);
     const ids = qvec && bits ? rrf([lexTop, top(binaryScores(qvec), 100, allowed)]).slice(0, k) : lexTop.slice(0, k);
-    return { ids, drugs, lexBest: lexTop.length ? lex[lexTop[0]] : 0, mode: qvec && bits ? "hybrid" : "keyword" };
+    return { ids, drugs, hints: hints ? sectionHints(question) : [], lexBest: lexTop.length ? lex[lexTop[0]] : 0, mode: qvec && bits ? "hybrid" : "keyword" };
   }
 
   // best supporting sentence in a passage: most query terms covered
@@ -102,6 +108,6 @@ function makeEngine(D) {
     return { sentences: sents, best, terms: q };
   }
 
-  return { tokenize, bm25, findDrugs, binaryScores, search, bestSentence, top, rrf };
+  return { tokenize, bm25, findDrugs, expandQuery, sectionHints, binaryScores, search, bestSentence, top, rrf };
 }
 if (typeof module !== "undefined") module.exports = { makeEngine };

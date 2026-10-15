@@ -28,6 +28,33 @@ _TOKEN = re.compile(r"[a-z0-9]+")
 _SENT = re.compile(r"(?<=[.;:])\s+(?=[A-Z0-9(])")
 
 
+# question wording -> label section it is probably about. Plain regex strings so the browser compiles the same patterns.
+SECTION_HINTS = [
+    ("pediatric", r"\b(kids?|child|children|pediatric|paediatric|teens?|teenagers?|adolescents?|infants?|bab(y|ies))\b"),
+    ("geriatric", r"\b(elderly|older (adults?|people|patients)|seniors?|geriatric)\b"),
+    ("pregnancy", r"\b(pregnan\w*|trimester|fetus|fetal)\b"),
+    ("lactation", r"\b(breast ?feed\w*|nursing|breast ?milk|lactat\w*)\b"),
+    ("overdosage", r"\b(overdos\w*|too much|too many)\b"),
+    ("adverse_reactions", r"\b(side effects?|adverse)\b"),
+    ("dosage", r"\b(doses?|dosing|dosage|how much|how (do|should) i take|how to take|max(imum)?)\b"),
+    ("interactions", r"\b(interact\w*|together|combin\w*|mix\w*)\b|\bwith (alcohol|grapefruit|other)\b"),
+    ("contraindications", r"\b(contraindicat\w*|should(n't| not) (take|use)|who (can't|cannot|should not))\b"),
+    ("indications", r"\b(used for|use for|treats?|indicat\w*)\b"),
+    ("boxed_warning", r"\b(boxed|black box)\b"),
+]
+_HINTS = [(sec, re.compile(rx, re.I)) for sec, rx in SECTION_HINTS]
+
+
+def section_hints(question: str) -> list[str]:
+    return [sec for sec, rx in _HINTS if rx.search(question)]
+
+
+def expand_query(question: str) -> str:
+    """Append the titles of the sections a question points at, so 'kids' can match 'Pediatric use'."""
+    hints = section_hints(question)
+    return question + "".join(f" {SECTION_TITLES[h]}" for h in hints)
+
+
 def stem(t: str) -> str:
     if len(t) > 4 and t.endswith("ies"):
         return t[:-3] + "y"

@@ -21,7 +21,8 @@
  },
  "questions": {
   "templated": 600,
-  "natural": 60
+  "natural": 60,
+  "holdout": 30
  },
  "configs": [
   {
@@ -30,15 +31,25 @@
    "headers": false,
    "drug_filter": false,
    "rerank": false,
-   "hit@1": 0.1682,
-   "hit@5": 0.3455,
-   "hit@10": 0.4379,
-   "mrr@10": 0.2404,
-   "ndcg@10": 0.1966,
-   "drug@1": 0.5424,
-   "n": 660,
+   "hints": false,
+   "hit@1": 0.1783,
+   "hit@5": 0.3522,
+   "hit@10": 0.4464,
+   "mrr@10": 0.2498,
+   "ndcg@10": 0.1992,
+   "drug@1": 0.5464,
+   "n": 690,
    "ms_per_query": 0.8,
    "by_source": {
+    "holdout": {
+     "hit@1": 0.4,
+     "hit@5": 0.5,
+     "hit@10": 0.6333,
+     "mrr@10": 0.4562,
+     "ndcg@10": 0.2571,
+     "drug@1": 0.6333,
+     "n": 30
+    },
     "natural": {
      "hit@1": 0.1333,
      "hit@5": 0.3,
@@ -65,15 +76,25 @@
    "headers": true,
    "drug_filter": false,
    "rerank": false,
-   "hit@1": 0.3424,
-   "hit@5": 0.6045,
-   "hit@10": 0.7212,
-   "mrr@10": 0.4501,
-   "ndcg@10": 0.3785,
-   "drug@1": 0.8136,
-   "n": 660,
-   "ms_per_query": 0.8,
+   "hints": false,
+   "hit@1": 0.3464,
+   "hit@5": 0.6,
+   "hit@10": 0.7159,
+   "mrr@10": 0.4511,
+   "ndcg@10": 0.3736,
+   "drug@1": 0.8072,
+   "n": 690,
+   "ms_per_query": 0.9,
    "by_source": {
+    "holdout": {
+     "hit@1": 0.4333,
+     "hit@5": 0.5,
+     "hit@10": 0.6,
+     "mrr@10": 0.4734,
+     "ndcg@10": 0.2644,
+     "drug@1": 0.6667,
+     "n": 30
+    },
     "natural": {
      "hit@1": 0.3833,
      "hit@5": 0.5667,
@@ -95,20 +116,30 @@
    }
   },
   {
-   "name": "BM25 + headers + drug-name filter",
+   "name": "BM25 + headers + drug filter",
    "method": "bm25",
    "headers": true,
    "drug_filter": true,
    "rerank": false,
-   "hit@1": 0.3939,
-   "hit@5": 0.6803,
-   "hit@10": 0.8227,
-   "mrr@10": 0.51,
-   "ndcg@10": 0.4382,
-   "drug@1": 0.9909,
-   "n": 660,
-   "ms_per_query": 1.1,
+   "hints": false,
+   "hit@1": 0.3986,
+   "hit@5": 0.6812,
+   "hit@10": 0.8232,
+   "mrr@10": 0.5127,
+   "ndcg@10": 0.4349,
+   "drug@1": 0.9913,
+   "n": 690,
+   "ms_per_query": 1.2,
    "by_source": {
+    "holdout": {
+     "hit@1": 0.5,
+     "hit@5": 0.7,
+     "hit@10": 0.8333,
+     "mrr@10": 0.572,
+     "ndcg@10": 0.3632,
+     "drug@1": 1.0,
+     "n": 30
+    },
     "natural": {
      "hit@1": 0.55,
      "hit@5": 0.75,
@@ -128,165 +159,194 @@
      "n": 600
     }
    }
+  },
+  {
+   "name": "BM25 + headers + drug filter + section hints",
+   "method": "bm25",
+   "headers": true,
+   "drug_filter": true,
+   "rerank": false,
+   "hints": true,
+   "hit@1": 0.7188,
+   "hit@5": 0.9333,
+   "hit@10": 0.9652,
+   "mrr@10": 0.8004,
+   "ndcg@10": 0.6885,
+   "drug@1": 0.9913,
+   "n": 690,
+   "ms_per_query": 1.3,
+   "by_source": {
+    "holdout": {
+     "hit@1": 0.5,
+     "hit@5": 0.7667,
+     "hit@10": 0.8667,
+     "mrr@10": 0.5787,
+     "ndcg@10": 0.3768,
+     "drug@1": 1.0,
+     "n": 30
+    },
+    "natural": {
+     "hit@1": 0.7333,
+     "hit@5": 0.9333,
+     "hit@10": 0.9667,
+     "mrr@10": 0.804,
+     "ndcg@10": 0.6495,
+     "drug@1": 0.9833,
+     "n": 60
+    },
+    "templated": {
+     "hit@1": 0.7283,
+     "hit@5": 0.9417,
+     "hit@10": 0.97,
+     "mrr@10": 0.8111,
+     "ndcg@10": 0.708,
+     "drug@1": 0.9917,
+     "n": 600
+    }
+   }
   }
  ],
- "best": "BM25 + headers + drug-name filter",
+ "best": "BM25 + headers + drug filter + section hints",
  "best_by_section": {
   "adverse_reactions": {
-   "hit@1": 0.5,
-   "hit@5": 0.6607,
-   "hit@10": 0.8036,
-   "mrr@10": 0.5886,
-   "ndcg@10": 0.4306,
+   "hit@1": 0.5965,
+   "hit@5": 0.8772,
+   "hit@10": 0.9298,
+   "mrr@10": 0.688,
+   "ndcg@10": 0.5544,
    "drug@1": 1.0,
-   "n": 56
+   "n": 57
   },
   "boxed_warning": {
-   "hit@1": 0.9706,
-   "hit@5": 0.9706,
-   "hit@10": 0.9706,
-   "mrr@10": 0.9706,
-   "ndcg@10": 0.6672,
+   "hit@1": 0.875,
+   "hit@5": 0.925,
+   "hit@10": 0.975,
+   "mrr@10": 0.8933,
+   "ndcg@10": 0.6124,
    "drug@1": 1.0,
-   "n": 34
+   "n": 40
   },
   "contraindications": {
-   "hit@1": 0.375,
-   "hit@5": 0.6458,
-   "hit@10": 0.8125,
-   "mrr@10": 0.5001,
-   "ndcg@10": 0.5097,
-   "drug@1": 0.9583,
-   "n": 48
+   "hit@1": 0.66,
+   "hit@5": 0.96,
+   "hit@10": 0.98,
+   "mrr@10": 0.7725,
+   "ndcg@10": 0.7426,
+   "drug@1": 0.98,
+   "n": 50
   },
   "dosage": {
-   "hit@1": 0.339,
-   "hit@5": 0.7458,
-   "hit@10": 0.8983,
-   "mrr@10": 0.4833,
-   "ndcg@10": 0.3965,
+   "hit@1": 0.4839,
+   "hit@5": 0.871,
+   "hit@10": 0.9194,
+   "mrr@10": 0.6075,
+   "ndcg@10": 0.5425,
    "drug@1": 1.0,
-   "n": 59
+   "n": 62
   },
   "geriatric": {
-   "hit@1": 0.4902,
-   "hit@5": 0.7647,
-   "hit@10": 0.8431,
-   "mrr@10": 0.5914,
-   "ndcg@10": 0.6185,
+   "hit@1": 0.902,
+   "hit@5": 1.0,
+   "hit@10": 1.0,
+   "mrr@10": 0.9477,
+   "ndcg@10": 0.9116,
    "drug@1": 0.9804,
    "n": 51
   },
   "indications": {
-   "hit@1": 0.1967,
-   "hit@5": 0.4918,
-   "hit@10": 0.6066,
-   "mrr@10": 0.2991,
-   "ndcg@10": 0.2564,
+   "hit@1": 0.8906,
+   "hit@5": 0.9844,
+   "hit@10": 0.9844,
+   "mrr@10": 0.9297,
+   "ndcg@10": 0.8647,
    "drug@1": 1.0,
-   "n": 61
+   "n": 64
   },
   "interactions": {
-   "hit@1": 0.24,
-   "hit@5": 0.68,
-   "hit@10": 0.94,
-   "mrr@10": 0.4256,
-   "ndcg@10": 0.4443,
+   "hit@1": 0.6923,
+   "hit@5": 0.9423,
+   "hit@10": 1.0,
+   "mrr@10": 0.7877,
+   "ndcg@10": 0.7667,
    "drug@1": 1.0,
-   "n": 50
+   "n": 52
   },
   "lactation": {
-   "hit@1": 0.386,
-   "hit@5": 0.7368,
-   "hit@10": 0.9123,
-   "mrr@10": 0.5129,
-   "ndcg@10": 0.3797,
+   "hit@1": 0.9649,
+   "hit@5": 0.9825,
+   "hit@10": 0.9825,
+   "mrr@10": 0.9693,
+   "ndcg@10": 0.5922,
    "drug@1": 1.0,
    "n": 57
   },
   "overdosage": {
-   "hit@1": 0.2121,
-   "hit@5": 0.4697,
-   "hit@10": 0.6515,
-   "mrr@10": 0.3208,
-   "ndcg@10": 0.3446,
+   "hit@1": 0.7463,
+   "hit@5": 0.9403,
+   "hit@10": 0.9552,
+   "mrr@10": 0.8315,
+   "ndcg@10": 0.7926,
    "drug@1": 1.0,
-   "n": 66
+   "n": 67
   },
   "pediatric": {
-   "hit@1": 0.2321,
-   "hit@5": 0.4107,
-   "hit@10": 0.6429,
-   "mrr@10": 0.3282,
-   "ndcg@10": 0.3209,
-   "drug@1": 1.0,
-   "n": 56
+   "hit@1": 0.661,
+   "hit@5": 0.9661,
+   "hit@10": 0.9831,
+   "mrr@10": 0.7901,
+   "ndcg@10": 0.7601,
+   "drug@1": 0.9831,
+   "n": 59
   },
   "pregnancy": {
-   "hit@1": 0.6842,
-   "hit@5": 0.9298,
-   "hit@10": 0.9649,
-   "mrr@10": 0.7881,
-   "ndcg@10": 0.6046,
-   "drug@1": 0.9825,
-   "n": 57
+   "hit@1": 0.8448,
+   "hit@5": 0.9655,
+   "hit@10": 0.9655,
+   "mrr@10": 0.8951,
+   "ndcg@10": 0.7145,
+   "drug@1": 0.9828,
+   "n": 58
   },
   "warnings": {
-   "hit@1": 0.3692,
-   "hit@5": 0.8,
-   "hit@10": 0.9231,
-   "mrr@10": 0.5344,
-   "ndcg@10": 0.436,
-   "drug@1": 0.9692,
-   "n": 65
+   "hit@1": 0.4384,
+   "hit@5": 0.8219,
+   "hit@10": 0.9315,
+   "mrr@10": 0.5854,
+   "ndcg@10": 0.4572,
+   "drug@1": 0.9726,
+   "n": 73
   }
  },
  "best_by_name_type": {
   "brand": {
-   "hit@1": 0.375,
-   "hit@5": 0.69,
-   "hit@10": 0.87,
-   "mrr@10": 0.5017,
-   "ndcg@10": 0.442,
+   "hit@1": 0.8,
+   "hit@5": 0.965,
+   "hit@10": 1.0,
+   "mrr@10": 0.8671,
+   "ndcg@10": 0.7394,
    "drug@1": 0.99,
    "n": 200
   },
   "generic": {
-   "hit@1": 0.38,
-   "hit@5": 0.665,
-   "hit@10": 0.7925,
-   "mrr@10": 0.494,
-   "ndcg@10": 0.4302,
+   "hit@1": 0.6925,
+   "hit@5": 0.93,
+   "hit@10": 0.955,
+   "mrr@10": 0.7831,
+   "ndcg@10": 0.6923,
    "drug@1": 0.9925,
    "n": 400
   },
   "mixed": {
-   "hit@1": 0.55,
-   "hit@5": 0.75,
-   "hit@10": 0.8667,
-   "mrr@10": 0.6446,
-   "ndcg@10": 0.479,
-   "drug@1": 0.9833,
-   "n": 60
+   "hit@1": 0.6556,
+   "hit@5": 0.8778,
+   "hit@10": 0.9333,
+   "mrr@10": 0.7289,
+   "ndcg@10": 0.5586,
+   "drug@1": 0.9889,
+   "n": 90
   }
  },
  "failures": [
-  {
-   "question": "What is the usual dose of tobramycin and dexamethasone?",
-   "gold_drug": "tobramycin and dexamethasone",
-   "gold_section": "dosage",
-   "source": "templated",
-   "got_drug": "tobramycin and dexamethasone",
-   "got_section": "pregnancy"
-  },
-  {
-   "question": "When is adapalene and benzoyl peroxide contraindicated?",
-   "gold_drug": "adapalene and benzoyl peroxide",
-   "gold_section": "contraindications",
-   "source": "templated",
-   "got_drug": "adapalene and benzoyl peroxide",
-   "got_section": "lactation"
-  },
   {
    "question": "How should Narcan be taken?",
    "gold_drug": "naloxone hydrochloride",
@@ -304,52 +364,12 @@
    "got_section": "adverse_reactions"
   },
   {
-   "question": "Can I breastfeed while taking divalproex sodium?",
-   "gold_drug": "divalproex sodium",
-   "gold_section": "lactation",
-   "source": "templated",
-   "got_drug": "divalproex sodium",
-   "got_section": "adverse_reactions"
-  },
-  {
-   "question": "Which medicines interact with Lithobid?",
-   "gold_drug": "lithium carbonate",
-   "gold_section": "interactions",
-   "source": "templated",
-   "got_drug": "lithium carbonate",
-   "got_section": "contraindications"
-  },
-  {
-   "question": "Can I breastfeed while taking Errin?",
-   "gold_drug": "norethindrone",
-   "gold_section": "lactation",
-   "source": "templated",
-   "got_drug": "norethindrone",
-   "got_section": "overdosage"
-  },
-  {
    "question": "How should citalopram be taken?",
    "gold_drug": "citalopram",
    "gold_section": "dosage",
    "source": "templated",
    "got_drug": "citalopram hydrobromide",
    "got_section": "interactions"
-  },
-  {
-   "question": "Can I breastfeed while taking quetiapine fumarate?",
-   "gold_drug": "quetiapine fumarate",
-   "gold_section": "lactation",
-   "source": "templated",
-   "got_drug": "quetiapine fumarate",
-   "got_section": "interactions"
-  },
-  {
-   "question": "Can I take Xiclo while pregnant?",
-   "gold_drug": "diclofenac",
-   "gold_section": "pregnancy",
-   "source": "templated",
-   "got_drug": "diclofenac",
-   "got_section": "warnings"
   },
   {
    "question": "Who should not take simvastatin?",
@@ -360,30 +380,6 @@
    "got_section": "warnings"
   },
   {
-   "question": "What happens if someone takes too much levocetirizine dihydrochloride?",
-   "gold_drug": "levocetirizine dihydrochloride",
-   "gold_section": "overdosage",
-   "source": "templated",
-   "got_drug": "levocetirizine dihydrochloride",
-   "got_section": "adverse_reactions"
-  },
-  {
-   "question": "Which medicines interact with dexmedetomidine hydrochloride?",
-   "gold_drug": "dexmedetomidine hydrochloride",
-   "gold_section": "interactions",
-   "source": "templated",
-   "got_drug": "dexmedetomidine hydrochloride",
-   "got_section": "warnings"
-  },
-  {
-   "question": "Can children take Amitiza?",
-   "gold_drug": "lubiprostone",
-   "gold_section": "pediatric",
-   "source": "templated",
-   "got_drug": "lubiprostone",
-   "got_section": "dosage"
-  },
-  {
    "question": "What are the main safety warnings for Xylocaine?",
    "gold_drug": "lidocaine hydrochloride and epinephrine",
    "gold_section": "warnings",
@@ -392,76 +388,12 @@
    "got_section": "contraindications"
   },
   {
-   "question": "Can children take rifampin?",
-   "gold_drug": "rifampin",
-   "gold_section": "pediatric",
-   "source": "templated",
-   "got_drug": "rifampin",
-   "got_section": "interactions"
-  },
-  {
-   "question": "Can children take icosapent ethyl?",
-   "gold_drug": "icosapent ethyl",
-   "gold_section": "pediatric",
-   "source": "templated",
-   "got_drug": "icosapent ethyl",
-   "got_section": "contraindications"
-  },
-  {
-   "question": "Can lisdexamfetamine dimesylate be taken with other drugs?",
-   "gold_drug": "lisdexamfetamine dimesylate",
-   "gold_section": "interactions",
-   "source": "templated",
-   "got_drug": "lisdexamfetamine dimesylate",
-   "got_section": "contraindications"
-  },
-  {
-   "question": "Can children take phenytoin sodium?",
-   "gold_drug": "phenytoin sodium",
-   "gold_section": "pediatric",
-   "source": "templated",
-   "got_drug": "phenytoin sodium",
-   "got_section": "pregnancy"
-  },
-  {
-   "question": "What is Diflucan used for?",
-   "gold_drug": "fluconazole",
-   "gold_section": "indications",
-   "source": "templated",
-   "got_drug": "fluconazole",
-   "got_section": "contraindications"
-  },
-  {
-   "question": "What conditions does meloxicam treat?",
-   "gold_drug": "meloxicam",
-   "gold_section": "indications",
-   "source": "templated",
-   "got_drug": "meloxicam",
-   "got_section": "warnings"
-  },
-  {
    "question": "What are the main safety warnings for rosuvastatin?",
    "gold_drug": "rosuvastatin",
    "gold_section": "warnings",
    "source": "templated",
    "got_drug": "rosuvastatin",
    "got_section": "geriatric"
-  },
-  {
-   "question": "What conditions does Epaned treat?",
-   "gold_drug": "enalapril maleate",
-   "gold_section": "indications",
-   "source": "templated",
-   "got_drug": "enalapril maleate",
-   "got_section": "warnings"
-  },
-  {
-   "question": "Who should not take Protonix I.V.?",
-   "gold_drug": "pantoprazole sodium",
-   "gold_section": "contraindications",
-   "source": "templated",
-   "got_drug": "pantoprazole sodium",
-   "got_section": "dosage"
   },
   {
    "question": "What happens if someone takes too much benztropine mesylate?",
@@ -480,86 +412,6 @@
    "got_section": "contraindications"
   },
   {
-   "question": "Can I breastfeed while taking Vascepa?",
-   "gold_drug": "icosapent ethyl",
-   "gold_section": "lactation",
-   "source": "templated",
-   "got_drug": "icosapent ethyl",
-   "got_section": "pediatric"
-  },
-  {
-   "question": "What happens if someone takes too much water?",
-   "gold_drug": "water",
-   "gold_section": "overdosage",
-   "source": "templated",
-   "got_drug": "water",
-   "got_section": "pregnancy"
-  },
-  {
-   "question": "Can children take Januvia?",
-   "gold_drug": "sitagliptin",
-   "gold_section": "pediatric",
-   "source": "templated",
-   "got_drug": "sitagliptin",
-   "got_section": "interactions"
-  },
-  {
-   "question": "What is duloxetine hydrochloride used for?",
-   "gold_drug": "duloxetine hydrochloride",
-   "gold_section": "indications",
-   "source": "templated",
-   "got_drug": "duloxetine hydrochloride",
-   "got_section": "warnings"
-  },
-  {
-   "question": "Are there special considerations for elderly patients taking Jantoven?",
-   "gold_drug": "warfarin sodium",
-   "gold_section": "geriatric",
-   "source": "templated",
-   "got_drug": "warfarin sodium",
-   "got_section": "warnings"
-  },
-  {
-   "question": "Are there special considerations for elderly patients taking paliperidone?",
-   "gold_drug": "paliperidone",
-   "gold_section": "geriatric",
-   "source": "templated",
-   "got_drug": "paliperidone",
-   "got_section": "dosage"
-  },
-  {
-   "question": "What are the common side effects of prochlorperazine maleate?",
-   "gold_drug": "prochlorperazine maleate",
-   "gold_section": "adverse_reactions",
-   "source": "templated",
-   "got_drug": "prochlorperazine maleate",
-   "got_section": "geriatric"
-  },
-  {
-   "question": "Can I breastfeed while taking alendronate sodium?",
-   "gold_drug": "alendronate sodium",
-   "gold_section": "lactation",
-   "source": "templated",
-   "got_drug": "alendronate sodium",
-   "got_section": "interactions"
-  },
-  {
-   "question": "Are there special considerations for elderly patients taking calcium chloride?",
-   "gold_drug": "calcium chloride",
-   "gold_section": "geriatric",
-   "source": "templated",
-   "got_drug": "calcium chloride",
-   "got_section": "interactions"
-  },
-  {
-   "question": "What are the common side effects of tizanidne hydrochloride?",
-   "gold_drug": "tizanidne hydrochloride",
-   "gold_section": "adverse_reactions",
-   "source": "templated",
-   "got_drug": "tizanidne hydrochloride",
-   "got_section": "lactation"
-  },
-  {
    "question": "What are the main safety warnings for tretinoin?",
    "gold_drug": "tretinoin",
    "gold_section": "warnings",
@@ -568,29 +420,253 @@
    "got_section": "dosage"
   },
   {
-   "question": "What happens if someone takes too much cyclophosphamide?",
-   "gold_drug": "cyclophosphamide",
-   "gold_section": "overdosage",
+   "question": "What adverse reactions were reported with isotretinoin?",
+   "gold_drug": "isotretinoin",
+   "gold_section": "adverse_reactions",
    "source": "templated",
-   "got_drug": "cyclophosphamide",
+   "got_drug": "isotretinoin",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What are the main safety warnings for cetirizine hydrochloride?",
+   "gold_drug": "cetirizine hydrochloride",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "cetirizine hydrochloride",
+   "got_section": "pediatric"
+  },
+  {
+   "question": "Can children take sacubitril and valsartan?",
+   "gold_drug": "sacubitril and valsartan",
+   "gold_section": "pediatric",
+   "source": "templated",
+   "got_drug": "sacubitril and valsartan",
+   "got_section": "dosage"
+  },
+  {
+   "question": "What are the main safety warnings for Vykoura?",
+   "gold_drug": "leucovorin calcium",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "leucovorin calcium",
+   "got_section": "adverse_reactions"
+  },
+  {
+   "question": "How should scopolamine be taken?",
+   "gold_drug": "scopolamine",
+   "gold_section": "dosage",
+   "source": "templated",
+   "got_drug": "scopolamine",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What adverse reactions were reported with betamethasone dipropionate?",
+   "gold_drug": "betamethasone dipropionate",
+   "gold_section": "adverse_reactions",
+   "source": "templated",
+   "got_drug": "betamethasone dipropionate",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What are the main safety warnings for desvenlafaxine succinate?",
+   "gold_drug": "desvenlafaxine succinate",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "desvenlafaxine succinate",
    "got_section": "contraindications"
   },
   {
-   "question": "Can children take piperacillin and tazobactam?",
-   "gold_drug": "piperacillin and tazobactam",
-   "gold_section": "pediatric",
+   "question": "What are the common side effects of hydrocodone bitartrate and acetaminophen?",
+   "gold_drug": "hydrocodone bitartrate and acetaminophen",
+   "gold_section": "adverse_reactions",
    "source": "templated",
-   "got_drug": "piperacillin and tazobactam",
-   "got_section": "interactions"
+   "got_drug": "hydrocodone bitartrate and acetaminophen",
+   "got_section": "warnings"
   },
   {
-   "question": "What happens if someone takes too much capecitabine?",
-   "gold_drug": "capecitabine",
+   "question": "What are the main safety warnings for cetirizine hydrochloride?",
+   "gold_drug": "cetirizine hydrochloride",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "cetirizine hydrochloride",
+   "got_section": "pediatric"
+  },
+  {
+   "question": "What happens if someone takes too much cisatracurium besylate?",
+   "gold_drug": "cisatracurium besylate",
    "gold_section": "overdosage",
    "source": "templated",
-   "got_drug": "capecitabine",
+   "got_drug": "cisatracurium besylate",
    "got_section": "dosage"
+  },
+  {
+   "question": "Can prednisone be taken with other drugs?",
+   "gold_drug": "prednisone",
+   "gold_section": "interactions",
+   "source": "templated",
+   "got_drug": "prednisone",
+   "got_section": "warnings"
+  },
+  {
+   "question": "Can I breastfeed while taking buprenorphine and naloxone?",
+   "gold_drug": "buprenorphine and naloxone",
+   "gold_section": "lactation",
+   "source": "templated",
+   "got_drug": "buprenorphine and naloxone",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What are the main safety warnings for Zithromax?",
+   "gold_drug": "azithromycin dihydrate",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "azithromycin dihydrate",
+   "got_section": "geriatric"
+  },
+  {
+   "question": "How should Lithobid be taken?",
+   "gold_drug": "lithium carbonate",
+   "gold_section": "dosage",
+   "source": "templated",
+   "got_drug": "lithium carbonate",
+   "got_section": "geriatric"
+  },
+  {
+   "question": "What happens if someone takes too much hydrocodone bitartrate and acetaminophen?",
+   "gold_drug": "hydrocodone bitartrate and acetaminophen",
+   "gold_section": "overdosage",
+   "source": "templated",
+   "got_drug": "hydrocodone bitartrate and acetaminophen",
+   "got_section": "dosage"
+  },
+  {
+   "question": "Is neomycin sulfate, polymyxin b sulfate and hydrocortisone safe during pregnancy?",
+   "gold_drug": "neomycin sulfate, polymyxin b sulfate and hydrocortisone",
+   "gold_section": "pregnancy",
+   "source": "templated",
+   "got_drug": "hydrocortisone acetate",
+   "got_section": "pregnancy"
+  },
+  {
+   "question": "What adverse reactions were reported with sulfasalazine?",
+   "gold_drug": "sulfasalazine",
+   "gold_section": "adverse_reactions",
+   "source": "templated",
+   "got_drug": "sulfasalazine",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What are the common side effects of Tobradex?",
+   "gold_drug": "tobramycin and dexamethasone",
+   "gold_section": "adverse_reactions",
+   "source": "templated",
+   "got_drug": "tobramycin and dexamethasone",
+   "got_section": "overdosage"
+  },
+  {
+   "question": "What precautions should I know before starting potassium chloride?",
+   "gold_drug": "potassium chloride",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "potassium chloride extended-release",
+   "got_section": "contraindications"
+  },
+  {
+   "question": "How should methylprednisolone be taken?",
+   "gold_drug": "methylprednisolone",
+   "gold_section": "dosage",
+   "source": "templated",
+   "got_drug": "methylprednisolone sodium succinate",
+   "got_section": "warnings"
+  },
+  {
+   "question": "What are the main safety warnings for pravastatin sodium?",
+   "gold_drug": "pravastatin sodium",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "pravastatin sodium",
+   "got_section": "contraindications"
+  },
+  {
+   "question": "How should amoxicillin be taken?",
+   "gold_drug": "amoxicillin",
+   "gold_section": "dosage",
+   "source": "templated",
+   "got_drug": "amoxicillin",
+   "got_section": "geriatric"
+  },
+  {
+   "question": "How should Nascobal be taken?",
+   "gold_drug": "cyanocobalamin",
+   "gold_section": "dosage",
+   "source": "templated",
+   "got_drug": "cyanocobalamin",
+   "got_section": "overdosage"
+  },
+  {
+   "question": "What are the main safety warnings for verapamil hydrochloride?",
+   "gold_drug": "verapamil hydrochloride",
+   "gold_section": "warnings",
+   "source": "templated",
+   "got_drug": "verapamil hydrochloride",
+   "got_section": "pediatric"
+  },
+  {
+   "question": "What are the common side effects of clindamycin hydrochloride?",
+   "gold_drug": "clindamycin hydrochloride",
+   "gold_section": "adverse_reactions",
+   "source": "templated",
+   "got_drug": "clindamycin hydrochloride",
+   "got_section": "lactation"
+  },
+  {
+   "question": "What adverse reactions were reported with potassium chloride extended-release?",
+   "gold_drug": "potassium chloride extended-release",
+   "gold_section": "adverse_reactions",
+   "source": "templated",
+   "got_drug": "potassium chloride extended-release",
+   "got_section": "pregnancy"
+  },
+  {
+   "question": "Is Viagra safe with nitroglycerin?",
+   "gold_drug": "sildenafil citrate",
+   "gold_section": "contraindications",
+   "source": "natural",
+   "got_drug": "nitroglycerin",
+   "got_section": "overdosage"
+  },
+  {
+   "question": "Does Singulair have mental health side effects?",
+   "gold_drug": "montelukast sodium",
+   "gold_section": "boxed_warning",
+   "source": "natural",
+   "got_drug": "montelukast sodium",
+   "got_section": "lactation"
+  },
+  {
+   "question": "Does topiramate make birth control pills less effective?",
+   "gold_drug": "topiramate",
+   "gold_section": "interactions",
+   "source": "natural",
+   "got_drug": "topiramate",
+   "got_section": "pregnancy"
+  },
+  {
+   "question": "Can hydrochlorothiazide affect blood sugar?",
+   "gold_drug": "hydrochlorothiazide",
+   "gold_section": "warnings",
+   "source": "natural",
+   "got_drug": "hydrochlorothiazide",
+   "got_section": "geriatric"
+  },
+  {
+   "question": "What's hydroxyzine prescribed for?",
+   "gold_drug": "hydroxyzine hydrochloride",
+   "gold_section": "indications",
+   "source": "holdout",
+   "got_drug": "hydroxyzine pamoate",
+   "got_section": "contraindications"
   }
  ],
- "failure_count": 211
+ "failure_count": 46
 }

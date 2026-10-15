@@ -104,7 +104,7 @@ def main():
     faith = Faithfulness()
 
     known = {lab["drug"] for lab in labels}
-    nat = [q for q in evalset.natural() if q["drug"] in known]
+    nat = [q for q in evalset.natural() + evalset.natural("holdout") if q["drug"] in known]
     tmpl = random.Random(SEED).sample(evalset.templated(labels), a.templated)
     unans = evalset.unanswerable()
     questions = nat + tmpl + unans
@@ -118,7 +118,7 @@ def main():
 
     rows, t0 = [], time.time()
     for n, q in enumerate(questions):
-        ids = retr.search(q["question"], method="hybrid", k=TOP_K, drug_filter=True, rerank=True)
+        ids = retr.search(q["question"], method="hybrid", k=TOP_K, drug_filter=True, rerank=True, hints=True)
         passages = [chunks[i] for i in ids]
         t = time.time()
         ans = chat(SYSTEM, prompt(q["question"], passages))
@@ -136,7 +136,7 @@ def main():
             if not row["refused"]:
                 row |= faith.score(ans, [p["text"] for p in cited] or [p["text"] for p in passages])
             row["key_facts"] = key_facts(ans, q.get("must"))
-            if q["source"] == "natural":
+            if q["source"] in ("natural", "holdout"):
                 closed = chat(SYSTEM_CLOSED, q["question"])
                 row["closed_book_answer"] = closed
                 row["closed_book_key_facts"] = key_facts(closed, q.get("must"))

@@ -1,8 +1,9 @@
 """Labeled questions for retrieval evaluation.
 
-Three sources:
+Four sources:
 - templated: generated from label structure, so the gold section is known exactly (large, systematic)
 - natural: hand-written questions in everyday wording, with the gold drug and section(s) (evals/natural.jsonl)
+- holdout: more hand-written questions, written after the retrieval rules were frozen (evals/holdout.jsonl)
 - unanswerable: questions the labels cannot answer, used to test abstention (evals/unanswerable.jsonl)
 """
 
@@ -49,11 +50,12 @@ def load_jsonl(name: str) -> list[dict]:
     return [json.loads(x) for x in p.read_text().splitlines() if x.strip()] if p.exists() else []
 
 
-def natural() -> list[dict]:
-    rows = load_jsonl("natural.jsonl")
+def natural(name: str = "natural") -> list[dict]:
+    """Hand-written questions. 'natural' was used to develop the retriever; 'holdout' was written after it was frozen."""
+    rows = load_jsonl(f"{name}.jsonl")
     for i, r in enumerate(rows):
-        r.setdefault("qid", f"n{i}")
-        r["source"] = "natural"
+        r.setdefault("qid", f"{name[0]}{i}")
+        r["source"] = name
         r.setdefault("section", r["sections"][0])
         r.setdefault("name_type", "mixed")
     return rows

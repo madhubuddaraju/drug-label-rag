@@ -6,7 +6,7 @@ from collections import Counter
 import numpy as np
 from scipy import sparse
 
-from .corpus import find_drugs, tokenize
+from .corpus import expand_query, find_drugs, tokenize
 
 
 def doc_text(c: dict, with_header: bool = True) -> str:
@@ -95,8 +95,11 @@ class Retriever:
         return (np.isin(self.drug_of, drugs) if drugs else None), drugs
 
     def search(self, question: str, method: str = "hybrid", k: int = 10, drug_filter: bool = True,
-               rerank: bool = False, qvec: np.ndarray | None = None) -> list[int]:
+               rerank: bool = False, qvec: np.ndarray | None = None, hints: bool = False) -> list[int]:
         allowed, _ = self.allowed(question) if drug_filter else (None, [])
+        original = question
+        if hints:
+            question = expand_query(question)
         depth = 50 if rerank else k
         if method in ("dense", "binary", "hybrid", "hybrid_binary") and qvec is None:
             qvec = self.encode_query([question])[0]
@@ -113,7 +116,7 @@ class Retriever:
         else:
             raise ValueError(method)
         if rerank and len(ids):
-            pairs = [(question, doc_text(self.chunks[i])) for i in ids]
+            pairs = [(original, doc_text(self.chunks[i])) for i in ids]
             s = np.asarray(self.reranker.predict(pairs, batch_size=64))
             ids = ids[np.argsort(-s, kind="stable")]
         return [int(i) for i in ids[:k]]
