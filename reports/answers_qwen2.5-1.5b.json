@@ -181,7 +181,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.986,
+   0.976,
    0.997
   ],
   "guarded_answer": "Yes, the label states that treatment of hyperlipidemia is not generally necessary during pregnancy. Atherosclerosis is a chronic process and the discontinuation of lipid-lowering drugs during pregnancy should have little impact on the outcome of long-term therapy of primary hyperlipidemia for most patients.",
@@ -238,7 +238,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.03
+   0.021
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -294,7 +294,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.012
+   0.006
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -426,8 +426,8 @@
   "claims": 2,
   "supported": 1,
   "support": [
-   0.518,
-   0.003
+   0.972,
+   0.001
   ],
   "guarded_answer": "The label says safety and effectiveness of gabapentin tablets in the management of postherpetic neuralgia in pediatric patients have not been established [1].",
   "guarded_refused": false,
@@ -488,7 +488,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.039
+   0.013
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -542,23 +542,23 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 8,
-  "supported": 7,
+  "supported": 8,
   "support": [
-   0.017,
+   0.998,
    0.996,
    0.996,
    0.997,
    0.989,
    0.997,
-   0.991,
-   0.994
+   0.992,
+   0.993
   ],
-  "guarded_answer": "Employ other supportive measures such as oxygen and vasopressors as indicated. Cardiac arrest or serious arrhythmias will require advanced life-support measures. For clinically significant respiratory or circulatory depression secondary to acetaminophen and codeine overdose, an opioid overdose reversal agent such as naloxone or nalmefene should be administered. Because the duration of opioid reversal is expected to be less than the duration of action of codeine in acetaminophen and codeine phosphate tablets, carefully monitor the patient until spontaneous respiration is reliably reestablished. If the response to an opioid overdose reversal agent is suboptimal or only brief in nature, additional reversal agent should be administered as directed by the product\u2019s prescribing information. In an individual physically dependent on opioids, administration of the recommended usual dosage of the overdose reversal agent will precipitate an acute withdrawal syndrome. The severity of the withdrawal symptoms experienced will depend on the",
+  "guarded_answer": "If someone overdoses on acetaminophen and codeine, priorities should include reestablishing a patent and protected airway and institution of assisted or controlled ventilation, if needed. Employ other supportive measures such as oxygen and vasopressors as indicated. Cardiac arrest or serious arrhythmias will require advanced life-support measures. For clinically significant respiratory or circulatory depression secondary to acetaminophen and codeine overdose, an opioid overdose reversal agent such as naloxone or nalmefene should be administered. Because the duration of opioid reversal is expected to be less than the duration of action of codeine in acetaminophen and codeine phosphate tablets, carefully monitor the patient until spontaneous respiration is reliably reestablished. If the response to an opioid overdose reversal agent is suboptimal or only brief in nature, additional reversal agent should be administered as directed by the product\u2019s prescribing information. In an individual physically dependent on opioids, administration of the recommended usual dosage of the overdose reversal agent will precipitate an acute withdrawal syndrome. The severity of the withdrawal symptoms experienced will depend on the",
   "guarded_refused": false,
   "key_facts": 0.0,
   "guarded_key_facts": 0.0,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "n9",
@@ -625,7 +625,7 @@
    0.998,
    0.997,
    0.998,
-   0.998,
+   0.997,
    0.998
   ],
   "guarded_answer": "Yes, nursing mothers should be cautious when taking sertraline hydrochloride [1]. There is an increased risk of stillborn pups and pup mortality in nursing rats [2]. The clinical significance of these effects is unknown [2]. There are no adequate and well-controlled studies in pregnant women [3]. The potential risks of taking an SSRI should be carefully considered when treating a pregnant woman with sertraline hydrochloride [4].",
@@ -686,7 +686,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.472
+   0.111
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -746,17 +746,17 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 2,
-  "supported": 1,
+  "supported": 2,
   "support": [
-   0.988,
-   0.203
+   0.985,
+   0.995
   ],
-  "guarded_answer": "For children weighing 40 kg or more, the adult dose is used [2].",
+  "guarded_answer": "For children weighing 40 kg or more, the adult dose is used [2]. For pediatric patients 12 weeks or younger (\u2264 3 months), the recommended upper dose of amoxicillin is 30 mg/kg/day divided every 12 hours [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0,
+  "guarded_key_facts": 1.0,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "n12",
@@ -815,7 +815,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.992
+   0.995
   ],
   "guarded_answer": "Yes, the label states that concomitant use of phosphodiesterase inhibitors like sildenafil can cause severe hypotension [1].",
   "guarded_refused": false,
@@ -878,7 +878,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.015
+   0.112
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -940,7 +940,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.995
+   0.998
   ],
   "guarded_answer": "The label states that thyroid hormones, including levothyroxine sodium, should not be used for the treatment of obesity or for weight loss [1].",
   "guarded_refused": false,
@@ -1002,14 +1002,14 @@
   "claims": 3,
   "supported": 2,
   "support": [
-   0.001,
-   0.712,
+   0.992,
+   0.356,
    0.986
   ],
-  "guarded_answer": "The risk was reduced in patients aged 65 and older [2-3]. The label advises monitoring for worsening and emergence of suicidal thoughts and behaviors [1-3].",
+  "guarded_answer": "Duloxetine carries a warning about suicidal thoughts because it increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults in short-term studies [1-3]. The label advises monitoring for worsening and emergence of suicidal thoughts and behaviors [1-3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.5,
+  "guarded_key_facts": 1.0,
   "drug_found": true,
   "guarded_by": "claim check"
  },
@@ -1066,7 +1066,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.049
+   0.142
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -1127,13 +1127,13 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 2,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.006,
+   0.977,
    0.002
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "The label states that clinical studies did not include sufficient numbers of elderly patients to determine if they respond differently from younger patients [1].",
+  "guarded_refused": false,
   "key_facts": 1.0,
   "guarded_key_facts": 0.0,
   "drug_found": true,
@@ -1186,10 +1186,10 @@
   "claims": 4,
   "supported": 2,
   "support": [
-   0.149,
-   0.035,
-   0.988,
-   0.992
+   0.099,
+   0.01,
+   0.968,
+   0.964
   ],
   "guarded_answer": "John's wort, co-enzyme Q 10 , St. John's wort, and ginseng.",
   "guarded_refused": false,
@@ -1249,17 +1249,17 @@
   "closed_book_key_facts": 1.0,
   "refused": false,
   "claims": 2,
-  "supported": 1,
+  "supported": 2,
   "support": [
-   0.992,
-   0.002
+   0.99,
+   0.994
   ],
-  "guarded_answer": "Yes, tramadol hydrochloride tablets have been reported to increase seizure risk in patients with epilepsy or a history of seizures [2].",
+  "guarded_answer": "Yes, tramadol hydrochloride tablets have been reported to increase seizure risk in patients with epilepsy or a history of seizures [2]. However, caution is advised as tramadol hydrochloride tablets may also increase seizure risk in patients taking other drugs that reduce the seizure threshold [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
   "guarded_key_facts": 1.0,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "n20",
@@ -1311,7 +1311,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.698,
+   0.603,
    0.998
   ],
   "guarded_answer": "To take Fosamax correctly, you should swallow the tablets whole with 6-8 ounces of plain water at least 30 minutes before the first food, drink, or medication of the day. Do not lie down for at least 30 minutes after taking the tablets and until after your first food of the day.",
@@ -1424,7 +1424,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.979
+   0.99
   ],
   "guarded_answer": "Yes, Flagyl can be used in the first trimester of pregnancy.",
   "guarded_refused": false,
@@ -1484,7 +1484,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.997
+   0.998
   ],
   "guarded_answer": "The warning signs of lactic acidosis with metformin include elevated blood lactate levels (>5 mmol/L), anion gap acidosis (without evidence of ketonuria or ketonemia), an increased lactate/pyruvate ratio, and metformin plasma levels generally >5 mcg/mL [2, 3].",
   "guarded_refused": false,
@@ -1544,7 +1544,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.879
+   0.994
   ],
   "guarded_answer": "Norvasc treats hypertension, coronary artery disease, and vasospastic angina [1, 2, 3].",
   "guarded_refused": false,
@@ -1600,7 +1600,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.895,
+   0.996,
    0.997
   ],
   "guarded_answer": "Yes, the label states that abrupt discontinuation or rapid dosage reduction of clonazepam tablets after continued use may precipitate acute withdrawal reactions, which can be life-threatening. To reduce the risk of withdrawal reactions, use a gradual taper to discontinue clonazepam tablets or reduce the dosage.",
@@ -1657,7 +1657,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.942
+   0.993
   ],
   "guarded_answer": "Yes, bupropion hydrochloride extended-release tablets (XL) can cause seizure [1, 2, 3].",
   "guarded_refused": false,
@@ -1724,7 +1724,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.02
+   0.024
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -1782,7 +1782,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.996,
+   0.995,
    0.996
   ],
   "guarded_answer": "Yes, the label states that the plasma concentration of cyclobenzaprine is increased in the elderly, and the elderly may be more at risk for CNS adverse events such as hallucinations and confusion, cardiac events resulting in falls or other sequelae, and drug-drug and drug-disease interactions. For these reasons, cyclobenzaprine should be used only if clearly needed in the elderly.",
@@ -1900,8 +1900,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.993,
-   0.995
+   0.995,
+   0.996
   ],
   "guarded_answer": "Yes, fluconazole use during pregnancy should be avoided except in patients with severe or potentially life-threatening fungal infections. Effective contraceptive measures should be considered in women of child-bearing potential who are being treated with fluconazole 400 to 800 mg/day and should continue throughout the treatment period and for approximately 1 week after the final dose.",
   "guarded_refused": false,
@@ -1957,7 +1957,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.99
+   0.989
   ],
   "guarded_answer": "Yes, the label states that Neuropsychiatric Events are described elsewhere in the labeling [6.1].",
   "guarded_refused": false,
@@ -2020,7 +2020,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.625
+   0.991
   ],
   "guarded_answer": "The maximum daily dose of Seroquel is 800 mg/day [2].",
   "guarded_refused": false,
@@ -2080,7 +2080,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.995
+   0.997
   ],
   "guarded_answer": "Yes, elderly patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death [see BOXED WARNING].",
   "guarded_refused": false,
@@ -2147,9 +2147,9 @@
   "claims": 3,
   "supported": 3,
   "support": [
-   0.993,
+   0.994,
    0.998,
-   0.995
+   0.996
   ],
   "guarded_answer": "The principal signs and symptoms of overdose with furosemide are dehydration, blood volume reduction, hypotension, electrolyte imbalance, hypokalemia and hypochloremic alkalosis, and are extensions of its diuretic action [1]. The acute toxicity of furosemide has been determined in mice, rats and dogs, with the oral LD 50 exceeding 1000 mg/kg body weight and the intravenous LD 50 ranging from 300 to 680 mg/kg [2]. Treatment of overdosage is supportive and consists of replacement of excessive fluid and electrolyte losses, with serum electrolytes, carbon dioxide level and blood pressure should be determined frequently [1].",
   "guarded_refused": false,
@@ -2386,7 +2386,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.966
+   0.992
   ],
   "guarded_answer": "Yes, the label states that Synthroid should not be taken with foods that decrease absorption of levothyroxine sodium tablets, such as soybean-based infant formula [see Drug Interactions (7.9) ].",
   "guarded_refused": false,
@@ -2440,16 +2440,16 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.027
+   0.987
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "Keppra is used for adjunctive therapy in the treatment of partial onset seizures in adults and children four years of age and older with epilepsy, myoclonic seizures in adults and adolescents 12 years of age and older with juvenile myoclonic epilepsy, and primary generalized tonic-clonic seizures in adults and children 6 years of age and older with idiopathic generalized epilepsy.",
+  "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0,
+  "guarded_key_facts": 1.0,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "n40",
@@ -2689,7 +2689,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.022
+   0.032
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -2748,7 +2748,7 @@
   "support": [
    0.997,
    0.996,
-   0.995
+   0.996
   ],
   "guarded_answer": "The pregnancy warnings for Isotretinoin include: It is contraindicated during pregnancy because it can cause fetal harm. There is an increased risk of major congenital malformations, spontaneous abortions, and premature births following isotretinoin exposure during pregnancy in humans. If pregnancy occurs during treatment, discontinue the medication immediately and refer the patient to an obstetrician/gynecologist experienced in reproductive toxicity for further evaluation and counseling.",
   "guarded_refused": false,
@@ -2812,7 +2812,7 @@
   "claims": 3,
   "supported": 2,
   "support": [
-   0.995,
+   0.996,
    0.007,
    0.991
   ],
@@ -2872,7 +2872,7 @@
   "support": [
    0.998,
    0.998,
-   0.954
+   0.956
   ],
   "guarded_answer": "For a benzodiazepine overdose, employ general supportive measures, including intravenous fluids and airway management. Flumazenil, a specific benzodiazepine receptor antagonist, can be used to reverse the sedative effects of benzodiazepines. However, it can lead to withdrawal and adverse reactions, including seizures, particularly in the context of mixed overdosage with drugs that increase seizure risk.",
   "guarded_refused": false,
@@ -2926,18 +2926,18 @@
   "closed_book_key_facts": 1.0,
   "refused": false,
   "claims": 3,
-  "supported": 3,
+  "supported": 2,
   "support": [
-   0.997,
-   0.993,
-   0.897
+   0.995,
+   0.995,
+   0.184
   ],
-  "guarded_answer": "Narcan is used to reverse the effects of opioids, including respiratory depression, induced by natural and synthetic opioids, propoxyphene, methadone, and certain mixed agonist-antagonist analgesics. It is also used to diagnose suspected or known acute opioid overdosage. Naloxone hydrochloride is indicated for the complete or partial reversal of opioid depression, including respiratory depression, induced by natural and synthetic opioids, and for the diagnosis of suspected or known acute opioid overdosage.",
+  "guarded_answer": "Narcan is used to reverse the effects of opioids, including respiratory depression, induced by natural and synthetic opioids, propoxyphene, methadone, and certain mixed agonist-antagonist analgesics. It is also used to diagnose suspected or known acute opioid overdosage.",
   "guarded_refused": false,
   "key_facts": 1.0,
   "guarded_key_facts": 1.0,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "n48",
@@ -2995,7 +2995,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.996
+   0.997
   ],
   "guarded_answer": "Yes, a pregnant woman can take Bactrim [2].",
   "guarded_refused": false,
@@ -3055,16 +3055,16 @@
   "closed_book_key_facts": 1.0,
   "refused": false,
   "claims": 1,
-  "supported": 1,
+  "supported": 0,
   "support": [
-   0.895
+   0.395
   ],
-  "guarded_answer": "Yes, patients should be warned against driving and other activities requiring mental alertness if Ambien is taken in these circumstances [see Warnings and Precautions ( 5.2 )].",
-  "guarded_refused": false,
+  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_refused": true,
   "key_facts": 0.5,
-  "guarded_key_facts": 0.5,
+  "guarded_key_facts": 0.0,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "n50",
@@ -3245,7 +3245,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.986
+   0.988
   ],
   "guarded_answer": "The usual dose for adults with major depressive disorder is 50 mg once daily [1].",
   "guarded_refused": false,
@@ -3307,16 +3307,16 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 1,
-  "supported": 1,
+  "supported": 0,
   "support": [
-   0.926
+   0.027
   ],
-  "guarded_answer": "Yes, the adverse reactions associated with hydrochlorothiazide have been shown to include hyperglycemia and glycosuria [3].",
-  "guarded_refused": false,
+  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0,
+  "guarded_key_facts": 0.0,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "n54",
@@ -3373,7 +3373,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.998
+   0.997
   ],
   "guarded_answer": "The serious side effects include severe cutaneous adverse reactions (SCARs), including Stevens-Johnson syndrome, toxic epidermal necrolysis, drug reaction with eosinophilia and systemic symptoms (DRESS), acute febrile neutrophilic dermatosis (AFND), acute generalized erythematous pustulosis (AGEP), fulminant hepatic necrosis, agranulocytosis, aplastic anemia, and other blood dyscrasias; acute and delayed lung injury; anaphylaxis and circulatory shock [2].",
   "guarded_refused": false,
@@ -3435,7 +3435,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.975
+   0.978
   ],
   "guarded_answer": "Yes, trazodone may enhance effects of alcohol, barbiturates, or other CNS depressants [2].",
   "guarded_refused": false,
@@ -3492,16 +3492,16 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.217
+   0.864
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "The side effects of prednisone when used long term include osteoporosis, osteopenia, muscle weakness, muscle wasting, hypertension, electrolyte imbalance, left ventricular free wall rupture, hypothalamic-pituitary adrenal (HPA) axis suppression, and cardiovascular system effects such as hypertension or aggravation of hypertension, congestive heart failure, and cardiac arrhythmias.",
+  "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0,
+  "guarded_key_facts": 1.0,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "n57",
@@ -3557,7 +3557,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.997
+   0.998
   ],
   "guarded_answer": "An overdose of amlodipine might cause excessive peripheral vasodilation with marked hypotension and possibly a reflex tachycardia [1].",
   "guarded_refused": false,
@@ -3615,7 +3615,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.995,
+   0.993,
    0.997
   ],
   "guarded_answer": "Yes, reports indicate that furosemide ototoxicity is associated with rapid injection, severe renal impairment, the use of higher than recommended doses, hypoproteinemia or concomitant therapy with aminoglycoside antibiotics, ethacrynic acid, or other ototoxic drugs. Hearing loss in neonates has been associated with the use of furosemide injection.",
@@ -3730,7 +3730,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.971
+   0.983
   ],
   "guarded_answer": "Yes, the label states that the use of Lisinopril in pregnant women should be discontinued as soon as possible [see Use in specific Populations (8.1) ].",
   "guarded_refused": false,
@@ -3786,7 +3786,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.002
+   0.001
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -3842,7 +3842,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.983,
+   0.986,
    0.996
   ],
   "guarded_answer": "Yes, the label states that the recommended initial dose for women is 5 mg, and for men, it's 5 or 10 mg, immediately before bedtime with at least 7 to 8 hours remaining before the planned time of awakening [2.1]. For elderly or debilitated patients, the recommended dose is 5 mg for men and women [2.2].",
@@ -3907,7 +3907,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.875
+   0.995
   ],
   "guarded_answer": "Yes, the label states that the continued use of benzodiazepines, including clonazepam tablets, may lead to clinically significant physical dependence [1].",
   "guarded_refused": false,
@@ -3967,16 +3967,16 @@
   "closed_book_key_facts": 0.0,
   "refused": false,
   "claims": 1,
-  "supported": 1,
+  "supported": 0,
   "support": [
-   0.938
+   0.014
   ],
-  "guarded_answer": "Yes, edema, which is ankle swelling, is a common adverse reaction reported with an incidence of 1.0% [3].",
-  "guarded_refused": false,
+  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0,
+  "guarded_key_facts": 0.0,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "h5",
@@ -4098,7 +4098,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.005
+   0.022
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -4160,7 +4160,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.023
+   0.024
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -4337,7 +4337,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.545
+   0.963
   ],
   "guarded_answer": "Patients with a history of NAION, a \"crowded\" optic disc, cardiovascular disease, or who are predisposed to priapism must avoid sildenafil [1, 2, 3, 4].",
   "guarded_refused": false,
@@ -4400,7 +4400,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.991
+   0.992
   ],
   "guarded_answer": "Yes, the label states that montelukast sodium has been evaluated for safety in pediatric patients 6 to 14 years of age [1].",
   "guarded_refused": false,
@@ -4456,9 +4456,9 @@
   "claims": 3,
   "supported": 3,
   "support": [
-   0.991,
-   0.928,
-   0.991
+   0.994,
+   0.747,
+   0.993
   ],
   "guarded_answer": "Furosemide is indicated in adults and pediatric patients for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome. It is also indicated as adjunctive therapy in acute pulmonary edema. Parenteral therapy should be reserved for patients unable to take oral medication or for patients in emergency clinical situations.",
   "guarded_refused": false,
@@ -4521,7 +4521,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.989
+   0.975
   ],
   "guarded_answer": "Yes, the label states that ondansetron is contraindicated for patients known to have hypersensitivity to the drug [3].",
   "guarded_refused": false,
@@ -4579,7 +4579,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.994,
+   0.989,
    0.988
   ],
   "guarded_answer": "Yes, routine urinalysis and other tests may be used to evaluate tubular function (e.g., urine specific gravity or osmolality following a period of water deprivation, or 24-hour urine volume) and glomerular function (e.g., serum creatinine, creatinine clearance, or proteinuria). During lithium treatment, progressive or sudden changes in renal function, even within the normal range, indicate the need for re-evaluation of treatment.",
@@ -4638,7 +4638,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.792
+   0.98
   ],
   "guarded_answer": "Table 3 in the passages lists several drugs that can increase the risk of bleeding when used with warfarin, including antibiotics and antifungals [2,3].",
   "guarded_refused": false,
@@ -4694,8 +4694,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.993,
-   0.986
+   0.991,
+   0.991
   ],
   "guarded_answer": "Yes, the label states that prolonged cardiac repolarization and QT interval, which can lead to cardiac arrhythmias and torsades de pointes, have been seen with treatment with macrolides, including azithromycin. Cases of torsades de pointes have been spontaneously reported during postmarketing surveillance in patients receiving azithromycin.",
   "guarded_refused": false,
@@ -4811,7 +4811,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.972
+   0.983
   ],
   "guarded_answer": "Yes, meloxicam can cause serious gastrointestinal adverse events including bleeding, ulceration, and perforation of the stomach or intestines, which can be fatal [ see Boxed warning ( 5.2 ) ].",
   "guarded_refused": false,
@@ -4873,7 +4873,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.994
+   0.992
   ],
   "guarded_answer": "Yes, gabapentin use in pediatric patients with epilepsy is associated with the occurrence of CNS related adverse reactions, including respiratory depression [2].",
   "guarded_refused": false,
@@ -4936,7 +4936,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.997
+   0.996
   ],
   "guarded_answer": "Yes, topiramate increases the risk of kidney stones [1].",
   "guarded_refused": false,
@@ -4992,7 +4992,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.922
+   0.995
   ],
   "guarded_answer": "Yes, tramadol hydrochloride tablets are contraindicated for all children younger than 12 years of age [1, 3].",
   "guarded_refused": false,
@@ -5115,7 +5115,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.996
+   0.994
   ],
   "guarded_answer": "Yes, fluoroquinolones, including levofloxacin, have been associated with disturbances of blood glucose, including symptomatic hyperglycemia and hypoglycemia, usually in diabetic patients receiving concomitant treatment with an oral hypoglycemic agent (e.g., glyburide) or with insulin [2].",
   "guarded_refused": false,
@@ -5172,7 +5172,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.992
+   0.988
   ],
   "guarded_answer": "Yes, the label states that at least 14 days should elapse between discontinuation of an MAOI intended to treat psychiatric disorders and initiation of therapy with escitalopram, and at least 14 days should be allowed after stopping escitalopram before starting an MAOI intended to treat psychiatric disorders [see Contraindications (4)].",
   "guarded_refused": false,
@@ -5229,7 +5229,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.985
+   0.997
   ],
   "guarded_answer": "Yes, duloxetine hydrochloride and duloxetine delayed-release capsules have been associated with reports of hepatic failure, sometimes fatal, in patients treated with them [1, 3].",
   "guarded_refused": false,
@@ -5292,7 +5292,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.604
+   0.633
   ],
   "guarded_answer": "Yes, the label states that concomitant administration of spironolactone with potassium supplements may lead to severe hyperkalemia [1].",
   "guarded_refused": false,
@@ -5356,7 +5356,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.026
+   0.007
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -5476,7 +5476,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.967
+   0.968
   ],
   "guarded_answer": "Metoprolol is not stopped suddenly because it may exacerbate the rebound hypertension that can follow the withdrawal of clonidine [see Warnings and Precautions (5.11)].",
   "guarded_refused": false,
@@ -5530,16 +5530,16 @@
   ],
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.002
+   0.988
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "Hydrocortisone acetate is indicated as adjunctive therapy in the topical treatment of ulcerative proctitis of the distal portion of the rectum in patients who cannot retain hydrocortisone or other corticosteroid enemas [1].",
+  "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "t25",
@@ -5694,7 +5694,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.99
+   0.989
   ],
   "guarded_answer": "The label states that there are insufficient data on use of fosaprepitant in pregnant women to inform a drug associated risk [2].",
   "guarded_refused": false,
@@ -5744,8 +5744,8 @@
   "claims": 3,
   "supported": 2,
   "support": [
-   0.004,
-   0.989,
+   0.006,
+   0.984,
    0.996
   ],
   "guarded_answer": "Risks of Use in Patients with Increased Intracranial Pressure, Brain Tumors, Head Injury, or Impaired Consciousness In patients who may be susceptible to the intracranial effects of CO 2 retention (e.g., those with evidence of increased intracranial pressure or brain tumors), hydrocodone bitartrate and acetaminophen oral solution may reduce respiratory drive, and the resultant CO 2 retention can further increase intracranial pressure. Risks of Gastrointestinal Complications Hydrocodone bitartrate and acetaminophen oral solution is contraindicated in patients with gastrointestinal obstruction, including paralytic ileus.",
@@ -5794,19 +5794,19 @@
   "cited_right_section": [],
   "refused": false,
   "claims": 4,
-  "supported": 3,
+  "supported": 4,
   "support": [
-   0.004,
-   0.994,
+   0.998,
+   0.993,
    0.997,
    0.996
   ],
-  "guarded_answer": "These adjustments should occur generally at intervals of not less than 2 weeks. The recommended dosage range is 2.5-10 mg once daily. Felodipine should be swallowed whole and not crushed or chewed.",
+  "guarded_answer": "The recommended starting dose of Felodipine is 5 mg once a day, and the dosage can be adjusted based on the patient's response. These adjustments should occur generally at intervals of not less than 2 weeks. The recommended dosage range is 2.5-10 mg once daily. Felodipine should be swallowed whole and not crushed or chewed.",
   "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "t104",
@@ -5849,8 +5849,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.941,
-   0.967
+   0.997,
+   0.902
   ],
   "guarded_answer": "Evista is contraindicated in women with active or past history of venous thromboembolism (VTE), including deep vein thrombosis, pulmonary embolism, and retinal vein thrombosis [4.1]. It is also contraindicated for use in pregnancy [4.2].",
   "guarded_refused": false,
@@ -5975,7 +5975,7 @@
   "claims": 4,
   "supported": 4,
   "support": [
-   0.974,
+   0.976,
    0.997,
    0.996,
    0.995
@@ -6034,7 +6034,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.85
+   0.998
   ],
   "guarded_answer": "Rowasa is contraindicated in patients with hypersensitivity to salicylates or aminosalicylates or to any of the components of mesalamine extended-release capsules [1].",
   "guarded_refused": false,
@@ -6084,7 +6084,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.013
+   0.007
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -6203,7 +6203,7 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.944,
+   0.979,
    0.997
   ],
   "guarded_answer": "Administer uridine triacetate within 96 hours for management of capecitabine overdose [1]. Serious renal failure, sometimes fatal, can occur with capecitabine [2].",
@@ -6260,7 +6260,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.996
+   0.995
   ],
   "guarded_answer": "In case of overdose, discontinue medication, treat symptomatically, and institute supportive measures [1].",
   "guarded_refused": false,
@@ -6310,7 +6310,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.996
+   0.989
   ],
   "guarded_answer": "Propafenone hydrochloride is used to prolong the time to recurrence of paroxysmal atrial fibrillation/flutter (PAF) associated with disabling symptoms in patients without structural heart disease, to prolong the time to recurrence of paroxysmal supraventricular tachycardia (PSVT) associated with disabling symptoms in patients without structural heart disease, and to treat documented ventricular arrhythmias, such as sustained ventricular tachycardia that, in the judgment of the physician, are life-threatening.",
   "guarded_refused": false,
@@ -6414,16 +6414,16 @@
   ],
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.04
+   0.704
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "Yes, nursing mothers should be cautious when taking Sodium Sulfacetamide 10% Wash as it may cause kernicterus in infants [2].",
+  "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "t574",
@@ -6466,7 +6466,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.01
+   0.0
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -6516,7 +6516,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.281
+   0.028
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -6622,11 +6622,11 @@
   "claims": 5,
   "supported": 5,
   "support": [
+   0.997,
    0.993,
-   0.993,
+   0.995,
    0.996,
-   0.996,
-   0.982
+   0.984
   ],
   "guarded_answer": "The recommended dosage and administration is to apply one to two drops of loteprednol etabonate ophthalmic suspension into the conjunctival sac of the affected eye(s) four times daily. During the initial treatment within the first week, the dosing may be increased, up to 1 drop every hour, if necessary. Care should be taken not to discontinue therapy prematurely. If signs and symptoms fail to improve after two days, the patient should be re-evaluated. Post-Operative Inflammation: Apply one to two drops of loteprednol etabonate ophthalmic suspension into the conjunctival sac of the operated eye(s) four times daily beginning 24 hours after surgery and continuing throughout the first 2 weeks of the post-operative period.",
   "guarded_refused": false,
@@ -6682,7 +6682,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.995
+   0.993
   ],
   "guarded_answer": "The label states that the safety and effectiveness of sildenafil in pediatric patients have not been established [1].",
   "guarded_refused": false,
@@ -6794,7 +6794,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.003
+   0.002
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -6844,7 +6844,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.846
+   0.987
   ],
   "guarded_answer": "Common side effects of dicyclomine hydrochloride include dry mouth, dizziness, vision blurred, nausea, somnolence, asthenia, nervousness, and fatigue.",
   "guarded_refused": false,
@@ -6952,7 +6952,7 @@
   "supported": 1,
   "support": [
    0.998,
-   0.002,
+   0.003,
    0.0
   ],
   "guarded_answer": "Erythromycin is used to reduce the development of drug-resistant bacteria and maintain effectiveness of the drug.",
@@ -7003,9 +7003,9 @@
   "claims": 3,
   "supported": 2,
   "support": [
-   0.963,
+   0.798,
    0.0,
-   0.994
+   0.986
   ],
   "guarded_answer": "Yes, the label states that clinical studies of vilazodone hydrochloride did not include sufficient numbers of subjects aged 65 and over to determine whether they respond differently from younger subjects. younger subjects (24 to 55 years-old) demonstrated that the pharmacokinetics were generally similar between the two age groups.",
   "guarded_refused": false,
@@ -7061,7 +7061,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.99
+   0.992
   ],
   "guarded_answer": "Caution should be exercised when metoclopramide is administered to a nursing mother [1].",
   "guarded_refused": false,
@@ -7109,16 +7109,16 @@
   "cited_right_section": [],
   "refused": false,
   "claims": 1,
-  "supported": 1,
+  "supported": 0,
   "support": [
-   0.605
+   0.046
   ],
-  "guarded_answer": "Valacyclovir is used for the treatment of cold sores (herpes labialis) in pediatric patients aged greater than or equal to 12 years and for treatment of chickenpox in pediatric patients aged 2 to less than 18 years [see Indications and Usage (1.2) , Dosage and Administration (2.2) ].",
-  "guarded_refused": false,
+  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_refused": true,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "t389",
@@ -7167,7 +7167,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.997
+   0.996
   ],
   "guarded_answer": "The hypotensive effect of sodium nitroprusside is augmented by that of most other hypotensive drugs, including ganglionic blocking agents, negative inotropic agents, and inhaled anesthetics [1].",
   "guarded_refused": false,
@@ -7274,8 +7274,8 @@
   "supported": 3,
   "support": [
    0.995,
-   0.991,
-   0.992
+   0.987,
+   0.993
   ],
   "guarded_answer": "Calcitriol has been found to be teratogenic in rabbits when given at doses of 0.08 and 0.3 mcg/kg (approximately 2 and 6 times the maximum recommended dose based on mg/m 2 ). However, there are no adequate and well-controlled studies in pregnant women. Calcitriol should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.",
   "guarded_refused": false,
@@ -7331,9 +7331,9 @@
   "claims": 3,
   "supported": 2,
   "support": [
-   0.991,
-   0.998,
-   0.001
+   0.992,
+   0.997,
+   0.002
   ],
   "guarded_answer": "Yes, mycophenolate mofetil can be taken with other drugs, but there are interactions that can affect its efficacy and safety. For example, antacids with magnesium or aluminum hydroxide decrease mycophenolate mofetil efficacy by reducing MPA systemic exposure [1].",
   "guarded_refused": false,
@@ -7392,8 +7392,8 @@
   "claims": 2,
   "supported": 1,
   "support": [
-   0.989,
-   0.007
+   0.996,
+   0.015
   ],
   "guarded_answer": "Yes, fluvoxamine maleate has been associated with PPHN in pregnant women [3].",
   "guarded_refused": false,
@@ -7505,7 +7505,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.995
+   0.996
   ],
   "guarded_answer": "Articaine HCl and Epinephrine is contraindicated in patients who are hypersensitive to products containing sulfites [1].",
   "guarded_refused": false,
@@ -7561,7 +7561,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.995
+   0.997
   ],
   "guarded_answer": "The pediatric use section states that the safety and effectiveness of ibuprofen and famotidine tablet in pediatric patients have not been established [1].",
   "guarded_refused": false,
@@ -7611,10 +7611,10 @@
   "claims": 4,
   "supported": 4,
   "support": [
-   0.993,
+   0.994,
    0.998,
-   0.998,
-   0.998
+   0.997,
+   0.997
   ],
   "guarded_answer": "The main safety warnings for cetirizine hydrochloride include: Overdose can cause somnolence, agitation/irritability, tachycardia, vomiting, mydriasis, and elevated creatinine phosphokinase. There is no known specific antidote. Cetirizine hydrochloride is not effectively removed by dialysis. The most common adverse reactions are somnolence, fatigue, dry mouth, pharyngitis, and dizziness.",
   "guarded_refused": false,
@@ -7668,16 +7668,16 @@
   ],
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.031
+   0.989
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "Yes, the label states that thyroid hormones do not readily cross the placental barrier and the clinical experience does not indicate any adverse effect on fetuses when thyroid hormones are administered to pregnant women [1].",
+  "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "t80",
@@ -7777,7 +7777,7 @@
   "supported": 2,
   "support": [
    0.997,
-   0.994
+   0.992
   ],
   "guarded_answer": "Yes, the label states that elderly patients exhibit a greater tendency to orthostatic hypotension, and its risk may be minimized by limiting the initial dose to 0.5 mg twice daily followed by careful titration [see Warnings and Precautions (5.7) ]. Monitoring of orthostatic vital signs should be considered in patients for whom this is of concern.",
   "guarded_refused": false,
@@ -7881,13 +7881,13 @@
   "cited_right_section": [],
   "refused": false,
   "claims": 2,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.002,
-   0.025
+   0.001,
+   0.991
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "The label also advises to ensure that management by neonatology experts will be available at delivery.",
+  "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
@@ -7990,7 +7990,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.002
+   0.001
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -8040,7 +8040,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.991
+   0.997
   ],
   "guarded_answer": "Duloxetine hydrochloride is indicated for the treatment of major depressive disorder in adults, generalized anxiety disorder in adults and pediatric patients 7 years of age and older, diabetic peripheral neuropathic pain in adults, fibromyalgia in adults and pediatric patients 13 years of age and older, and chronic musculoskeletal pain in adults.",
   "guarded_refused": false,
@@ -8096,7 +8096,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.989
+   0.988
   ],
   "guarded_answer": "Yes, the label states that a loading dose of 15 to 20 mg/kg of Phenytoin Sodium Injection intravenously will usually produce serum concentrations of phenytoin within the generally accepted serum total concentrations between 10 and 20 mcg/mL [1].",
   "guarded_refused": false,
@@ -8152,7 +8152,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.977
+   0.98
   ],
   "guarded_answer": "Yes, nursing mothers should not nurse since the possibility exists that the drug may be excreted in breast milk and be harmful to the child [1].",
   "guarded_refused": false,
@@ -8202,7 +8202,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.026
+   0.072
   ],
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
@@ -8306,13 +8306,13 @@
   "cited_right_section": [],
   "refused": false,
   "claims": 3,
-  "supported": 1,
+  "supported": 2,
   "support": [
-   0.019,
+   0.998,
    0.998,
    0.004
   ],
-  "guarded_answer": "Gastrointestinal bleeding has occurred, and hypertension, acute renal failure, respiratory depression, and coma have occurred, but were rare.",
+  "guarded_answer": "If someone takes too much Zipsor, they may experience symptoms such as lethargy, drowsiness, nausea, vomiting, and epigastric pain, which are generally reversible with supportive care. Gastrointestinal bleeding has occurred, and hypertension, acute renal failure, respiratory depression, and coma have occurred, but were rare.",
   "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
@@ -8358,18 +8358,18 @@
   "cited_right_section": [],
   "refused": false,
   "claims": 3,
-  "supported": 3,
+  "supported": 2,
   "support": [
-   0.851,
+   0.051,
    0.996,
    0.994
   ],
-  "guarded_answer": "Yes, the label states that dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy. This drug is known to be substantially excreted by the kidney, and the risk of toxic reactions to this drug may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
+  "guarded_answer": "This drug is known to be substantially excreted by the kidney, and the risk of toxic reactions to this drug may be greater in patients with impaired renal function. Because elderly patients are more likely to have decreased renal function, care should be taken in dose selection, and it may be useful to monitor renal function.",
   "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": null
+  "guarded_by": "claim check"
  },
  {
   "qid": "t373",
@@ -8413,14 +8413,14 @@
   "supported": 8,
   "support": [
    0.998,
-   0.027,
-   0.992,
-   0.995,
+   0.033,
+   0.991,
+   0.994,
    0.998,
-   0.972,
+   0.99,
+   0.996,
    0.997,
-   0.998,
-   0.995
+   0.997
   ],
   "guarded_answer": "Yes, certain drugs can be taken with glyburide and metformin hydrochloride. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide and dichlorphenamide. Drugs that reduce metformin clearance may increase systemic exposure to metformin and may increase the risk for lactic acidosis [ see Clinical Pharmacology (12.3) ]. Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride. Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine. Alcohol can potentiate the effect of metformin on lactate metabolism. Intervention: Warn patients against excessive alcohol intake while receiving glyburide and metformin hydrochloride.",
   "guarded_refused": false,
@@ -8521,8 +8521,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.991,
-   0.928
+   0.994,
+   0.747
   ],
   "guarded_answer": "Furosemide is indicated in adults and pediatric patients for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome. It is also indicated as adjunctive therapy in acute pulmonary edema.",
   "guarded_refused": false,
@@ -8576,16 +8576,16 @@
   ],
   "refused": false,
   "claims": 1,
-  "supported": 0,
+  "supported": 1,
   "support": [
-   0.016
+   0.997
   ],
-  "guarded_answer": "Not found in the FDA labels provided.",
-  "guarded_refused": true,
+  "guarded_answer": "Famotidine is contraindicated in patients with hypersensitivity to any component of these products [1].",
+  "guarded_refused": false,
   "key_facts": null,
   "guarded_key_facts": null,
   "drug_found": true,
-  "guarded_by": "claim check"
+  "guarded_by": null
  },
  {
   "qid": "t214",
@@ -8634,8 +8634,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.866,
-   0.992
+   0.988,
+   0.991
   ],
   "guarded_answer": "Vectical treats secondary hyperparathyroidism and resultant metabolic bone disease in patients with moderate to severe chronic renal failure not yet on dialysis [1]. It also treats hypocalcemia and its clinical manifestations in patients with postsurgical hypoparathyroidism, idiopathic hypoparathyroidism, and pseudohypoparathyroidism [1].",
   "guarded_refused": false,
@@ -8742,11 +8742,11 @@
   "claims": 5,
   "supported": 4,
   "support": [
+   0.995,
+   0.995,
+   0.001,
    0.996,
-   0.995,
-   0.0,
-   0.995,
-   0.978
+   0.976
   ],
   "guarded_answer": "Yes, for elderly patients, greater sensitivity of some older individuals cannot be ruled out. Warfarin sodium is contraindicated in any unsupervised patient with senility. Treatment with warfarin sodium may be considered after the platelet count has normalized. In those individual situations, the decision to initiate or continue warfarin sodium should be reviewed with the patient, taking into consideration the specific risks and benefits pertaining to the individual patient's medical situation, as well as the most current medical guidelines.",
   "guarded_refused": false,
@@ -8934,7 +8934,7 @@
   "claims": 1,
   "supported": 0,
   "support": [
-   0.008
+   0.169
   ],
   "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
@@ -9122,7 +9122,7 @@
   "claims": 1,
   "supported": 1,
   "support": [
-   0.992
+   0.988
   ],
   "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
@@ -9668,8 +9668,8 @@
   "claims": 2,
   "supported": 2,
   "support": [
-   0.992,
-   0.992
+   0.984,
+   0.993
   ],
   "guarded_answer": "The label states that rivaroxaban tablets should be stopped at least 24 hours before the procedure to reduce the risk of bleeding [see Warnings and Precautions (5.2) ]. In deciding whether a procedure should be delayed until 24 hours after the last dose of rivaroxaban tablets, the increased risk of bleeding should be weighed against the urgency of intervention.",
   "guarded_refused": false,
@@ -9945,7 +9945,7 @@
   "claims": 2,
   "supported": 1,
   "support": [
-   0.002,
+   0.042,
    0.996
   ],
   "guarded_answer": "No FDA label in this collection matches the drug in the question.",
