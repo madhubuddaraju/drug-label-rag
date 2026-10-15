@@ -1,7 +1,7 @@
 PY ?= python
 export PYTHONPATH := src
 
-.PHONY: install install-models data index index-bm25 answers web test lint serve
+.PHONY: install install-models data index index-bm25 answers grade web test lint serve
 
 install:            ## core: BM25 retrieval, evaluation, site, tests
 	$(PY) -m pip install -r requirements.txt pytest ruff
@@ -19,8 +19,13 @@ index:              ## chunk, embed, evaluate every retrieval configuration
 index-bm25:         ## same, keyword retrieval only (no models needed)
 	$(PY) -m labelrag.build --no-dense
 
-answers:            ## answer the eval questions with Qwen2.5-1.5B and grade them
-	$(PY) -m labelrag.generate
+MODEL ?= qwen2.5-3b
+
+answers:            ## answer the eval questions with a local LLM and grade them (MODEL=qwen2.5-1.5b|qwen2.5-3b)
+	$(PY) -m labelrag.generate --model $(MODEL)
+
+grade:              ## re-grade saved answers (MODEL=...)
+	$(PY) -m labelrag.grade --tag $(MODEL)
 
 web:                ## docs/index.html + docs/corpus.json
 	$(PY) -m labelrag.web
