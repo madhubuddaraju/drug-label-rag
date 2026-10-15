@@ -119,7 +119,7 @@ def main():
                 closed = chat([{"role": "system", "content": SYSTEM_CLOSED}, {"role": "user", "content": q["question"]}])
                 row["closed_book_answer"] = closed
                 row["closed_book_key_facts"] = key_facts(closed, q.get("must"))
-        rows.append(grade_row(row, [p["text"] for p in passages], judge, drug_found=drug_found))
+        rows.append(grade_row(row, [(p["header"], p["text"]) for p in passages], judge, drug_found=drug_found))
         if n % 10 == 0:
             log.info("%d/%d answered (%.0f min)", n + 1, len(questions), (time.time() - t0) / 60)
 

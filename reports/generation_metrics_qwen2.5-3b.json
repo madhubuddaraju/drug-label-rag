@@ -17,9 +17,10 @@
  },
  "guarded": {
   "answer_rate": 0.7533,
-  "correct_refusal_rate": 0.931,
+  "correct_refusal_rate": 0.9655,
   "false_refusal_when_gold_retrieved": 0.2286,
   "claims_removed": 0.4013,
+  "refused_by_drug_gate": 18,
   "key_fact_recall": 0.5722
  },
  "key_fact_recall_closed_book": 0.5056,
@@ -49,7 +50,7 @@
   "unanswerable": {
    "n": 29,
    "refusal_rate": 0.931,
-   "guarded_refusal_rate": 0.931,
+   "guarded_refusal_rate": 0.9655,
    "key_fact_recall": null,
    "guarded_key_fact_recall": null
   }

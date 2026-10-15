@@ -65,7 +65,9 @@
   "guarded_answer": "The label states that metronidazole is associated with a disulfiram-like reaction to alcohol, including abdominal cramps, nausea, vomiting, headaches, and flushing [1]. It advises discontinuing consumption of alcohol or products containing propylene glycol during and for at least three days after therapy with metronidazole [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n1",
@@ -131,7 +133,9 @@
   "guarded_answer": "The label states the maximum daily dose of metformin hydrochloride is 2550 mg, given in divided doses [2], [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n2",
@@ -204,7 +208,9 @@
   "guarded_answer": "The label indicates that atorvastatin calcium (Lipitor) may cause fetal harm when administered to pregnant patients based on its mechanism of action [1]. However, available data from case series and observational cohort studies do not identify a drug-associated risk of major congenital malformations [4]. The label advises discontinuing atorvastatin calcium tablets when pregnancy is recognized, or consider the ongoing therapeutic needs of the individual patient [1].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n3",
@@ -265,7 +271,9 @@
   "guarded_answer": "Warfarin and NSAIDs have been reported to have a synergistic effect on GI bleeding, indicating a higher risk of serious bleeding when combined [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n4",
@@ -326,7 +334,9 @@
   "guarded_answer": "For pediatric patients 6 years of age and older, the recommended starting dose is 0.07 mg per kg once daily, up to 5 mg total [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n5",
@@ -393,7 +403,9 @@
   "guarded_answer": "The most common side effects of gabapentin in patients >12 years of age are somnolence, dizziness, ataxia, fatigue, and nystagmus [2]. In pediatric patients 3 to 12 years of age, the most common side effects are viral infection, fever, nausea and/or vomiting, somnolence, and hostility [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n6",
@@ -459,7 +471,9 @@
   "guarded_answer": "The label indicates that gabapentin (Neurontin) safety and effectiveness have not been established in pediatric patients below 18 years old [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n7",
@@ -519,7 +533,9 @@
   "guarded_answer": "It also advises limiting dosages and durations of both drugs and closely monitoring patients for signs of respiratory depression and sedation [1, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n8",
@@ -579,7 +595,9 @@
   "guarded_answer": "Employ other supportive measures (including oxygen and vasopressors) in the management of circulatory shock and pulmonary edema as indicated. Cardiac arrest or serious arrhythmias will require advanced life-support measures. For clinically significant respiratory or circulatory depression secondary to acetaminophen and codeine overdose, administer an opioid overdose reversal agent such as naloxone or nalmefene. Because the duration of opioid reversal is expected to be less than the duration of action of codeine in acetaminophen and codeine phosphate tablets, carefully monitor the patient until spontaneous respiration is reliably reestablished. If the response to an opioid overdose reversal agent is suboptimal or only brief in nature, administer additional reversal agent as directed by the product's prescribing information. In an individual physically dependent on opioids, administration of the recommended usual dosage of the overdose reversal agent will precipitate an acute withdrawal syndrome.",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n9",
@@ -640,7 +658,9 @@
   "guarded_answer": "Caution should be exercised when sertraline hydrochloride is administered to a nursing woman [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n10",
@@ -710,7 +730,9 @@
   "guarded_answer": "Prednisone is indicated in various conditions including endocrine disorders, rheumatic disorders, collagen diseases, dermatologic diseases, hematologic disorders, neoplastic diseases, edematous states, gastrointestinal diseases, miscellaneous diseases, and allergic states [1][2][3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n11",
@@ -775,7 +797,9 @@
   "guarded_answer": "For children weighing 40 kg or more, the dose should be calculated according to adult recommendations [2]. For children under 12 weeks old, the dose is 30 mg/kg/day divided every 12 hours, with a maximum of 30 mg/kg/day for this age group [1]. For pediatric patients aged 3 months and older, the dose is 20 to 45 mg/kg/day in divided doses every 8 to 12 hours [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n12",
@@ -839,7 +863,9 @@
   "guarded_answer": "The warnings state that nitroglycerin should not be used in patients taking phosphodiesterase inhibitors like sildenafil for erectile dysfunction or pulmonary arterial hypertension due to the risk of severe drops in blood pressure [1].",
   "guarded_refused": false,
   "key_facts": 0.5,
-  "guarded_key_facts": 0.5
+  "guarded_key_facts": 0.5,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n13",
@@ -902,7 +928,9 @@
   "guarded_answer": "Symptoms may include seizures, cerebral embolism, shock, coma, and death. Reducing the dosage or temporarily discontinuing levothyroxine sodium is advised if signs or symptoms of overdosage occur, and appropriate supportive treatment should be initiated [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n14",
@@ -962,7 +990,9 @@
   "guarded_answer": "The label states that thyroid hormones, including levothyroxine sodium, should not be used for the treatment of obesity or for weight loss [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n15",
@@ -1024,7 +1054,9 @@
   "guarded_answer": "This risk was not seen in patients over 24 years old or in those 65 years and older [1, 2]. It also notes that there is a known risk of suicide in depression and other psychiatric disorders, and antidepressants may worsen depression and cause suicidal thoughts and behaviors during treatment [3, 4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.5
+  "guarded_key_facts": 0.5,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n16",
@@ -1079,7 +1111,9 @@
   "guarded_answer": "Taking these medications together increases the risk of bleeding [5.2, 5.3].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n17",
@@ -1144,7 +1178,9 @@
   "guarded_answer": "Adjustments in dosage may be necessary for elderly patients, starting at lower levels and closely monitoring serum lithium concentrations [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n18",
@@ -1212,7 +1248,9 @@
   "guarded_answer": "John's wort, and ginseng [2], [3], [4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n19",
@@ -1273,7 +1311,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n20",
@@ -1331,7 +1371,9 @@
   "guarded_answer": "Do not lie down for at least 30 minutes after taking the tablets and until after food [2, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.5
+  "guarded_key_facts": 0.5,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n21",
@@ -1386,7 +1428,9 @@
   "guarded_answer": "The label indicates that diarrhea/loose stools are the most frequently reported adverse reactions, occurring in 9% of patients [6.1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n22",
@@ -1450,7 +1494,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n23",
@@ -1509,7 +1555,9 @@
   "guarded_answer": "Elevated blood lactate levels (>5 mmol/L), anion gap acidosis, and an increased lactate/pyruvate ratio are also associated with lactic acidosis [2, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n24",
@@ -1580,7 +1628,9 @@
   "guarded_answer": "Amlodipine besylate (Norvasc) treats hypertension, as indicated by its use in lowering blood pressure [4]. It also treats coronary artery disease, specifically chronic stable angina, vasospastic angina (Prinzmetal's or variant angina), and angiographically documented coronary artery disease in patients without heart failure or an ejection fraction below 40% [1], [2], [4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n25",
@@ -1641,7 +1691,9 @@
   "guarded_answer": "The label warns that abrupt discontinuation or rapid dosage reduction of clonazepam tablets after continued use may precipitate acute withdrawal reactions, which can be life-threatening [2]. Therefore, to reduce the risk of withdrawal reactions, a gradual taper is recommended to discontinue clonazepam tablets [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n26",
@@ -1708,7 +1760,9 @@
   "guarded_answer": "Bupropion hydrochloride extended-release tablets (XL) can cause seizure, and the risk is dose-related [1]. The risk is also related to patient factors, clinical situations, and concomitant medications that lower the seizure threshold [2][3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n27",
@@ -1777,7 +1831,9 @@
   "guarded_answer": "The label indicates meloxicam should not be taken by patients with known hypersensitivity to meloxicam or any components of the drug product [1], history of asthma, urticaria, or other allergic-type reactions after taking aspirin or other NSAIDs [1], and in the setting of coronary artery bypass graft (CABG) surgery [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n28",
@@ -1840,7 +1896,9 @@
   "guarded_answer": "The label states that the plasma concentration of cyclobenzaprine is increased in the elderly and they may be more at risk for adverse events such as hallucinations and confusion, cardiac events, and drug interactions [1]. It advises that cyclobenzaprine should be used only if clearly needed in the elderly and should be initiated with a 5 mg dose and titrated slowly upward [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n29",
@@ -1902,7 +1960,9 @@
   "guarded_answer": "The recommended dosage of valacyclovir tablets for the treatment of cold sores in pediatric patients \u226512 years of age is 2 grams twice daily for 1 day taken 12 hours apart [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n30",
@@ -1970,7 +2030,9 @@
   "guarded_answer": "It also states that effective contraceptive measures should be used in women of child-bearing potential who are being treated with fluconazole 400 to 800 mg/day and should continue throughout the treatment period and for approximately 1 week after the final dose [1].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n31",
@@ -2031,7 +2093,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n32",
@@ -2098,7 +2162,9 @@
   "guarded_answer": "The maximum daily dose of Seroquel is 800 mg/day, as seen in multiple dosage and administration sections [2], [3], [4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n33",
@@ -2156,7 +2222,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n34",
@@ -2219,7 +2287,9 @@
   "guarded_answer": "Treatment of overdosage is supportive and consists of replacement of excessive fluid and electrolyte losses.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n35",
@@ -2280,7 +2350,9 @@
   "guarded_answer": "The label states that abrupt discontinuation of propranolol therapy can lead to exacerbation of angina and, in some cases, myocardial infarction [2]. Therefore, when discontinuation is planned, the dosage should be gradually reduced over at least a few weeks, and the patient should be advised to consult a physician [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n36",
@@ -2347,7 +2419,9 @@
   "guarded_answer": "The most common adverse reactions associated with discontinuation in patients treated with escitalopram were insomnia (1%) and nausea (2%) [1], [2], [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n37",
@@ -2409,7 +2483,9 @@
   "guarded_answer": "The label states that losartan potassium can cause fetal harm when administered to a pregnant woman [1]. It also mentions that use of drugs affecting the renin-angiotensin system during pregnancy can reduce fetal renal function and increase fetal and neonatal morbidity and death [1]. Pregnancy should be avoided in women who are or may become pregnant due to the potential risk to the fetus [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n38",
@@ -2461,7 +2537,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n39",
@@ -2522,7 +2600,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n40",
@@ -2582,7 +2662,9 @@
   "guarded_answer": "The label warns that caution is advised when tadalafil is coadministered with alpha-blockers due to the potential for additive hypotensive effects [1, 2, 3, 4]. It also states that the combination of tadalafil and alpha-blockers is not recommended for the treatment of BPH due to the risk of blood pressure lowering and lack of efficacy data [2, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n41",
@@ -2649,7 +2731,9 @@
   "guarded_answer": "The label indicates fluoxetine is approved for use in pediatric patients with MDD and OCD [1, 2]. Regular monitoring for adverse reactions, including decreased weight gain and changes in height and weight, is recommended [3, 4]. Animal studies suggest potential toxicity on muscle tissue, neurobehavior, reproductive organs, and bone development [4]. Therefore, the safety of fluoxetine treatment for pediatric patients has not been systematically assessed for chronic treatment longer than several months in duration [3].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n42",
@@ -2701,7 +2785,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n43",
@@ -2756,7 +2842,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n44",
@@ -2818,7 +2906,9 @@
   "guarded_answer": "The pregnancy warnings for Accutane state that isotretinoin can cause fetal harm when administered to a pregnant patient, and there is an increased risk of major congenital malformations, spontaneous abortions, and premature births following isotretinoin exposure during pregnancy [2, 3]. Accutane is contraindicated during pregnancy due to the high risk of embryo-fetal toxicity [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n45",
@@ -2876,7 +2966,9 @@
   "guarded_answer": "Long-term use may also lead to hypomagnesemia, a condition that can cause serious adverse events like tetany, arrhythmias, and seizures [5.9].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n46",
@@ -2942,7 +3034,9 @@
   "guarded_answer": "Flumazenil, a specific benzodiazepine receptor antagonist, can be used to reverse the sedative effects of benzodiazepines in the management of benzodiazepine overdosage [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n47",
@@ -3007,7 +3101,9 @@
   "guarded_answer": "Naloxone hydrochloride injection is indicated for the complete or partial reversal of opioid depression, including respiratory depression, induced by natural and synthetic opioids [1]. It is also indicated for the diagnosis of suspected or known acute opioid overdosage [1]. Usage in pediatric patients and neonates for septic shock has not been established [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n48",
@@ -3075,7 +3171,9 @@
   "guarded_answer": "The label indicates that sulfamethoxazole and trimethoprim may interfere with folic acid metabolism, and use during pregnancy should be avoided if not necessary due to potential teratogenic effects [3]. The potential benefit must be weighed against the potential risk to the fetus.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n49",
@@ -3136,7 +3234,9 @@
   "guarded_answer": "The label warns that patients should be warned against driving and other activities requiring complete mental alertness if zolpidem tartrate tablets are taken in these circumstances [see Dosage and Administration (2), Clinical Studies (14.3)]. Morning after use of zolpidem can cause impairment of driving and other activities that require full alertness [see Warnings and Precautions (5.2)].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n50",
@@ -3197,7 +3297,9 @@
   "guarded_answer": "The label states that photosensitivity manifested by an exaggerated sunburn reaction has been observed in some individuals taking tetracyclines, including doxycycline hyclate [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n51",
@@ -3254,7 +3356,9 @@
   "guarded_answer": "The warnings state that fluoroquinolones, including ciprofloxacin, have been associated with an increased risk of tendinitis and tendon rupture in all ages [see Warnings and Precautions ( 5.1 ) and Adverse Reactions ( 6.2 )]. This adverse reaction most frequently involves the Achilles tendon, and has also been reported with the rotator cuff (the shoulder), the hand, the biceps, the thumb, and other tendons. Tendinitis or tendon rupture can occur within hours or days of starting ciprofloxacin, or as long as several months after completion of fluoroquinolone therapy.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n52",
@@ -3314,7 +3418,9 @@
   "guarded_answer": "For depression, the usual dose of sertraline hydrochloride (Zoloft) is 50 mg once daily, as recommended in the initial treatment dosage for adults with major depressive disorder and obsessive-compulsive disorder [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n53",
@@ -3376,7 +3482,9 @@
   "guarded_answer": "The passage states that hydrochlorothiazide can cause hyperglycemia and glycosuria, indicating it may affect blood sugar [4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n54",
@@ -3432,7 +3540,9 @@
   "guarded_answer": "The serious side effects of Bactrim include fatal and serious adverse reactions such as severe cutaneous adverse reactions (SCARs), including Stevens-Johnson syndrome, toxic epidermal necrolysis, drug reaction with eosinophilia and systemic symptoms (DRESS), acute febrile neutrophilic dermatosis (AFND), acute generalized erythematous pustulosis (AGEP), fulminant hepatic necrosis, agranulocytosis, aplastic anemia, thrombocytopenia, leukopenia, neutropenia, hemolytic anemia, megaloblastic anemia, hypoprothrombinemia, methemoglobinemia, eosinophilia, and cardiovascular reactions like circulatory shock and QT prolongation resulting in ventricular tachycardia and torsades de pointes.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n55",
@@ -3487,7 +3597,9 @@
   "guarded_answer": "The label indicates trazodone is contraindicated with antidepressants that inhibit monoamine oxidase (MAOIs) [1, 2]. Additionally, the concurrent use of trazodone with other serotonergic drugs, including antidepressants, can increase the risk of serotonin syndrome [1, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n56",
@@ -3550,7 +3662,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n57",
@@ -3612,7 +3726,9 @@
   "guarded_answer": "Overdosage might be expected to cause excessive peripheral vasodilation with marked hypotension and possibly a reflex tachycardia [1]. In humans, experience with intentional overdosage of amlodipine is limited, and single oral doses of amlodipine maleate equivalent to 40 mg amlodipine/kg and 100 mg amlodipine/kg in mice and rats, respectively, caused deaths [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "n58",
@@ -3678,7 +3794,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "n59",
@@ -3735,7 +3853,9 @@
   "guarded_answer": "The label warns that atorvastatin calcium is contraindicated in patients with acute liver failure or decompensated cirrhosis [see Contraindications ( 4 )] . Therefore, someone with liver disease should not take Lipitor [1, 4].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h0",
@@ -3797,7 +3917,9 @@
   "guarded_answer": "Potential neonatal adverse effects include skull hypoplasia, anuria, hypotension, renal failure, and death [4].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h1",
@@ -3849,7 +3971,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h2",
@@ -3904,7 +4028,9 @@
   "guarded_answer": "The label indicates that elderly or debilitated patients may be especially sensitive to zolpidem tartrate's effects [2.2]. For geriatric patients, the recommended dose is 5 mg for men and women [2.2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h3",
@@ -3966,7 +4092,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h4",
@@ -4020,7 +4148,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h5",
@@ -4085,7 +4215,9 @@
   "guarded_answer": "However, another patient who took 2.5 grams of sertraline hydrochloride alone experienced a fatal outcome [1].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h6",
@@ -4148,7 +4280,9 @@
   "guarded_answer": "It also mentions that some clinical characteristics of the advanced intrathecal baclofen withdrawal syndrome may resemble other conditions, and that rapid, accurate diagnosis and treatment are important to prevent potentially life-threatening effects [1].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h7",
@@ -4210,7 +4344,9 @@
   "guarded_answer": "For pediatric patients aged 10 years and older with HeFH, the recommended starting dosage is 10 mg once daily [2]. For pediatric patients aged 10 years and older with HoFH, the recommended starting dosage is 10 to 20 mg once daily [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h8",
@@ -4267,7 +4403,9 @@
   "guarded_answer": "The label indicates that ciprofloxacin is not a drug of first choice in the pediatric population due to an increased incidence of adverse reactions compared to the controls, including events related to joints and/or surrounding tissues [see Adverse Reactions (6.1) and Clinical Studies (14.1)]. Therefore, for these specific conditions, ciprofloxacin can be used in pediatric patients, but it is not recommended as a first choice for general use in children.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h9",
@@ -4329,7 +4467,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h10",
@@ -4384,7 +4524,9 @@
   "guarded_answer": "The passages indicate patients with a history of NAION or a \"crowded\" optic disc must avoid sildenafil, as the drug's use is cautioned in these cases [1, 2, 4].",
   "guarded_refused": false,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h11",
@@ -4442,7 +4584,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h12",
@@ -4503,7 +4647,9 @@
   "guarded_answer": "Furosemide is indicated in adults and pediatric patients for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome [3]. It is particularly useful when an agent with greater diuretic potential is desired [3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h13",
@@ -4567,7 +4713,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h14",
@@ -4634,7 +4782,9 @@
   "guarded_answer": "Additionally, routine urinalysis may be used to assess these functions.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h15",
@@ -4700,7 +4850,9 @@
   "guarded_answer": "The passages indicate that certain drugs can increase the risk of bleeding when used with warfarin, including anticoagulants, antiplatelet agents, nonsteroidal anti-inflammatory agents, serotonin reuptake inhibitors, antibiotics, and antifungals [3]. and [4] provide a list of specific drugs that can interact with warfarin sodium, such as argatroban, dabigatran, heparin, aspirin, clopidogrel, and others.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h16",
@@ -4763,7 +4915,9 @@
   "guarded_answer": "The warnings and precautions state that prolonged cardiac repolarization and QT interval have been seen with treatment with azithromycin, posing a risk of developing cardiac arrhythmia and torsades de pointes [1], [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h17",
@@ -4825,7 +4979,9 @@
   "guarded_answer": "Serious and occasionally fatal anaphylactic reactions have been reported in patients on amoxicillin therapy, including oral penicillins. These reactions are more likely to occur in individuals with a history of penicillin hypersensitivity and/or a history of sensitivity to multiple allergens [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h18",
@@ -4882,7 +5038,9 @@
   "guarded_answer": "The label indicates meloxicam can cause serious gastrointestinal adverse events including bleeding, ulceration, and perforation of the stomach or intestines, which can be fatal [2, 3]. These events can occur at any time during use without warning symptoms.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h19",
@@ -4936,7 +5094,9 @@
   "guarded_answer": "The label indicates that gabapentin can cause respiratory depression and sedation, sometimes resulting in death, when coadministered with opioids [see Warnings and Precautions ( 5.8 )].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h20",
@@ -5001,7 +5161,9 @@
   "guarded_answer": "The label states that topiramate increases the risk of kidney stones [1] and [2]. In an open-label extension study of pediatric patients, 7% developed kidney or bladder stones during long-term treatment [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h21",
@@ -5055,7 +5217,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h22",
@@ -5120,7 +5284,9 @@
   "guarded_answer": "Quetiapine is approved to treat schizophrenia [1], bipolar I disorder manic episodes [1, 2], and bipolar disorder depressive episodes [1, 2]. It is also approved for the acute treatment of manic episodes associated with bipolar I disorder, both as monotherapy and as an adjunct to lithium or divalproex [2, 3].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h23",
@@ -5176,7 +5342,9 @@
   "guarded_answer": "The label indicates levofloxacin can affect blood glucose, causing disturbances including hyperglycemia and hypoglycemia, especially in diabetic patients taking concomitant oral hypoglycemic agents [2, 5.13].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h24",
@@ -5238,7 +5406,9 @@
   "guarded_answer": "The label states that escitalopram should not be used with MAOIs intended to treat psychiatric disorders, either before or after treatment, due to an increased risk of serotonin syndrome [2, 3]. Escitalopram is also contraindicated within 14 days of stopping treatment with an MAOI intended to treat psychiatric disorders [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "h25",
@@ -5305,7 +5475,9 @@
   "guarded_answer": "The label indicates duloxetine delayed-release capsules can cause liver injury, as evidenced by reports of hepatic failure in patients treated with the drug [3] and [4]. Elevated transaminase levels, jaundice, and hepatomegaly have been observed, reflecting a mixed or hepatocellular pattern of liver injury. Discontinuation of duloxetine delayed-release capsules is advised if liver dysfunction is suspected.",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h26",
@@ -5371,7 +5543,9 @@
   "guarded_answer": "The label indicates spironolactone should not be administered concurrently with other potassium-sparing diuretics [1]. It also warns against concomitant use with ACE inhibitors or indomethacin, which may lead to severe hyperkalemia [2].",
   "guarded_refused": false,
   "key_facts": 1.0,
-  "guarded_key_facts": 1.0
+  "guarded_key_facts": 1.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h27",
@@ -5433,7 +5607,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h28",
@@ -5495,7 +5671,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 1.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "h29",
@@ -5550,7 +5728,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": 0.0,
-  "guarded_key_facts": 0.0
+  "guarded_key_facts": 0.0,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t114",
@@ -5604,7 +5784,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t25",
@@ -5658,7 +5840,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t281",
@@ -5713,7 +5897,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t250",
@@ -5769,7 +5955,9 @@
   "guarded_answer": "The label states there are insufficient data on the use of fosaprepitant in pregnant women to inform a drug-associated risk [2]. Animal reproduction studies did not show adverse developmental effects in rats or rabbits exposed to the drug during organogenesis [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t228",
@@ -5815,7 +6003,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t142",
@@ -5870,7 +6060,9 @@
   "guarded_answer": "Felodipine should be taken either without food or with a light meal [1]. It should be swallowed whole and not crushed or chewed [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t104",
@@ -5928,7 +6120,9 @@
   "guarded_answer": "Evista is contraindicated for use in women who are or may become pregnant [2] and in women with a history of venous thromboembolism, including deep vein thrombosis, pulmonary embolism, and retinal vein thrombosis [4.1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t558",
@@ -5992,7 +6186,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t89",
@@ -6046,7 +6242,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t432",
@@ -6100,7 +6298,9 @@
   "guarded_answer": "The label states that Mesalamine (Rowasa, Lialda, Canasa) are contraindicated in patients with hypersensitivity to salicylates or aminosalicylates or to any of the components of mesalamine extended-release capsules [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t32",
@@ -6157,7 +6357,9 @@
   "guarded_answer": "The adverse reactions reported with tetracycline hydrochloride include gastrointestinal issues such as anorexia, nausea, epigastric distress, vomiting, diarrhea, glossitis, black hairy tongue, dysphagia, enterocolitis, and inflammatory lesions (with Candida overgrowth) in the anogenital region [2]. Renal toxicity and liver toxicity, including hepatotoxicity and liver failure, have been observed in patients receiving tetracycline and in tetracycline-treated patients with renal impairment [1, 2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t30",
@@ -6212,7 +6414,9 @@
   "guarded_answer": "The label states that treatment with quetiapine may result in an increase in serum prolactin levels, which may lead to a reversible reduction in fertility in females of reproductive potential [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t95",
@@ -6267,7 +6471,9 @@
   "guarded_answer": "If someone takes too much capecitabine, uridine triacetate should be administered within 96 hours for management of capecitabine overdose [1]. Dialysis may be of benefit in reducing circulating concentrations of 5\u2019-DFUR, a low-molecular-weight metabolite of the parent compound [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t223",
@@ -6322,7 +6528,9 @@
   "guarded_answer": "In case of overdosage, discontinue medication, treat symptomatically and institute supportive measures [1]. Dialysis does not alter serum half-life and would not be of benefit in treating cases of overdosage [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t238",
@@ -6378,7 +6586,9 @@
   "guarded_answer": "It is also used to treat documented ventricular arrhythmias, such as sustained ventricular tachycardia, in patients without structural heart disease [2]. Usage considerations include avoiding use to control ventricular rate during atrial fibrillation and using concomitant treatment with drugs that increase the functional atrioventricular (AV) nodal refractory period [2,3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t517",
@@ -6426,7 +6636,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t27",
@@ -6482,7 +6694,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t574",
@@ -6536,7 +6750,9 @@
   "guarded_answer": "The label mentions pruritus, vaginitis, angioedema, and exfoliative dermatitis as skin and mucous membrane side effects [4].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t203",
@@ -6591,7 +6807,9 @@
   "guarded_answer": "The label states that Trospium Chloride Tablets are classified as Pregnancy Category C, indicating there are no adequate and well-controlled studies in pregnant women [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t429",
@@ -6645,7 +6863,9 @@
   "guarded_answer": "Oxcarbazepine is indicated for the treatment of partial-onset seizures in adults and as monotherapy in the treatment of partial-onset seizures in pediatric patients aged 4 years and above, and as adjunctive therapy in pediatric patients aged 2 years and above with partial-onset seizures [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t225",
@@ -6701,7 +6921,9 @@
   "guarded_answer": "For steroid responsive disease treatment, apply one to two drops into the conjunctival sac four times daily, increasing to one drop every hour during the initial week if necessary [2]. For post-operative inflammation, apply one to two drops four times daily starting 24 hours after surgery and continuing for the first 2 weeks [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t459",
@@ -6756,7 +6978,9 @@
   "guarded_answer": "The label says sildenafil tablets are not indicated for use in pediatric patients and safety and effectiveness have not been established in this age group [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t284",
@@ -6815,7 +7039,9 @@
   "guarded_answer": "No information is provided about drug interactions involving water [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t6",
@@ -6869,7 +7095,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t163",
@@ -6923,7 +7151,9 @@
   "guarded_answer": "The common side effects of dicyclomine hydrochloride, as described, include dry mouth, dizziness, vision blurred, nausea, somnolence, asthenia, and nervousness [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t348",
@@ -6977,7 +7207,9 @@
   "guarded_answer": "Telephone numbers of certified Poison Control Centers are listed in the Physicians' Desk Reference (PDR). Management of overdose involves considering multiple-drug interactions, drug-drug interactions, and unusual drug kinetics in the patient. There are no established roles for serum levels of irbesartan in the management of overdose. Hemodialysis is not effective for irbesartan.",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t159",
@@ -7038,7 +7270,9 @@
   "guarded_answer": "Erythromycin is used for treating infections caused by susceptible strains of microorganisms, including Streptococcus pyogenes, Streptococcus pneumoniae, Haemophilus influenzae, Corynebacterium diphtheriae, Entamoeba histolytica, Corynebacterium minutissimum, Neisseria gonorrhoeae, Chlamydia trachomatis, Ureaplasma urealyticum, and Treponema pallidum [1][3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t220",
@@ -7098,7 +7332,9 @@
   "guarded_answer": "Dosage should be conservative, starting at the low end of the dosing range, due to potential differences in hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy [1]. No dosage adjustment is recommended on the basis of age, but results from a pharmacokinetic study suggest that pharmacokinetics are generally similar between elderly and younger patients [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t344",
@@ -7155,7 +7391,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t94",
@@ -7206,7 +7444,9 @@
   "guarded_answer": "Suppressive therapy and safer sex practices are recommended with suppressive therapy for genital herpes transmission [1, 3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t389",
@@ -7260,7 +7500,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t99",
@@ -7318,7 +7560,9 @@
   "guarded_answer": "The label states there are no adequate or well-controlled studies in pregnant women, so Ciclopirox Olamine Topical Suspension USP, 1.0% should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t367",
@@ -7373,7 +7617,9 @@
   "guarded_answer": "There are no adequate and well-controlled studies in pregnant women, suggesting calcitriol should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t352",
@@ -7429,7 +7675,9 @@
   "guarded_answer": "The label indicates mycophenolate mofetil can be taken with other drugs, but interactions can affect its efficacy or cause adverse reactions. For example, antacids with magnesium or aluminum hydroxide, proton pump inhibitors, drugs that interfere with enterohepatic recirculation, telmisartan, and calcium-free phosphate binders can reduce mycophenolate mofetil efficacy [1, 3]. Additionally, mycophenolate mofetil may reduce the effectiveness of oral contraceptives, requiring additional contraceptive methods [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t270",
@@ -7487,7 +7735,9 @@
   "guarded_answer": "The label indicates fluvoxamine maleate is contraindicated during pregnancy due to potential risks including increased risk of postpartum hemorrhage and persistent pulmonary hypertension of the newborn in infants exposed to the drug in utero [3]. Pregnant women treated with fluvoxamine have shown a positive statistical association with PPHN [4].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t44",
@@ -7552,7 +7802,9 @@
   "guarded_answer": "For patients under 1 year of age, specific dosing and studies are provided, including pharmacokinetic and pharmacodynamic data [1] and a treatment-withdrawal study [3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t470",
@@ -7606,7 +7858,9 @@
   "guarded_answer": "Zorcaine is contraindicated in patients who are hypersensitive to products containing sulfites, as it can cause allergic-type reactions including anaphylactic symptoms and life-threatening or less severe asthmatic episodes in certain susceptible people [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t549",
@@ -7660,7 +7914,9 @@
   "guarded_answer": "The label states that safety and effectiveness of ibuprofen and famotidine tablet have not been established in pediatric patients [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t127",
@@ -7718,7 +7974,9 @@
   "guarded_answer": "The main safety warnings for cetirizine hydrochloride include somnolence/sedation, which is described as a clinically significant adverse reaction [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t387",
@@ -7773,7 +8031,9 @@
   "guarded_answer": "It is categorized as Pregnancy Category A.",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t80",
@@ -7827,7 +8087,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t565",
@@ -7886,7 +8148,9 @@
   "guarded_answer": "There is also a boxed warning about increased mortality in elderly patients with dementia-related psychosis, and Risperidone is not approved for this use [3]. Monitoring of orthostatic vital signs is recommended to manage this risk [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t300",
@@ -7940,7 +8204,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t370",
@@ -7997,7 +8263,9 @@
   "guarded_answer": "The main safety warnings for Oxaydo include Addiction, Abuse, and Misuse [5.2], Life-Threatening Respiratory Depression [5.3], Interactions with Benzodiazepines or Other CNS Depressants [5.4], Neonatal Opioid Withdrawal Syndrome [5.5], and Fatal Overdose Risk with Concomitant Use of CYP3A4 Inhibitors or CYP3A4 Inducers [5.7, 7, 12.3] [1] [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t591",
@@ -8058,7 +8326,9 @@
   "guarded_answer": "Theophylline overdose can lead to severe toxicity, including seizures, life-threatening cardiac arrhythmias, and death, especially at serum concentrations above 30 mcg/mL [2], [3], [4]. The severity of toxicity is more strongly correlated with age, with patients over 60 years being at the greatest risk for severe toxicity and mortality [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t196",
@@ -8113,7 +8383,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t71",
@@ -8167,7 +8439,9 @@
   "guarded_answer": "Duloxetine hydrochloride is indicated for the treatment of Major depressive disorder in adults, Generalized anxiety disorder in adults and pediatric patients 7 years of age and older, Diabetic peripheral neuropathic pain in adults, Fibromyalgia in adults and pediatric patients 13 years of age and older, and Chronic musculoskeletal pain in adults [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t46",
@@ -8216,7 +8490,9 @@
   "guarded_answer": "The label indicates that for children, a loading dose of 15 to 20 mg/kg of Phenytoin Sodium Injection should be administered intravenously to achieve serum concentrations within the therapeutic range of 10 to 20 mcg/mL (unbound phenytoin concentrations of 1 to 2 mcg/mL) [2, 3]. The drug should be injected slowly intravenously at a rate not exceeding 1 to 3 mg/kg/min or 50 mg per minute, whichever is slower [2, 3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t233",
@@ -8271,7 +8547,9 @@
   "guarded_answer": "Nursing mothers should be advised that the drug may be harmful to the child.",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t296",
@@ -8321,7 +8599,9 @@
   "guarded_answer": "If someone takes too much cisatracurium besylate, a reversal agent should be considered especially in cases where residual paralysis is more likely to occur [see Overdosage (10)].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t81",
@@ -8376,7 +8656,9 @@
   "guarded_answer": "The label warns that cabergoline should be used with caution in patients exposed to other medications associated with valvulopathy [2] and that patients should undergo a cardiovascular evaluation, including echocardiogram, to assess the potential presence of valvular disease [2]. Patients should not be treated with cabergoline if valvular disease is detected [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t103",
@@ -8434,7 +8716,9 @@
   "guarded_answer": "Gastrointestinal bleeding has occurred. Hypertension, acute renal failure, respiratory depression, and coma have occurred, but were rare [2]. Manage patients with symptomatic and supportive care following an NSAID overdosage. There are no specific antidotes.",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t464",
@@ -8492,7 +8776,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t373",
@@ -8555,7 +8841,9 @@
   "guarded_answer": "Additionally, it mentions that alcohol can potentiate the effect of metformin on lactate metabolism, and patients should be warned against excessive alcohol intake while taking this combination [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t166",
@@ -8609,7 +8897,9 @@
   "guarded_answer": "The common side effects of ciclopirox include rash-related adverse events such as periungual erythema and erythema of the proximal nail fold [2], as well as nail disorders such as shape change, irritation, ingrown toenail, and discoloration [2].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t379",
@@ -8664,7 +8954,9 @@
   "guarded_answer": "Furosemide is indicated in adults and pediatric patients for the treatment of edema associated with congestive heart failure, cirrhosis of the liver, and renal disease, including the nephrotic syndrome [1]. It is also indicated as adjunctive therapy in acute pulmonary edema [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t363",
@@ -8718,7 +9010,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t214",
@@ -8772,7 +9066,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "t273",
@@ -8834,7 +9130,9 @@
   "guarded_answer": "The label indicates calcium chloride injection is indicated for the treatment of acute symptomatic hypocalcemia in pediatric patients [2]. However, it is contraindicated in newborns if they require ceftriaxone intravenous treatment due to the risk of precipitation of ceftriaxone-calcium [1]. For pediatric patients older than 28 days of age, calcium chloride injection and ceftriaxone intravenous solutions may be administered sequentially if infusion lines are used at different sites, replaced, or thoroughly flushed between infusions with physiological salt solution to avoid precipitation [3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "t73",
@@ -8890,7 +9188,9 @@
   "guarded_answer": "For elderly patients, the label indicates that warfarin sodium is contraindicated in any unsupervised patient with senility [1]. Lower initiation and maintenance doses are recommended for elderly patients [1].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "u0",
@@ -8930,10 +9230,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u1",
@@ -8973,10 +9275,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u2",
@@ -9016,10 +9320,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u3",
@@ -9059,10 +9365,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u4",
@@ -9102,10 +9410,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u5",
@@ -9145,10 +9455,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u6",
@@ -9188,10 +9500,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u7",
@@ -9231,10 +9545,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u8",
@@ -9277,7 +9593,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u9",
@@ -9320,7 +9638,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u10",
@@ -9363,7 +9683,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u11",
@@ -9403,10 +9725,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u12",
@@ -9446,10 +9770,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u13",
@@ -9492,7 +9818,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u14",
@@ -9535,7 +9863,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u15",
@@ -9575,10 +9905,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u16",
@@ -9621,7 +9953,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u17",
@@ -9664,7 +9998,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u18",
@@ -9707,7 +10043,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u19",
@@ -9756,7 +10094,9 @@
   "guarded_answer": "For adult patients who are unable to swallow whole tablets, rivaroxaban tablets may be crushed and mixed with applesauce immediately prior to use and administered orally [3]. If oral medication cannot be taken during or after surgical intervention, consider administering a parenteral anticoagulant [3].",
   "guarded_refused": false,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": "claim check"
  },
  {
   "qid": "u20",
@@ -9796,10 +10136,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u21",
@@ -9839,10 +10181,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u22",
@@ -9886,10 +10230,12 @@
   "support": [
    0.703
   ],
-  "guarded_answer": "The label indicates that there have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis, in patients taking sitagliptin (Trulicity) [4].",
-  "guarded_refused": false,
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
+  "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u23",
@@ -9932,7 +10278,9 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  },
  {
   "qid": "u24",
@@ -9972,10 +10320,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u25",
@@ -10015,10 +10365,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u26",
@@ -10058,10 +10410,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u27",
@@ -10101,10 +10455,12 @@
   "claims": 0,
   "supported": 0,
   "support": [],
-  "guarded_answer": "Not found in the FDA labels provided.",
+  "guarded_answer": "No FDA label in this collection matches the drug in the question.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": false,
+  "guarded_by": "drug gate"
  },
  {
   "qid": "u28",
@@ -10147,6 +10503,8 @@
   "guarded_answer": "Not found in the FDA labels provided.",
   "guarded_refused": true,
   "key_facts": null,
-  "guarded_key_facts": null
+  "guarded_key_facts": null,
+  "drug_found": true,
+  "guarded_by": null
  }
 ]

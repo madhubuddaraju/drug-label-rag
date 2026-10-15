@@ -27,11 +27,11 @@ from .config import CHUNKS, NLI_MODEL, REPORTS
 REFUSAL = "Not found in the FDA labels provided."
 NO_DRUG = "No FDA label in this collection matches the drug in the question."
 THRESHOLD = 0.5
-_CITE = re.compile(r"\s*\[(\d+)\]")
+_CITE = re.compile(r",?\s*\[(\d+(?:\s*,\s*\d+)*)\]")      # [2], [1, 3], [2], [3]
 
 
 def citations(answer: str) -> list[int]:
-    return sorted({int(n) for n in _CITE.findall(answer)})
+    return sorted({int(n) for group in _CITE.findall(answer) for n in group.split(",")})
 
 
 def is_refusal(answer: str) -> bool:
@@ -41,7 +41,7 @@ def is_refusal(answer: str) -> bool:
 
 def split_answer(answer: str) -> list[tuple[str, str]]:
     """(sentence as written, with its citation markers) and (claim text without markers), for claims of 4+ words."""
-    a = re.sub(r"([.!?])\s*((?:\[\d+\]\s*)+)", lambda m: " " + m.group(2).strip() + m.group(1) + " ", answer)
+    a = re.sub(r"([.!?])\s*((?:,?\s*\[\d+(?:\s*,\s*\d+)*\])+)", lambda m: " " + m.group(2).strip(" ,") + m.group(1) + " ", answer)
     out = []
     for raw in re.split(r"(?<=[.!?])\s+(?=[^\[\s])", a.strip()):
         claim = _CITE.sub("", raw).strip()
@@ -75,9 +75,14 @@ class Judge:
         self.ent = labels["entailment"]
         self.name = model
 
-    def support(self, claims: list[str], passages: list[str]) -> np.ndarray:
-        """Highest entailment probability of each claim over all passage windows."""
-        prem = [w for p in passages for w in windows(p)]
+    def support(self, claims: list[str], passages: list) -> np.ndarray:
+        """Highest entailment probability of each claim over all passage windows.
+
+        A passage is its text, or (header, text). The header ("Lisinopril (Zestril) | Dosage and administration")
+        is prefixed to every window, so a window that never names the drug can still support a claim that does.
+        """
+        prem = [f"{p[0]}. {w}" if isinstance(p, tuple) else w for p in passages
+                for w in windows(p[1] if isinstance(p, tuple) else p)]
         if not claims or not prem:
             return np.zeros(len(claims))
         pairs = [(w, c) for c in claims for w in prem]
@@ -169,8 +174,8 @@ def regrade(tag: str, reuse: bool = False) -> dict:
     aliases = corpus.alias_index(corpus.load_labels())
     text = {c["id"]: c["text"] for c in corpus.load_chunks(CHUNKS)}
     judge = None if reuse else Judge()
-    rows = [grade_row(r, [text[p["id"]] for p in r["passages"]], judge, drug_found=bool(corpus.find_drugs(r["question"], aliases)))
-            for r in rows]
+    rows = [grade_row(r, [(p["header"], text[p["id"]]) for p in r["passages"]], judge,
+                      drug_found=bool(corpus.find_drugs(r["question"], aliases))) for r in rows]
     path.write_text(json.dumps(rows, indent=1))
     mpath = REPORTS / f"generation_metrics_{tag}.json"
     meta = json.loads(mpath.read_text()) if mpath.exists() else {}

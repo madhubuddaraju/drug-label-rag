@@ -21,6 +21,10 @@ def test_answer_parsing_helpers():
     assert grade.is_refusal(grade.REFUSAL) and not grade.is_refusal(a)
     assert grade.key_facts(a, [["2,550", "2550"], ["insulin"]]) == 0.5
     assert grade.key_facts(a, []) is None
+    b = "The maximum is 2550 mg [1, 3]. Take it with food [2], [3]."
+    assert grade.citations(b) == [1, 2, 3]
+    assert grade.split_answer(b) == [("The maximum is 2550 mg [1, 3].", "The maximum is 2550 mg."),
+                                     ("Take it with food [2], [3].", "Take it with food.")]
 
 
 class FakeJudge:
@@ -28,7 +32,7 @@ class FakeJudge:
     name = "fake"
 
     def support(self, claims, passages):
-        words = set(" ".join(passages).lower().replace(".", "").split())
+        words = set(" ".join(" ".join(p) if isinstance(p, tuple) else p for p in passages).lower().replace(".", "").split())
         return np.array([float(set(c.lower().rstrip(".").split()) <= words) for c in claims])
 
 
@@ -42,6 +46,12 @@ def test_guardrail_drops_unsupported_claims_and_refuses_when_nothing_is_left():
     assert g["key_facts"] == 1.0 and g["guarded_key_facts"] == 1.0
     g = generate_grade({**row, "answer": "It is safe in pregnancy [1]."}, passages)
     assert g["guarded_refused"] and g["guarded_answer"] == grade.REFUSAL
+
+
+def test_passage_headers_reach_the_judge():
+    g = grade.grade_row({"source": "natural", "answer": "Lisinopril starts at 10 mg daily [1].", "seconds": 1},
+                        [("Lisinopril", "starts at 10 mg daily.")], FakeJudge())
+    assert g["supported"] == 1
 
 
 def test_drug_gate_refuses_when_no_known_drug_is_named():
