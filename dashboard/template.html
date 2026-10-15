@@ -106,6 +106,10 @@ tr.best td:first-child { box-shadow: inset 3px 0 0 var(--teal); }
 .pill { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
 .pill.ok { background: var(--teal-soft); color: #115e59; } .pill.warn { background: var(--amber-soft); color: #92400e; } .pill.bad { background: var(--red-soft); color: var(--red); }
 .pill.plain { background: var(--soft); color: var(--ink-2); font-weight: 500; }
+.removed { margin-top: 8px; font-size: 13px; color: #9b2c2c; background: #fdf2f2; border-radius: 6px; padding: 6px 10px; }
+.removed s { text-decoration-color: rgba(155,44,44,.6); }
+table.gen tr.best td { background: #eef6f4; }
+.note { font-size: 12.5px; color: var(--ink-3); margin: 6px 0 18px; }
 .closed { margin-top: 8px; font-size: 13px; color: var(--ink-3); border-left: 2px solid var(--line); padding-left: 10px; }
 .pending { border: 1px dashed var(--line); border-radius: 12px; padding: 18px; color: var(--ink-2); background: var(--soft); }
 .method { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
@@ -173,8 +177,8 @@ footer.site { border-top: 1px solid var(--line); padding-block: 20px 40px; font-
     <div class="method">
       <div><b>Corpus</b><span id="mCorpus"></span></div>
       <div><b>Chunking</b>Sentence-packed chunks of ~160 words with 30 words of overlap, each prefixed with drug, brand names and section.</div>
-      <div><b>Retrieval</b>BM25 + bge-small embeddings fused with reciprocal rank fusion, filtered to the drug named in the question, re-ranked by a cross-encoder.</div>
-      <div><b>Generation</b>Qwen2.5-1.5B (4-bit, CPU) answers only from the top 4 passages, cites them, and refuses when they don't answer.</div>
+      <div><b>Retrieval</b>BM25 + bge-small embeddings fused with reciprocal rank fusion, filtered to the drug named in the question, with section hints. A cross-encoder re-ranker was tested and left out: it lowered top-1 accuracy.</div>
+      <div><b>Generation</b>Qwen2.5 (4-bit, CPU) answers only from the top 4 passages and cites them. An entailment check removes sentences the passages don't support, and refuses when none are left.</div>
     </div>
   </section>
 
@@ -284,31 +288,39 @@ $("failTable").innerHTML = `<thead><tr><th>Question</th><th>Wanted</th><th>Got</
 
 // ---------------- generation ----------------
 function cite(a) { return esc(a).replace(/\[(\d+)\]/g, "<sup>[$1]</sup>"); }
-if (!G) {
+const MODEL_NAME = { "qwen2.5-1.5b-prompt1": "Qwen2.5-1.5B, first prompt", "qwen2.5-1.5b": "Qwen2.5-1.5B", "qwen2.5-3b": "Qwen2.5-3B" };
+const runs = G ? Object.keys(G).sort((a, b) => ["qwen2.5-1.5b-prompt1", "qwen2.5-1.5b", "qwen2.5-3b"].indexOf(a) - ["qwen2.5-1.5b-prompt1", "qwen2.5-1.5b", "qwen2.5-3b"].indexOf(b)) : [];
+if (!runs.length || !D.best_model) {
   $("genBody").innerHTML = `<div class="pending">Answer generation and grading run in a separate job (an open-source LLM on CPU takes about an hour). Results appear here when it finishes.</div>`;
 } else {
-  const un = G.by_source.unanswerable || {};
-  $("genBody").innerHTML = `<p class="lede">An open-source model (Qwen2.5-1.5B, 4-bit, running on a CPU) answers using only the top 4 retrieved passages. Each answer sentence is checked against the passages it cites with an entailment model, and ${fmt(G.unanswerable)} questions the labels can't answer test whether it refuses.</p>
+  const B = G[D.best_model], bn = MODEL_NAME[D.best_model] || D.best_model;
+  const cell = (v) => v == null ? "–" : pct(v);
+  $("genBody").innerHTML = `<p class="lede">Open-source models (4-bit, running on a CPU, no API) answer from the top ${B.top_k} retrieved passages and must cite them or refuse. Every answer sentence is then checked against the passages with an entailment model (${B.nli_model.split("/")[1]}). The <b>guardrail</b> refuses when the question names no drug in the collection, keeps only the sentences that check out, and refuses when none do. ${fmt(B.unanswerable)} questions the labels can't answer test refusal.</p>
     <div class="kpis">
-      <div class="kpi"><b>${pct(G.faithfulness)}</b><span>of answer sentences supported by the cited passage</span><small>NLI entailment, ${G.nli_model.split("/")[1]}</small></div>
-      <div class="kpi"><b>${pct(G.citation_right_section)}</b><span>of citations point to the right drug and section</span><small>${pct(G.citation_right_drug)} cite the right drug</small></div>
-      <div class="kpi"><b>${pct(G.correct_refusal_rate)}</b><span>of unanswerable questions correctly refused</span><small>${pct(G.false_refusal_when_gold_retrieved)} false refusals when the answer was retrieved</small></div>
-      <div class="kpi"><b>${pct(G.key_fact_recall_rag)}</b><span>key facts recalled with retrieval</span><small>vs ${pct(G.key_fact_recall_closed_book)} for the same model without it</small></div>
+      <div class="kpi"><b>${pct(B.guarded.claims_removed)}</b><span>of ${bn}'s sentences removed by the guardrail as unsupported</span><small>${pct(B.raw.faithfulness)} of sentences were supported before it</small></div>
+      <div class="kpi"><b>${pct(B.guarded.key_fact_recall)}</b><span>key facts in guarded answers</span><small>vs ${pct(B.key_fact_recall_closed_book)} for the same model without retrieval</small></div>
+      <div class="kpi"><b>${pct(B.guarded.correct_refusal_rate)}</b><span>of unanswerable questions refused</span><small>${B.guarded.refused_by_drug_gate} by the drug gate before generation; ${pct(B.guarded.false_refusal_when_gold_retrieved)} of answerable questions refused although the answer was retrieved</small></div>
+      <div class="kpi"><b>${pct(B.raw.citation_right_section)}</b><span>of citations point to the right drug and section</span><small>${pct(B.raw.citation_right_drug)} cite the right drug</small></div>
     </div>
-    <div class="tabs" id="ansTabs"><button aria-pressed="true" data-f="natural">Development</button><button aria-pressed="false" data-f="holdout">Held-out</button><button aria-pressed="false" data-f="unanswerable">Unanswerable</button><button aria-pressed="false" data-f="refused">Refused</button></div>
+    <div class="scroll"><table class="gen"><thead><tr><th>Model</th><th class="n">Sentences supported</th><th class="n">Key facts</th><th class="n">Key facts, guarded</th><th class="n">Unanswerable refused, guarded</th><th class="n">False refusals, guarded</th><th class="n">s / answer</th></tr></thead><tbody>
+      ${runs.map((t) => { const g = G[t]; return `<tr class="${t === D.best_model ? "best" : ""}"><td>${MODEL_NAME[t] || t}</td><td class="n">${cell(g.raw.faithfulness)}</td><td class="n">${cell(g.raw.key_fact_recall)}</td><td class="n"><b>${cell(g.guarded.key_fact_recall)}</b></td><td class="n">${cell(g.guarded.correct_refusal_rate)}</td><td class="n">${cell(g.guarded.false_refusal_when_gold_retrieved)}</td><td class="n">${g.median_seconds.toFixed(0)}</td></tr>`; }).join("")}
+    </tbody></table></div>
+    <p class="note">Key facts: share of the facts a pharmacist would expect (for example "2,550 mg" for metformin's maximum dose) that appear in the answer, on the 90 hand-written questions. Highlighted: the model shown below.</p>
+    <div class="tabs" id="ansTabs"><button aria-pressed="true" data-f="natural">Development</button><button aria-pressed="false" data-f="holdout">Held-out</button><button aria-pressed="false" data-f="unanswerable">Unanswerable</button><button aria-pressed="false" data-f="trimmed">Trimmed by guardrail</button></div>
     <div id="ansList"></div>`;
   const draw = (f) => {
-    const rows = D.answers.filter((a) => f === "refused" ? a.refused && a.source !== "unanswerable" : a.source === f).slice(0, 14);
+    const rows = D.answers.filter((a) => f === "trimmed" ? a.parts.some((p) => !p.ok) : a.source === f).slice(0, 14);
     $("ansList").innerHTML = rows.length ? rows.map((a) => {
       const pills = [];
-      if (a.source === "unanswerable") pills.push(a.refused ? '<span class="pill ok">correctly refused</span>' : '<span class="pill bad">answered anyway</span>');
-      else if (a.refused) pills.push('<span class="pill warn">refused</span>');
-      else {
-        if (a.sentences) pills.push(`<span class="pill ${a.supported === a.sentences ? "ok" : "warn"}">${a.supported}/${a.sentences} sentences supported</span>`);
-        if (a.key_facts != null) pills.push(`<span class="pill ${a.key_facts === 1 ? "ok" : a.key_facts > 0 ? "warn" : "bad"}">key facts ${pct(a.key_facts)}</span>`);
-      }
-      const srcs = (a.citations || []).map((c) => a.passages[c - 1]).filter(Boolean).map((p) => `<span class="pill plain">[${a.passages.indexOf(p) + 1}] ${esc(p.header)}</span>`).join("");
-      return `<div class="qa"><div class="q">${esc(a.question)}</div><div class="a">${cite(a.answer)}</div><div class="meta">${pills.join("")}${srcs}</div>
+      if (a.source === "unanswerable") pills.push(a.guarded_refused ? '<span class="pill ok">refused</span>' : '<span class="pill bad">answered anyway</span>');
+      else if (a.guarded_refused) pills.push(a.refused ? '<span class="pill warn">model refused</span>' : '<span class="pill warn">guardrail refused: nothing verifiable</span>');
+      if (a.guarded_by === "drug gate") pills.push('<span class="pill plain">drug gate: no matching label</span>');
+      if (a.guarded_key_facts != null && !a.guarded_refused) pills.push(`<span class="pill ${a.guarded_key_facts === 1 ? "ok" : a.guarded_key_facts > 0 ? "warn" : "bad"}">key facts ${pct(a.guarded_key_facts)}</span>`);
+      const srcs = (a.citations || []).map((c) => a.passages[c - 1] && `<span class="pill plain">[${c}] ${esc(a.passages[c - 1].header)}</span>`).filter(Boolean).join("");
+      const removed = a.parts.filter((p) => !p.ok);
+      return `<div class="qa"><div class="q">${esc(a.question)}</div><div class="a">${cite(a.guarded_answer)}</div>
+        ${removed.length ? `<div class="removed"><b>Removed by the guardrail:</b> ${removed.map((p) => `<s>${cite(p.text)}</s>`).join(" ")}</div>` : ""}
+        <div class="meta">${pills.join("")}${srcs}</div>
         ${a.closed_book_answer ? `<div class="closed"><b>Same model, no retrieval:</b> ${esc(a.closed_book_answer)}</div>` : ""}</div>`;
     }).join("") : `<div class="pending">None in this category.</div>`;
   };

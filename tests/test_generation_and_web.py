@@ -44,6 +44,16 @@ def test_guardrail_drops_unsupported_claims_and_refuses_when_nothing_is_left():
     assert g["guarded_refused"] and g["guarded_answer"] == grade.REFUSAL
 
 
+def test_drug_gate_refuses_when_no_known_drug_is_named():
+    row = {"source": "unanswerable", "answer": "The maximum dose is 2550 mg per day [1].", "seconds": 1}
+    g = grade.grade_row(row, ["the maximum dose is 2550 mg per day."], FakeJudge(), drug_found=False)
+    assert g["supported"] == 1 and g["guarded_refused"] and g["guarded_answer"] == grade.NO_DRUG
+    assert g["guarded_by"] == "drug gate"
+    # stored support scores can be reused without the judge
+    again = grade.grade_row(g, ["unused"], None, drug_found=True)
+    assert again["guarded_answer"] == "The maximum dose is 2550 mg per day [1]." and not again["guarded_refused"]
+
+
 def generate_grade(row, passages):
     return grade.grade_row(row, passages, FakeJudge())
 

@@ -100,6 +100,7 @@ def main():
     for n, q in enumerate(questions):
         # best configuration in reports/retrieval_metrics.json (the cross-encoder re-ranker lowered hit@1 there)
         ids = retr.search(q["question"], method="hybrid", k=TOP_K, drug_filter=True, rerank=False, hints=True)
+        drug_found = bool(retr.allowed(q["question"])[1])
         passages = [chunks[i] for i in ids]
         t = time.time()
         ans = chat(messages(q["question"], passages))
@@ -118,7 +119,7 @@ def main():
                 closed = chat([{"role": "system", "content": SYSTEM_CLOSED}, {"role": "user", "content": q["question"]}])
                 row["closed_book_answer"] = closed
                 row["closed_book_key_facts"] = key_facts(closed, q.get("must"))
-        rows.append(grade_row(row, [p["text"] for p in passages], judge))
+        rows.append(grade_row(row, [p["text"] for p in passages], judge, drug_found=drug_found))
         if n % 10 == 0:
             log.info("%d/%d answered (%.0f min)", n + 1, len(questions), (time.time() - t0) / 60)
 
