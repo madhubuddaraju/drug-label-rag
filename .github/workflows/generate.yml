@@ -1,8 +1,14 @@
 name: Generate and grade answers
+run-name: Generate and grade answers (${{ inputs.model }})
 
 on:
   workflow_dispatch:
     inputs:
+      model:
+        description: Model to answer with
+        type: choice
+        options: [qwen2.5-1.5b, qwen2.5-3b]
+        default: qwen2.5-1.5b
       templated:
         description: Templated questions to answer (all natural and unanswerable questions are always included)
         default: "60"
@@ -25,22 +31,22 @@ jobs:
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt sentence-transformers huggingface_hub
           pip install llama-cpp-python --prefer-binary --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
-      - name: Answer with Qwen2.5-1.5B and grade
-        run: python -m labelrag.generate --templated ${{ inputs.templated }} 2>&1 | tee generate.log
+      - name: Answer and grade
+        run: python -m labelrag.generate --model ${{ inputs.model }} --templated ${{ inputs.templated }} 2>&1 | tee generate.log; test ${PIPESTATUS[0]} -eq 0
+        shell: bash
         env:
           PYTHONPATH: src
       - name: Commit answers and metrics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add reports/answers.json reports/generation_metrics.json
-          git commit -m "Regenerate answers and grading" || exit 0
-          git pull --rebase
-          git push
+          git add "reports/answers_${{ inputs.model }}.json" "reports/generation_metrics_${{ inputs.model }}.json"
+          git commit -m "Regenerate answers and grading (${{ inputs.model }})" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
       - name: Keep log on failure
         if: failure()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git checkout -B generate-debug
-          git add -f generate.log && git commit -m "generate log" && git push -f origin generate-debug
+          git checkout -B "generate-debug-${{ inputs.model }}"
+          git add -f generate.log && git commit -m "generate log" && git push -f origin "generate-debug-${{ inputs.model }}"

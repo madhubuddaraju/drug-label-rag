@@ -112,7 +112,7 @@ tr.best td:first-child { box-shadow: inset 3px 0 0 var(--teal); }
 .method div { border-top: 3px solid var(--teal); padding-top: 10px; font-size: 13.5px; color: var(--ink-2); }
 .method b { display: block; color: var(--ink); margin-bottom: 3px; }
 footer.site { border-top: 1px solid var(--line); padding-block: 20px 40px; font-size: 12.5px; color: var(--ink-3); display: grid; gap: 4px; }
-@media (max-width: 900px) { .cols { grid-template-columns: 1fr; } .kpis, .method { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .cols { grid-template-columns: minmax(0, 1fr); } .kpis, .method { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .kpis, .method { grid-template-columns: 1fr; } .askbox button { padding: 0 14px; } .top nav { display: none; } }
 </style>
 </head>
@@ -260,7 +260,7 @@ $("retKpis").innerHTML = [
   [pct(hold(best)["hit@5"]), "of held-out questions answered in the top 5", `vs ${pct(hold(base)["hit@5"])} for plain BM25; ${pct(nat(best)["hit@5"])} on development questions`],
   [pct(hold(best)["hit@1"]), "of held-out questions with the right passage first", `MRR@10 ${hold(best)["mrr@10"].toFixed(2)}`],
   [pct(best["drug@1"]), "top result is about the right drug", `all ${fmt(best.n)} questions`],
-  [`${best.ms_per_query.toFixed(0)} ms`, "per query on a laptop-class CPU", R.best],
+  [`${best.ms_per_query.toFixed(0)} ms`, "per query, measured on a 4-core cloud CPU", R.best],
 ].map(([v, l, s]) => `<div class="kpi"><b>${v}</b><span>${l}</span><small>${esc(s)}</small></div>`).join("");
 new Chart($("cfgChart"), { type: "bar", data: { labels: cfgs.map((c) => c.name),
   datasets: [{ label: "Development", data: cfgs.map((c) => nat(c)["hit@5"] * 100), backgroundColor: "#0f766e", borderRadius: 3, barPercentage: 0.9, categoryPercentage: 0.8 },

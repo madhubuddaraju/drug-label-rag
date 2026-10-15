@@ -19,7 +19,7 @@ EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 EMBED_MODEL_WEB = "Xenova/bge-small-en-v1.5"   # ONNX port of the same weights, used by the browser demo
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 RERANK_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
-NLI_MODEL = "cross-encoder/nli-deberta-v3-small"
+NLI_MODEL = "cross-encoder/nli-deberta-v3-base"
 
 CHUNK_WORDS = 160
 CHUNK_OVERLAP = 30

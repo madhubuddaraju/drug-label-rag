@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from labelrag import generate
+from labelrag import grade
 from labelrag.search import BM25, doc_text, hamming_scores, to_binary
 from labelrag.web import browser_corpus
 
@@ -14,26 +14,55 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_answer_parsing_helpers():
-    a = "Take 500 mg twice daily with meals [1]. The maximum is 2,550 mg per day [1][3]."
-    assert generate.citations(a) == [1, 3]
-    assert generate.sentences(a) == ["Take 500 mg twice daily with meals.", "The maximum is 2,550 mg per day."]
-    assert generate.is_refusal(generate.REFUSAL) and not generate.is_refusal(a)
-    assert generate.key_facts(a, [["2,550", "2550"], ["insulin"]]) == 0.5
-    assert generate.key_facts(a, []) is None
+    a = "Take 500 mg twice daily with meals [1]. The maximum is 2,550 mg per day. [1][3]"
+    assert grade.citations(a) == [1, 3]
+    assert grade.sentences(a) == ["Take 500 mg twice daily with meals.", "The maximum is 2,550 mg per day."]
+    assert [r for r, _ in grade.split_answer(a)][1] == "The maximum is 2,550 mg per day [1][3]."
+    assert grade.is_refusal(grade.REFUSAL) and not grade.is_refusal(a)
+    assert grade.key_facts(a, [["2,550", "2550"], ["insulin"]]) == 0.5
+    assert grade.key_facts(a, []) is None
+
+
+class FakeJudge:
+    """Entails a claim when every word of it appears in the passages."""
+    name = "fake"
+
+    def support(self, claims, passages):
+        words = set(" ".join(passages).lower().replace(".", "").split())
+        return np.array([float(set(c.lower().rstrip(".").split()) <= words) for c in claims])
+
+
+def test_guardrail_drops_unsupported_claims_and_refuses_when_nothing_is_left():
+    passages = ["the maximum dose is 2550 mg per day. take with meals."]
+    row = {"source": "natural", "answer": "The maximum dose is 2550 mg per day [1]. It is safe in pregnancy [1].",
+           "must": [["2550"]], "seconds": 1}
+    g = generate_grade(row, passages)
+    assert g["claims"] == 2 and g["supported"] == 1
+    assert g["guarded_answer"] == "The maximum dose is 2550 mg per day [1]." and not g["guarded_refused"]
+    assert g["key_facts"] == 1.0 and g["guarded_key_facts"] == 1.0
+    g = generate_grade({**row, "answer": "It is safe in pregnancy [1]."}, passages)
+    assert g["guarded_refused"] and g["guarded_answer"] == grade.REFUSAL
+
+
+def generate_grade(row, passages):
+    return grade.grade_row(row, passages, FakeJudge())
 
 
 def test_summary_counts_refusals_and_citations():
+    passages = ["take 500 mg twice daily with meals."]
     rows = [
-        {"source": "natural", "refused": False, "retrieved_gold": True, "citations": [1], "cited_right_drug": [True],
-         "cited_right_section": [True], "sentences": 2, "supported": 2, "key_facts": 1.0, "closed_book_key_facts": 0.0, "seconds": 3},
-        {"source": "natural", "refused": True, "retrieved_gold": True, "citations": [], "cited_right_drug": [],
-         "cited_right_section": [], "key_facts": 0.0, "closed_book_key_facts": 1.0, "seconds": 2},
-        {"source": "unanswerable", "refused": True, "citations": [], "seconds": 1},
+        grade.grade_row({"source": "natural", "answer": "Take 500 mg twice daily with meals [1].", "retrieved_gold": True,
+                         "citations": [1], "cited_right_drug": [True], "cited_right_section": [True], "must": [["500 mg"]],
+                         "closed_book_key_facts": 0.0, "seconds": 3}, passages, FakeJudge()),
+        grade.grade_row({"source": "natural", "answer": grade.REFUSAL, "retrieved_gold": True, "citations": [],
+                         "must": [["500 mg"]], "closed_book_key_facts": 1.0, "seconds": 2}, passages, FakeJudge()),
+        grade.grade_row({"source": "unanswerable", "answer": grade.REFUSAL, "citations": [], "seconds": 1}, passages, FakeJudge()),
     ]
-    s = generate.summarise(rows)
-    assert s["answer_rate"] == 0.5 and s["correct_refusal_rate"] == 1.0
-    assert s["faithfulness"] == 1.0 and s["citation_right_section"] == 1.0
-    assert s["false_refusal_when_gold_retrieved"] == 0.5
+    s = grade.summarise(rows)
+    assert s["raw"]["answer_rate"] == 0.5 and s["raw"]["correct_refusal_rate"] == 1.0
+    assert s["raw"]["faithfulness"] == 1.0 and s["raw"]["citation_right_section"] == 1.0
+    assert s["raw"]["false_refusal_when_gold_retrieved"] == 0.5
+    assert s["guarded"]["claims_removed"] == 0.0 and s["key_fact_recall_closed_book"] == 0.5
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not installed")

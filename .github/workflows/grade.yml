@@ -1,0 +1,38 @@
+name: Re-grade saved answers
+run-name: Re-grade saved answers (${{ inputs.tag }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Suffix of reports/answers_<tag>.json
+        default: qwen2.5-1.5b-prompt1
+
+permissions:
+  contents: write
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt sentence-transformers
+      - name: Grade
+        run: python -m labelrag.grade --tag ${{ inputs.tag }}
+        env:
+          PYTHONPATH: src
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add "reports/answers_${{ inputs.tag }}.json" "reports/generation_metrics_${{ inputs.tag }}.json"
+          git commit -m "Re-grade answers (${{ inputs.tag }})" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
