@@ -1,0 +1,839 @@
+2026-10-15 03:55:38,299 | 600 drugs -> 25584 chunks, 1694 drug-name aliases
+2026-10-15 03:56:01,254 | HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,341 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:01,354 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/modules.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,367 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/modules.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,456 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-15 03:56:01,456 | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-15 03:56:01,469 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config_sentence_transformers.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,481 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config_sentence_transformers.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,482 | Loading SentenceTransformer model from BAAI/bge-small-en-v1.5.
+2026-10-15 03:56:01,566 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:01,579 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config_sentence_transformers.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,668 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:01,680 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/README.md?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2FREADME.md=&etag=%228b8567d75ffa619486d9590cb0eb76d66ad46c49%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,694 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/README.md?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2FREADME.md=&etag=%228b8567d75ffa619486d9590cb0eb76d66ad46c49%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,785 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:01,797 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/modules.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,883 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:01,896 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/sentence_bert_config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%22ea85692bff64b0d1917833c31ddbca8ab10f5455%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,908 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/sentence_bert_config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%22ea85692bff64b0d1917833c31ddbca8ab10f5455%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:01,999 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:02,095 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-15 03:56:02,197 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:02,209 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fconfig.json=&etag=%223992bf890728a92476c700e6e657fd696eb94160%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:02,222 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fconfig.json=&etag=%223992bf890728a92476c700e6e657fd696eb94160%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:02,317 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-15 03:56:02,433 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/model.safetensors "HTTP/1.1 302 Found"
+2026-10-15 03:56:02,523 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/xet-read-token/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7128.11it/s]
+2026-10-15 03:56:04,976 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,074 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/processor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:05,162 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:05,248 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:05,331 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:05,344 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer_config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Ftokenizer_config.json=&etag=%2237fca74771bc76a8e01178ce3a6055a0995f8093%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,360 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer_config.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Ftokenizer_config.json=&etag=%2237fca74771bc76a8e01178ce3a6055a0995f8093%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,453 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:05,542 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,635 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:05,647 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/vocab.txt?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fvocab.txt=&etag=%22fb140275c155a9c7c5a3b3e0e77a9e839594a938%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,661 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/vocab.txt?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fvocab.txt=&etag=%22fb140275c155a9c7c5a3b3e0e77a9e839594a938%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,756 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:05,768 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Ftokenizer.json=&etag=%22688882a79f44442ddc1f60d70334a7ff5df0fb47%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,781 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/tokenizer.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Ftokenizer.json=&etag=%22688882a79f44442ddc1f60d70334a7ff5df0fb47%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,877 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:05,961 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:05,973 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/special_tokens_map.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fspecial_tokens_map.json=&etag=%22a8b3208c2884c4efb86e49300fdd3dc877220cdf%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:05,986 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/special_tokens_map.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2F5c38ec7c405ec4b44b94cc5a9bb96e735b38267a%2Fspecial_tokens_map.json=&etag=%22a8b3208c2884c4efb86e49300fdd3dc877220cdf%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:06,078 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:06,189 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 03:56:06,201 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/1_Pooling%2Fconfig.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%221da070f0993788c8851a652170ff013aa54dd519%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:06,214 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-small-en-v1.5/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/1_Pooling%2Fconfig.json?%2FBAAI%2Fbge-small-en-v1.5%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%221da070f0993788c8851a652170ff013aa54dd519%22 "HTTP/1.1 200 OK"
+2026-10-15 03:56:06,309 | HTTP Request: HEAD https://huggingface.co/BAAI/bge-small-en-v1.5/resolve/main/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-15 03:56:06,401 | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-small-en-v1.5 "HTTP/1.1 200 OK"
+2026-10-15 03:56:06,417 | loaded BAAI/bge-small-en-v1.5 (4 threads)
+2026-10-15 03:56:06,438 | embedding 0/25584
+2026-10-15 03:59:09,444 | embedding 2000/25584
+2026-10-15 04:02:13,100 | embedding 4000/25584
+2026-10-15 04:05:23,545 | embedding 6000/25584
+2026-10-15 04:08:34,598 | embedding 8000/25584
+2026-10-15 04:11:41,650 | embedding 10000/25584
+2026-10-15 04:14:52,041 | embedding 12000/25584
+2026-10-15 04:18:08,505 | embedding 14000/25584
+2026-10-15 04:21:09,667 | embedding 16000/25584
+2026-10-15 04:24:11,011 | embedding 18000/25584
+2026-10-15 04:27:14,776 | embedding 20000/25584
+2026-10-15 04:30:20,983 | embedding 22000/25584
+2026-10-15 04:33:28,223 | embedding 24000/25584
+2026-10-15 04:36:02,431 | embedded 25584 chunks (headers=True) in 2396s
+2026-10-15 04:36:02,468 | embedding 0/25584
+2026-10-15 04:39:01,282 | embedding 2000/25584
+2026-10-15 04:41:57,964 | embedding 4000/25584
+2026-10-15 04:45:04,375 | embedding 6000/25584
+2026-10-15 04:48:10,444 | embedding 8000/25584
+2026-10-15 04:51:10,864 | embedding 10000/25584
+2026-10-15 04:54:16,037 | embedding 12000/25584
+2026-10-15 04:57:27,992 | embedding 14000/25584
+2026-10-15 05:00:21,813 | embedding 16000/25584
+2026-10-15 05:03:16,119 | embedding 18000/25584
+2026-10-15 05:06:14,733 | embedding 20000/25584
+2026-10-15 05:09:14,859 | embedding 22000/25584
+2026-10-15 05:12:16,527 | embedding 24000/25584
+2026-10-15 05:14:44,964 | embedded 25584 chunks (headers=False) in 2323s
+2026-10-15 05:14:56,458 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:56,557 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:14:56,558 | No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+2026-10-15 05:14:56,646 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:56,736 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-15 05:14:56,828 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:56,920 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-15 05:14:57,009 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,097 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,109 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/config.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fconfig.json=&etag=%2288bc4f74b33a2073abc9a66cb532b889448ac3ed%22 "HTTP/1.1 200 OK"
+2026-10-15 05:14:57,122 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/config.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fconfig.json=&etag=%2288bc4f74b33a2073abc9a66cb532b889448ac3ed%22 "HTTP/1.1 200 OK"
+2026-10-15 05:14:57,213 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,305 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:14:57,392 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,481 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-15 05:14:57,570 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,661 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-15 05:14:57,748 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/model.safetensors "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:57,837 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/model.safetensors "HTTP/1.1 302 Found"
+2026-10-15 05:14:57,927 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/xet-read-token/233902d25c440f23af6f7d6e94d2946bac0bee0a "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 6296.58it/s]
+2026-10-15 05:14:59,713 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:59,804 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-15 05:14:59,893 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/processor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:14:59,982 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/processor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:00,070 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,156 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:00,260 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,346 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:00,435 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,520 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,533 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer_config.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Ftokenizer_config.json=&etag=%22a2435fedfac32b9ad70f052d4f84007730cd3109%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:00,545 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer_config.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Ftokenizer_config.json=&etag=%22a2435fedfac32b9ad70f052d4f84007730cd3109%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:00,640 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,728 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:00,835 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:00,925 | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,015 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,104 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,116 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/vocab.txt?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fvocab.txt=&etag=%22fb140275c155a9c7c5a3b3e0e77a9e839594a938%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,130 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/vocab.txt?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fvocab.txt=&etag=%22fb140275c155a9c7c5a3b3e0e77a9e839594a938%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,231 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,316 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,328 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Ftokenizer.json=&etag=%22688882a79f44442ddc1f60d70334a7ff5df0fb47%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,342 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/tokenizer.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Ftokenizer.json=&etag=%22688882a79f44442ddc1f60d70334a7ff5df0fb47%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,441 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/added_tokens.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,528 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:01,615 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,704 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,716 | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/special_tokens_map.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fspecial_tokens_map.json=&etag=%227520992f25914d962f0e2fd0e0566fc33d19ec59%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,728 | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/233902d25c440f23af6f7d6e94d2946bac0bee0a/special_tokens_map.json?%2Fcross-encoder%2Fms-marco-MiniLM-L6-v2%2Fresolve%2F233902d25c440f23af6f7d6e94d2946bac0bee0a%2Fspecial_tokens_map.json=&etag=%227520992f25914d962f0e2fd0e0566fc33d19ec59%22 "HTTP/1.1 200 OK"
+2026-10-15 05:15:01,822 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-10-15 05:15:01,912 | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/233902d25c440f23af6f7d6e94d2946bac0bee0a/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-10-15 05:15:07,681 | BM25                                           hit@5 0.352  natural 0.300  holdout 0.500  0.7 ms
+2026-10-15 05:15:08,172 | BM25 + chunk headers                           hit@5 0.600  natural 0.567  holdout 0.500  0.7 ms
+2026-10-15 05:15:08,702 | BM25 + headers + drug filter                   hit@5 0.681  natural 0.750  holdout 0.700  0.8 ms
+2026-10-15 05:15:09,347 | BM25 + headers + drug filter + section hints   hit@5 0.933  natural 0.933  holdout 0.767  0.9 ms
+2026-10-15 05:15:10,166 | Dense (bge-small)                              hit@5 0.627  natural 0.667  holdout 0.900  1.2 ms
+2026-10-15 05:15:11,035 | Dense + chunk headers                          hit@5 0.909  natural 0.900  holdout 0.933  1.3 ms
+2026-10-15 05:15:13,056 | Dense, binary-quantised                        hit@5 0.790  natural 0.867  holdout 0.767  2.9 ms
+2026-10-15 05:15:14,754 | Hybrid (RRF)                                   hit@5 0.880  natural 0.867  holdout 0.833  2.5 ms
+2026-10-15 05:15:16,495 | Hybrid + drug filter                           hit@5 0.884  natural 0.917  holdout 0.900  2.5 ms
+2026-10-15 05:15:18,456 | Hybrid + drug filter + section hints           hit@5 0.980  natural 0.950  holdout 0.967  2.8 ms
+2026-10-15 05:15:21,144 | Hybrid, binary + drug filter + hints           hit@5 0.970  natural 0.950  holdout 0.933  3.9 ms
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.56it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.26s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.75it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.83s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.01s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.18s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.07s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.57s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.16s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.10s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.52s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.52s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.75it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.75it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.27s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.61s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.62s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.33s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.82s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.70s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.79s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.11s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.34s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.03s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.29s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.85it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.83s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.50s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.66s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.90it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.69s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.24s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.33s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.39s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.11s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.69s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.86it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.16it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.27s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.45it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.95s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.04s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.56s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.93s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.86s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.68s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.96s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.29s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.16it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.71s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.61s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.29s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.37s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.89it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.42s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.99s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.29s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.53s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.62it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.13s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.89s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.82s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.59s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.59s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.57s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.69s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.68s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.88it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.57s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.69s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.65s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.14s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.38s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.37it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.58s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.23s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.30s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.71s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.49s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.90s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.67s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.39s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.53it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.53it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.98it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.80s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.36s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.54s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.39s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.87s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.65s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.00it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.74s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.07s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.41it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.64s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.01s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.61s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.24s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.00it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.90s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.92s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.98s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.98s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.76s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.60s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.94s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.62it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.14s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.02s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.10s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.29s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.74it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.88s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.47s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.01s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.56s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.05s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.23s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.27it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.03s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.64s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.20s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.98s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.58s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.99s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.39s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.10s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.94it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.14s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.68s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.98it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.97s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.33s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.75s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.74s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.75s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.13s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.98it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.01s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.57s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.43s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.33s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.00s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.00s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.64s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.61s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.50s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.37s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.36s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.02s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.65s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.12s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.38s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.51s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.89s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.43s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.45s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.12s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.15s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.23s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.86s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.29s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.68s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.80it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.80it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.65s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.50s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.50s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.42s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.53s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.12s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.30s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.81s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.63it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.57s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.84s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.95s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.55s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.67s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.20s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.60s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.95s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.16s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.26s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.01s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.65s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.23s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.82s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.82s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.04s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.86s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.14s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.34s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.64s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.93s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.30s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.65s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.65s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.57s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.13s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.62s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.30s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.97it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.59s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.59s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.55s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.07s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.25s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.91s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.81it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.93s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.12s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.00s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.00s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.53s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.04s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.27s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.36s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.30s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.11s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.64s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.55s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.11s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.33s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.79s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.93s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.26s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.19s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.46s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.46s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.01s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.01s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.38s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.93s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.52s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  4.00s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  4.00s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.12s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.56s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.63s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.67s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.13s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.47s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.30s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.35s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.47s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.99s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.16s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.31s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.88s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.22s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.81s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.94s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.53s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.02s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.19s/it]
+2026-10-15 05:42:52,957 | Hybrid + filter + hints + re-ranker            hit@5 0.942  natural 0.967  holdout 0.933  2393.9 ms
