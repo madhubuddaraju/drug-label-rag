@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+artifacts/
+data/*
+!data/labels.jsonl.gz
+!data/labels_meta.json
+!data/chunks.jsonl.gz
+!data/embeddings.npy
+*.log

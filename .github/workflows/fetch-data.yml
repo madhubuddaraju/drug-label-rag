@@ -1,0 +1,38 @@
+name: Fetch FDA labels
+
+on:
+  workflow_dispatch:
+    inputs:
+      drugs:
+        description: Number of drugs to keep
+        default: "600"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python scripts/fetch_labels.py --drugs ${{ inputs.drugs }} 2>&1 | tee fetch.log
+      - name: Commit labels
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data/labels.jsonl.gz data/labels_meta.json
+          git commit -m "Refresh FDA label snapshot" || exit 0
+          git pull --rebase
+          git push
+      - name: Keep log on failure
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git checkout -B fetch-debug
+          git add -f fetch.log && git commit -m "fetch log" && git push -f origin fetch-debug
