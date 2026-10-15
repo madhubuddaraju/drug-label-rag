@@ -14,7 +14,7 @@ import re
 import sys
 import time
 import zipfile
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import requests
@@ -111,7 +111,7 @@ def main():
             f.write(json.dumps(rec) + "\n")
     meta = {"source": INDEX, "partitions": len(parts), "labels_read": seen, "rx_generics": len(counts),
             "drugs_kept": len(top), "sha256_of_downloads": digest.hexdigest(),
-            "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+            "fetched_at": datetime.now(UTC).isoformat(timespec="seconds")}
     LABELS_META.write_text(json.dumps(meta, indent=1))
     print(json.dumps(meta, indent=1))
 

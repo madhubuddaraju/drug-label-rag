@@ -1,0 +1,60 @@
+{"qid": "n0", "question": "Can I drink alcohol while taking metronidazole?", "drug": "metronidazole", "sections": ["warnings", "interactions", "contraindications"], "must": [["alcohol"], ["cramps", "flushing", "nausea", "vomiting", "headache"]]}
+{"qid": "n1", "question": "What's the most metformin I can take in a day?", "drug": "metformin hydrochloride", "sections": ["dosage"], "must": [["2,550", "2550", "2,000", "2000"]]}
+{"qid": "n2", "question": "Is Lipitor safe to take while pregnant?", "drug": "atorvastatin calcium", "sections": ["pregnancy", "contraindications"], "must": [["discontinue", "stop"]]}
+{"qid": "n3", "question": "Can I take ibuprofen with warfarin?", "drug": "ibuprofen", "sections": ["interactions", "warnings"], "must": [["bleeding"]]}
+{"qid": "n4", "question": "What is the starting dose of lisinopril for high blood pressure?", "drug": "lisinopril", "sections": ["dosage"], "must": [["10 mg"]]}
+{"qid": "n5", "question": "What are the most common side effects of gabapentin?", "drug": "gabapentin", "sections": ["adverse_reactions"], "must": [["dizziness"], ["somnolence"]]}
+{"qid": "n6", "question": "Can kids take Neurontin?", "drug": "gabapentin", "sections": ["pediatric", "dosage", "indications"], "must": [["3 years", "3 to 12", "12 years"]]}
+{"qid": "n7", "question": "Is it dangerous to take Xanax with opioid painkillers?", "drug": "alprazolam", "sections": ["boxed_warning", "interactions", "warnings"], "must": [["respiratory depression"], ["sedation", "coma", "death"]]}
+{"qid": "n8", "question": "What should be done if someone overdoses on acetaminophen and codeine?", "drug": "acetaminophen and codeine phosphate", "sections": ["overdosage"], "must": [["acetylcysteine"]]}
+{"qid": "n9", "question": "Can I breastfeed while on Zoloft?", "drug": "sertraline hydrochloride", "sections": ["lactation", "pregnancy"], "must": [["milk"]]}
+{"qid": "n10", "question": "What is prednisone used for?", "drug": "prednisone", "sections": ["indications"], "must": [["allerg"], ["rheumat", "arthritis"]]}
+{"qid": "n11", "question": "How is the amoxicillin dose worked out for a child?", "drug": "amoxicillin", "sections": ["dosage"], "must": [["mg/kg"]]}
+{"qid": "n12", "question": "Is Viagra safe with nitroglycerin?", "drug": "sildenafil citrate", "sections": ["contraindications", "interactions", "warnings"], "must": [["nitrate"], ["hypotension", "blood pressure"]]}
+{"qid": "n13", "question": "What happens if you take too much levothyroxine?", "drug": "levothyroxine sodium", "sections": ["overdosage"], "must": [["hyperthyroidism", "thyrotoxicosis"]]}
+{"qid": "n14", "question": "Can Synthroid be used to lose weight?", "drug": "levothyroxine sodium", "sections": ["boxed_warning", "indications"], "must": [["weight"]]}
+{"qid": "n15", "question": "Why does duloxetine carry a warning about suicidal thoughts?", "drug": "duloxetine", "sections": ["boxed_warning", "warnings"], "must": [["suicid"], ["young adults", "children", "pediatric", "adolescent"]]}
+{"qid": "n16", "question": "Should I avoid taking Plavix with omeprazole?", "drug": "clopidogrel", "sections": ["interactions", "warnings", "boxed_warning"], "must": [["cyp2c19"]]}
+{"qid": "n17", "question": "Is lithium safe for older adults?", "drug": "lithium carbonate", "sections": ["geriatric", "dosage"], "must": [["renal", "kidney"]]}
+{"qid": "n18", "question": "What foods or supplements affect warfarin?", "drug": "warfarin sodium", "sections": ["interactions", "warnings", "dosage"], "must": [["vitamin k"]]}
+{"qid": "n19", "question": "Can I take tramadol if I have a seizure disorder?", "drug": "tramadol hydrochloride", "sections": ["warnings", "contraindications"], "must": [["seizure"]]}
+{"qid": "n20", "question": "How do I take Fosamax correctly?", "drug": "alendronate sodium", "sections": ["dosage"], "must": [["water"], ["30 minutes"]]}
+{"qid": "n21", "question": "Does Augmentin cause diarrhea?", "drug": "amoxicillin and clavulanate potassium", "sections": ["adverse_reactions", "warnings"], "must": [["diarrhea"]]}
+{"qid": "n22", "question": "Can Flagyl be used in the first trimester of pregnancy?", "drug": "metronidazole", "sections": ["pregnancy", "contraindications"], "must": [["trimester"]]}
+{"qid": "n23", "question": "What are the warning signs of lactic acidosis with metformin?", "drug": "metformin hydrochloride", "sections": ["boxed_warning", "warnings"], "must": [["malaise", "myalgia", "respiratory distress", "somnolence", "abdominal pain"]]}
+{"qid": "n24", "question": "What does Norvasc treat?", "drug": "amlodipine besylate", "sections": ["indications"], "must": [["hypertension"], ["angina", "coronary"]]}
+{"qid": "n25", "question": "Is it okay to stop Klonopin suddenly?", "drug": "clonazepam", "sections": ["warnings", "boxed_warning", "dosage"], "must": [["withdrawal"]]}
+{"qid": "n26", "question": "Can Wellbutrin cause seizures?", "drug": "bupropion hydrochloride", "sections": ["warnings", "contraindications"], "must": [["seizure"]]}
+{"qid": "n27", "question": "Who should not take meloxicam?", "drug": "meloxicam", "sections": ["contraindications", "boxed_warning"], "must": [["cabg", "coronary artery bypass"], ["aspirin", "nsaid"]]}
+{"qid": "n28", "question": "Is cyclobenzaprine safe for elderly patients?", "drug": "cyclobenzaprine hydrochloride", "sections": ["geriatric", "dosage"], "must": [["elderly", "older", "geriatric"]]}
+{"qid": "n29", "question": "What is the Valtrex dose for cold sores?", "drug": "valacyclovir hydrochloride", "sections": ["dosage"], "must": [["2 grams", "2 g"]]}
+{"qid": "n30", "question": "Can I take Diflucan while pregnant?", "drug": "fluconazole", "sections": ["pregnancy", "warnings"], "must": [["trimester", "miscarriage", "birth defects", "abortion", "congenital"]]}
+{"qid": "n31", "question": "Does Singulair have mental health side effects?", "drug": "montelukast sodium", "sections": ["boxed_warning", "warnings"], "must": [["neuropsychiatric"]]}
+{"qid": "n32", "question": "What is the maximum daily dose of Seroquel?", "drug": "quetiapine", "sections": ["dosage"], "must": [["800 mg", "750 mg"]]}
+{"qid": "n33", "question": "Do antipsychotics like Abilify raise the risk of death in elderly dementia patients?", "drug": "aripiprazole", "sections": ["boxed_warning", "warnings"], "must": [["dementia"], ["death", "mortality"]]}
+{"qid": "n34", "question": "What happens if someone overdoses on Lasix?", "drug": "furosemide", "sections": ["overdosage"], "must": [["dehydration", "electrolyte", "volume"]]}
+{"qid": "n35", "question": "Can propranolol be stopped abruptly?", "drug": "propranolol hydrochloride", "sections": ["warnings", "boxed_warning", "dosage"], "must": [["angina"]]}
+{"qid": "n36", "question": "What are common side effects of Lexapro?", "drug": "escitalopram", "sections": ["adverse_reactions"], "must": [["nausea"]]}
+{"qid": "n37", "question": "Is losartan safe during pregnancy?", "drug": "losartan potassium", "sections": ["boxed_warning", "pregnancy", "warnings"], "must": [["fetal"]]}
+{"qid": "n38", "question": "Should Synthroid be taken with food?", "drug": "levothyroxine sodium", "sections": ["dosage"], "must": [["empty stomach"]]}
+{"qid": "n39", "question": "What is Keppra used for?", "drug": "levetiracetam", "sections": ["indications"], "must": [["seizure"]]}
+{"qid": "n40", "question": "Can Cialis be taken with alpha blockers?", "drug": "tadalafil", "sections": ["interactions", "warnings", "dosage"], "must": [["alpha"], ["hypotension", "blood pressure"]]}
+{"qid": "n41", "question": "Is Prozac safe for teenagers?", "drug": "fluoxetine hydrochloride", "sections": ["pediatric", "boxed_warning", "warnings"], "must": [["suicid"]]}
+{"qid": "n42", "question": "Does topiramate make birth control pills less effective?", "drug": "topiramate", "sections": ["interactions", "warnings"], "must": [["contracept"]]}
+{"qid": "n43", "question": "How much colchicine should be taken for a gout flare?", "drug": "colchicine", "sections": ["dosage"], "must": [["1.2 mg"], ["0.6 mg"]]}
+{"qid": "n44", "question": "What are the pregnancy warnings for Accutane?", "drug": "isotretinoin", "sections": ["boxed_warning", "contraindications", "warnings", "pregnancy"], "must": [["birth defects", "fetal"]]}
+{"qid": "n45", "question": "What are the risks of taking omeprazole for a long time?", "drug": "omeprazole", "sections": ["warnings"], "must": [["fracture", "b12", "magnesium"]]}
+{"qid": "n46", "question": "How is a Xanax overdose treated?", "drug": "alprazolam", "sections": ["overdosage"], "must": [["flumazenil"]]}
+{"qid": "n47", "question": "What is Narcan used for?", "drug": "naloxone hydrochloride", "sections": ["indications"], "must": [["opioid"]]}
+{"qid": "n48", "question": "Can a pregnant woman take Bactrim?", "drug": "sulfamethoxazole and trimethoprim", "sections": ["pregnancy", "contraindications", "warnings"], "must": [["folate", "folic", "kernicterus", "pregnan"]]}
+{"qid": "n49", "question": "Can I drive the morning after taking Ambien?", "drug": "zolpidem tartrate", "sections": ["warnings", "dosage"], "must": [["next-day", "next day", "morning"], ["driving", "drive"]]}
+{"qid": "n50", "question": "Does doxycycline make you sensitive to the sun?", "drug": "doxycycline hyclate", "sections": ["warnings", "adverse_reactions"], "must": [["photosensitivity", "sun"]]}
+{"qid": "n51", "question": "Can ciprofloxacin damage tendons?", "drug": "ciprofloxacin", "sections": ["boxed_warning", "warnings"], "must": [["tendon", "tendin"]]}
+{"qid": "n52", "question": "What is the usual dose of sertraline for depression?", "drug": "sertraline hydrochloride", "sections": ["dosage"], "must": [["50 mg"]]}
+{"qid": "n53", "question": "Can hydrochlorothiazide affect blood sugar?", "drug": "hydrochlorothiazide", "sections": ["warnings", "interactions", "adverse_reactions"], "must": [["glucose", "diabetes", "hyperglycemia"]]}
+{"qid": "n54", "question": "What are the serious side effects of Bactrim?", "drug": "sulfamethoxazole and trimethoprim", "sections": ["warnings"], "must": [["stevens-johnson", "toxic epidermal", "hypersensitivity"]]}
+{"qid": "n55", "question": "Is trazodone okay to use with other antidepressants?", "drug": "trazodone hydrochloride", "sections": ["interactions", "warnings", "contraindications"], "must": [["serotonin"]]}
+{"qid": "n56", "question": "What are the side effects of prednisone when used long term?", "drug": "prednisone", "sections": ["adverse_reactions", "warnings"], "must": [["osteoporosis", "glucose", "infection", "cataract"]]}
+{"qid": "n57", "question": "What happens with an overdose of amlodipine?", "drug": "amlodipine besylate", "sections": ["overdosage"], "must": [["hypotension", "vasodilation"]]}
+{"qid": "n58", "question": "Can furosemide cause hearing loss?", "drug": "furosemide", "sections": ["warnings", "adverse_reactions"], "must": [["ototoxicity", "tinnitus", "hearing"]]}
+{"qid": "n59", "question": "Should someone with liver disease take Lipitor?", "drug": "atorvastatin calcium", "sections": ["contraindications", "warnings"], "must": [["liver", "hepatic"]]}

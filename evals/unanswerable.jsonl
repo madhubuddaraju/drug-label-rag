@@ -1,0 +1,29 @@
+{"question": "What is the recommended dose of Eliquis?", "type": "not_in_corpus", "qid": "u0"}
+{"question": "What are the side effects of Ozempic?", "type": "not_in_corpus", "qid": "u1"}
+{"question": "Is Paxlovid safe with statins?", "type": "not_in_corpus", "qid": "u2"}
+{"question": "What is Jardiance used for?", "type": "not_in_corpus", "qid": "u3"}
+{"question": "What is the usual dose of zelnorvatide?", "type": "made_up_drug", "qid": "u4"}
+{"question": "Can I take Trevoxil while pregnant?", "type": "made_up_drug", "qid": "u5"}
+{"question": "What are the side effects of Brexafemme?", "type": "not_in_corpus", "qid": "u6"}
+{"question": "What is the dosage of Wegovy for weight loss?", "type": "not_in_corpus", "qid": "u7"}
+{"question": "How much does Lipitor cost without insurance?", "type": "not_in_label", "qid": "u8"}
+{"question": "Which pharmacy has the cheapest gabapentin?", "type": "not_in_label", "qid": "u9"}
+{"question": "Who invented metformin?", "type": "not_in_label", "qid": "u10"}
+{"question": "What is the capital of France?", "type": "off_topic", "qid": "u11"}
+{"question": "Write me a poem about aspirin.", "type": "off_topic", "qid": "u12"}
+{"question": "How many people take sertraline in the US?", "type": "not_in_label", "qid": "u13"}
+{"question": "Is Keppra covered by Medicare Part D?", "type": "not_in_label", "qid": "u14"}
+{"question": "What is the stock price of Pfizer?", "type": "off_topic", "qid": "u15"}
+{"question": "Which is better, Zoloft or therapy?", "type": "not_in_label", "qid": "u16"}
+{"question": "What color is a 10 mg Xanax pill?", "type": "not_in_label", "qid": "u17"}
+{"question": "Can my dog take gabapentin?", "type": "not_in_label", "qid": "u18"}
+{"question": "What is the dose of Xarelto after knee surgery?", "type": "not_in_label", "qid": "u19"}
+{"question": "Is Humira safe in pregnancy?", "type": "not_in_corpus", "qid": "u20"}
+{"question": "What are the side effects of Dupixent?", "type": "not_in_corpus", "qid": "u21"}
+{"question": "Can Trulicity cause pancreatitis?", "type": "not_in_corpus", "qid": "u22"}
+{"question": "What is the half-life of Vyvanse?", "type": "not_in_label", "qid": "u23"}
+{"question": "What is the best diet for diabetes?", "type": "off_topic", "qid": "u24"}
+{"question": "How long does a flu shot last?", "type": "off_topic", "qid": "u25"}
+{"question": "What is the dose of Zepbound?", "type": "not_in_corpus", "qid": "u26"}
+{"question": "Can you take Entyvio with Stelara?", "type": "not_in_corpus", "qid": "u27"}
+{"question": "How much ibuprofen can a horse take?", "type": "not_in_label", "qid": "u28"}

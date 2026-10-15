@@ -1,0 +1,34 @@
+name: Build index and evaluate retrieval
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt sentence-transformers
+      - name: Embed chunks and evaluate every retrieval configuration
+        run: python -m labelrag.build
+        env:
+          PYTHONPATH: src
+      - name: Commit index and metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add data/chunks.jsonl.gz data/embeddings.npy reports/retrieval_metrics.json
+          git commit -m "Rebuild index and retrieval metrics" || exit 0
+          git pull --rebase
+          git push

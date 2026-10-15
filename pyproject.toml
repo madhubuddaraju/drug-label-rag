@@ -1,0 +1,15 @@
+[project]
+name = "drug-label-rag"
+version = "1.0.0"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP"]

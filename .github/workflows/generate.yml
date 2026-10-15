@@ -1,0 +1,46 @@
+name: Generate and grade answers
+
+on:
+  workflow_dispatch:
+    inputs:
+      templated:
+        description: Templated questions to answer (all natural and unanswerable questions are always included)
+        default: "60"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt sentence-transformers huggingface_hub
+          pip install llama-cpp-python --prefer-binary --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+      - name: Answer with Qwen2.5-1.5B and grade
+        run: python -m labelrag.generate --templated ${{ inputs.templated }} 2>&1 | tee generate.log
+        env:
+          PYTHONPATH: src
+      - name: Commit answers and metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add reports/answers.json reports/generation_metrics.json
+          git commit -m "Regenerate answers and grading" || exit 0
+          git pull --rebase
+          git push
+      - name: Keep log on failure
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git checkout -B generate-debug
+          git add -f generate.log && git commit -m "generate log" && git push -f origin generate-debug
