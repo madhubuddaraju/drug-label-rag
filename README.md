@@ -1,11 +1,11 @@
 # Ask the Drug Label: retrieval-augmented QA over FDA labels
 
-![CI](https://github.com/madhubuddaraju/drug-label-rag/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/subbarajubuddaraju/drug-label-rag/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![Embeddings](https://img.shields.io/badge/embeddings-bge--small-green)
 ![LLM](https://img.shields.io/badge/LLM-Qwen2.5--3B%20(CPU)-purple)
 
-**Live demo: [madhubuddaraju.github.io/drug-label-rag](https://madhubuddaraju.github.io/drug-label-rag/)**
+**Live demo: [subbarajubuddaraju.github.io/drug-label-rag](https://subbarajubuddaraju.github.io/drug-label-rag/)**
 (search runs entirely in your browser; the page also shows every graded LLM answer. Generation takes about
 30 seconds per answer on a CPU, so it runs offline in GitHub Actions rather than live.)
 
@@ -142,7 +142,7 @@ example. Grading:
 ## Quick start
 
 ```bash
-git clone https://github.com/madhubuddaraju/drug-label-rag.git
+git clone https://github.com/subbarajubuddaraju/drug-label-rag.git
 cd drug-label-rag
 python -m venv .venv && source .venv/bin/activate
 make install          # keyword retrieval, evaluation, site, tests

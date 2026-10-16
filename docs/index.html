@@ -123,7 +123,7 @@ footer.site { border-top: 1px solid var(--line); padding-block: 20px 40px; font-
 <body>
 <header class="top"><div class="wrap">
   <div class="brand"><i>Rx</i>Ask the Drug Label</div>
-  <nav><a href="#eval">Retrieval</a><a href="#answers">Answers</a><a href="#method">Method</a><a href="https://github.com/madhubuddaraju/drug-label-rag">Code</a></nav>
+  <nav><a href="#eval">Retrieval</a><a href="#answers">Answers</a><a href="#method">Method</a><a href="https://github.com/subbarajubuddaraju/drug-label-rag">Code</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -442,7 +442,7 @@ if (!runs.length || !D.best_model) {
 }
 
 $("mCorpus").textContent = `${R.corpus.drugs} prescription drugs with the most marketed labels, from ${fmt(D.meta.labels_read)} openFDA labels; 12 label sections.`;
-$("foot").innerHTML = `<div>Data: openFDA drug labeling (public domain), snapshot ${D.meta.fetched_at.slice(0, 10)}. Labels can lag the latest DailyMed version, and generic labels can omit indications carved out for the brand.</div><div>Portfolio project by <a href="https://madhubuddaraju.github.io/">V R S Subbaraju Buddaraju</a> · <a href="https://github.com/madhubuddaraju/drug-label-rag">source code</a></div>`;
+$("foot").innerHTML = `<div>Data: openFDA drug labeling (public domain), snapshot ${D.meta.fetched_at.slice(0, 10)}. Labels can lag the latest DailyMed version, and generic labels can omit indications carved out for the brand.</div><div>Portfolio project by <a href="https://subbarajubuddaraju.github.io/">V R S Subbaraju Buddaraju</a> · <a href="https://github.com/subbarajubuddaraju/drug-label-rag">source code</a></div>`;
 </script>
 </body>
 </html>
